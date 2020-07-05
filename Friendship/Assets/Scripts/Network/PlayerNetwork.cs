@@ -51,13 +51,6 @@ namespace TheBattle
                 Instance = this;
         }
 
-        //calls when click select person button
-        public void OnClick_SelectCharacter(int selectedCharacter)
-        {
-
-            photonView.RPC("RPC_SelectCharacter", RpcTarget.AllBuffered, selectedCharacter);
-        }
-
         //Set nickname method
         public void Set_NickName(string name)
         {
@@ -139,9 +132,9 @@ namespace TheBattle
         }
 
         [PunRPC]
-        void RPC_SelectCharacter()
+        void RPC_SelectCharacter(int character)
         {
-
+            PlayerPrefs.SetInt("myCharacter", character);
         }
 
         #endregion

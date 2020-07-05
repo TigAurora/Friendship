@@ -204,7 +204,11 @@ namespace TheBattle
         public void OnClick_SelectCharacter(int character)
         {
             string[] characterlist = { "Blind", "Deaf" };
-            PlayerPrefs.SetInt("myCharacter", character);
+            if (PlayerNetwork.Instance.photonView.IsMine)
+            {
+                PlayerNetwork.Instance.photonView.RPC("RPC_SelectCharacter", RpcTarget.Others, 1 - character);
+                PlayerPrefs.SetInt("myCharacter", character);
+            }
             Debug.Log("Current character: " + characterlist[character]);
         }
 
