@@ -29,6 +29,7 @@ namespace TheBattle
         {
             //connect to photon using setting file in project
             PhotonNetwork.ConnectUsingSettings();
+            PhotonNetwork.ConnectToRegion("us");
 
             //Disable automatic player scene transition
             PhotonNetwork.AutomaticallySyncScene = false;
