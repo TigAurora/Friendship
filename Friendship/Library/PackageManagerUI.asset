@@ -1,0 +1,29 @@
+{
+    "developmentStates": [
+        {
+            "PackageName": "com.unity.2d.animation",
+            "publishTarget": "",
+            "test": 0
+        },
+        {
+            "PackageName": "com.unity.2d.psdimporter",
+            "publishTarget": "",
+            "test": 0
+        },
+        {
+            "PackageName": "com.unity.2d.ik",
+            "publishTarget": "",
+            "test": 0
+        },
+        {
+            "PackageName": "com.unity.2d.spriteshape",
+            "publishTarget": "",
+            "test": 0
+        },
+        {
+            "PackageName": "com.unity.2d.sprite",
+            "publishTarget": "",
+            "test": 0
+        }
+    ]
+}

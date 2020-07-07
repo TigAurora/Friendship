@@ -1,0 +1,1616 @@
+fileFormatVersion: 2
+guid: 34d8e4941d657794884304d629f4082d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1416614878748285068
+    second: ccUIbg
+  - first:
+      213: -4320327355265107231
+    second: ccUIeye1
+  - first:
+      213: -6510316568425865490
+    second: ccUIeye1x
+  - first:
+      213: 2485958138505090036
+    second: ccUIsunglasses1x
+  - first:
+      213: -7578476016098124072
+    second: ccUIselectk1
+  - first:
+      213: 4436863404949477263
+    second: ccUIselectk1x
+  - first:
+      213: 4275556338910974296
+    second: ccUIselectk2x
+  - first:
+      213: -3178559732234228831
+    second: ccUImouth1
+  - first:
+      213: -3458036942463547457
+    second: ccUImouth1x
+  - first:
+      213: -8487777309203385058
+    second: ccUIsunglasses1
+  - first:
+      213: 3032028183899682566
+    second: ccUIeyebrow1
+  - first:
+      213: -2628871088001862503
+    second: ccUIeyebrow1x
+  - first:
+      213: -7583832688663830251
+    second: ccUIsunglasses2
+  - first:
+      213: -5272923893809540785
+    second: ccUIselectk2
+  - first:
+      213: -3719930217087058102
+    second: ccUItear1
+  - first:
+      213: -2947283559033259186
+    second: ccUItear1x
+  - first:
+      213: -4324774585301404029
+    second: ccUIsunglasses2x
+  - first:
+      213: 8451674605882429143
+    second: ccUIhairb1
+  - first:
+      213: 1647165772580034255
+    second: ccUIhairb1x
+  - first:
+      213: -3063047378460407982
+    second: ccUIhaira1
+  - first:
+      213: 533799690994055775
+    second: ccUIhaira1x
+  - first:
+      213: -328017606281222396
+    second: ccUIhairc1
+  - first:
+      213: -3608562249751607904
+    second: ccUIhairc1x
+  - first:
+      213: 2479487979660510487
+    second: ccUIcat1
+  - first:
+      213: -391170167139520109
+    second: ccUIcat1x
+  - first:
+      213: -5974305549024385826
+    second: ccUIwheelchair1
+  - first:
+      213: 740371658683388638
+    second: ccUIwheelchair1x
+  - first:
+      213: -873752692535392957
+    second: ccUIeye2
+  - first:
+      213: -6858182660985149511
+    second: ccUIeye2x
+  - first:
+      213: 2668703776861031372
+    second: ccUIsamplek2
+  - first:
+      213: -8792972632874028549
+    second: ccUIsamplek1
+  - first:
+      213: -2181534319902178021
+    second: ccUIlpx
+  - first:
+      213: -6494077540920421461
+    second: ccUInpx
+  - first:
+      213: -4578892566954188785
+    second: ccUImouth2
+  - first:
+      213: -9022427996816792723
+    second: charactercreatorUI 1_34
+  - first:
+      213: 1617129055135431369
+    second: ccUIlp
+  - first:
+      213: -5988444600019982770
+    second: ccUInp
+  - first:
+      213: 3922073177655424938
+    second: ccUIeyebrow2
+  - first:
+      213: -8133740893450027651
+    second: ccUIeyebrow2x
+  - first:
+      213: 4146384756719920690
+    second: XXX
+  - first:
+      213: -5569251158260713501
+    second: ccUIyesx
+  - first:
+      213: -7916022583304713841
+    second: ccUItear2
+  - first:
+      213: 5130341942460811707
+    second: ccUItear2x
+  - first:
+      213: -2003558332860115524
+    second: ccUIrandom
+  - first:
+      213: 3874599318114770781
+    second: ccUI yes
+  - first:
+      213: 6360978236101772923
+    second: ccUIhairb2
+  - first:
+      213: -8364076645620481754
+    second: ccUIhairb2x
+  - first:
+      213: -3608225566754979947
+    second: ccUIhaira2
+  - first:
+      213: 1296005422292663370
+    second: ccUIhaira2x
+  - first:
+      213: -5810411570035621210
+    second: ccUIgang
+  - first:
+      213: 6139677475232779921
+    second: ccUIhairc2
+  - first:
+      213: 2241505570781274868
+    second: ccUIhairc2x
+  - first:
+      213: 6022332101769729005
+    second: ccUI1
+  - first:
+      213: -4768864617135206919
+    second: ccUI2
+  - first:
+      213: 7955868805299468696
+    second: ccUI3
+  - first:
+      213: 8873490759930582420
+    second: ccUI4
+  - first:
+      213: -5568787637082316564
+    second: charactercreatorUI 1_56
+  - first:
+      213: 6855726752150338326
+    second: ccUIcat2
+  - first:
+      213: 7161920011710221067
+    second: ccUIcat2x
+  - first:
+      213: 4468250789944298508
+    second: ccUIwheelchair2
+  - first:
+      213: -5491907721372737594
+    second: ccUIwheelchair2x
+  - first:
+      213: 5313773025695272776
+    second: XX
+  - first:
+      213: -3068478665565899819
+    second: ccUIrandomx
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ccUIbg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 1916
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477eca8f54c275ce0800000000000000
+      internalID: -1416614878748285068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeye1
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2018
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea3504192d1b04c0800000000000000
+      internalID: -4320327355265107231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeye1x
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 2016
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeed2abf295b6a5a0800000000000000
+      internalID: -6510316568425865490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIsunglasses1x
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 2013
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3561c71c5ef7220800000000000000
+      internalID: 2485958138505090036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIselectk1
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 1889
+        width: 238
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de57a14738d3d690800000000000000
+      internalID: -7578476016098124072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIselectk1x
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 1891
+        width: 238
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8791f062c7e29d30800000000000000
+      internalID: 4436863404949477263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIselectk2x
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1666
+        width: 240
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85155fd56d3d55b30800000000000000
+      internalID: 4275556338910974296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUImouth1
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1920
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab61d6a3cc73e3d0800000000000000
+      internalID: -3178559732234228831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUImouth1x
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1919
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb74848e8b59200d0800000000000000
+      internalID: -3458036942463547457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIsunglasses1
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1911
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15bf48e18b553a80800000000000000
+      internalID: -8487777309203385058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeyebrow1
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1816
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073052a19de31a20800000000000000
+      internalID: 3032028183899682566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeyebrow1x
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1814
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994ba5f7caf548bd0800000000000000
+      internalID: -2628871088001862503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIsunglasses2
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1815
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511623cb950d0c690800000000000000
+      internalID: -7583832688663830251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIselectk2
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 1668
+        width: 240
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4110ddd7afc2d6b0800000000000000
+      internalID: -5272923893809540785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUItear1
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1718
+        width: 165
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb8453d27206cc0800000000000000
+      internalID: -3719930217087058102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUItear1x
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1716
+        width: 165
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b397be7352917d0800000000000000
+      internalID: -2947283559033259186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIsunglasses2x
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 1712
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386f875ad605bf3c0800000000000000
+      internalID: -4324774585301404029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairb1
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 1615
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7decfc076416a4570800000000000000
+      internalID: 8451674605882429143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairb1x
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1613
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc690d80b88ebd610800000000000000
+      internalID: 1647165772580034255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhaira1
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1512
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2570da453aedd75d0800000000000000
+      internalID: -3063047378460407982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhaira1x
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1510
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5af9e2adff686700800000000000000
+      internalID: 533799690994055775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairc1
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1407
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407a88999b5a27bf0800000000000000
+      internalID: -328017606281222396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairc1x
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1405
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5cba9b0cfcbedc0800000000000000
+      internalID: -3608562249751607904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIcat1
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1307
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715048c3e29e86220800000000000000
+      internalID: 2479487979660510487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIcat1x
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1305
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913be43ec8429af0800000000000000
+      internalID: -391170167139520109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIwheelchair1
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1201
+        width: 167
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4a1c2a1c0071da0800000000000000
+      internalID: -5974305549024385826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIwheelchair1x
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1200
+        width: 167
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed21795d914564a00800000000000000
+      internalID: 740371658683388638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeye2
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1075
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34503e33e8ecfd3f0800000000000000
+      internalID: -873752692535392957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeye2x
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1068
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7ac3fb437d2d0a0800000000000000
+      internalID: -6858182660985149511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIsamplek2
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 51
+        width: 678
+        height: 961
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb8b8612f3290520800000000000000
+      internalID: 2668703776861031372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIsamplek1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 55
+        width: 678
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1ffc14af519f580800000000000000
+      internalID: -8792972632874028549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIlpx
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 952
+        width: 69
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1548e42812a9b1e0800000000000000
+      internalID: -2181534319902178021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUInpx
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 953
+        width: 69
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3989532e660e5a0800000000000000
+      internalID: -6494077540920421461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUImouth2
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 975
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00e40a68718470c0800000000000000
+      internalID: -4578892566954188785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charactercreatorUI 1_34
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 969
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63223e2a85e9c280800000000000000
+      internalID: -9022427996816792723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIlp
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 878
+        width: 69
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca7f47ce42317610800000000000000
+      internalID: 1617129055135431369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUInp
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 876
+        width: 69
+        height: 51
+      alignment: 9
+      pivot: {x: 0.49135208, y: 0.4653994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46e3ba4d55c4eca0800000000000000
+      internalID: -5988444600019982770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeyebrow2
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 873
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa73d3966c00e6630800000000000000
+      internalID: 3922073177655424938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIeyebrow2x
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 868
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7db7d670c52f1f80800000000000000
+      internalID: -8133740893450027651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XXX
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 311
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236a26eb7faea8930800000000000000
+      internalID: 4146384756719920690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIyesx
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 705
+        width: 136
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7ffe6249b06b2b0800000000000000
+      internalID: -5569251158260713501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUItear2
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 774
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f890720c663a42290800000000000000
+      internalID: -7916022583304713841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUItear2x
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 769
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb90aa0a0d2a23740800000000000000
+      internalID: 5130341942460811707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIrandom
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 550
+        width: 136
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb55913cf4ee134e0800000000000000
+      internalID: -2003558332860115524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUI yes
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 552
+        width: 136
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f93332d8755c530800000000000000
+      internalID: 3874599318114770781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairb2
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 670
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7646daf00cb64850800000000000000
+      internalID: 6360978236101772923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairb2x
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 665
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62186a70b94dceb80800000000000000
+      internalID: -8364076645620481754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhaira2
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 568
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f3618d6f10dedc0800000000000000
+      internalID: -3608225566754979947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhaira2x
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 563
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cfbb6a0165cf110800000000000000
+      internalID: 1296005422292663370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIgang
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 404
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2053146754d5fa0800000000000000
+      internalID: -5810411570035621210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairc2
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 464
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e87b26224843550800000000000000
+      internalID: 6139677475232779921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIhairc2x
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 458
+        width: 165
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f22a7cc07d6b1f10800000000000000
+      internalID: 2241505570781274868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUI1
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 410
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de39a6d832f939350800000000000000
+      internalID: 6022332101769729005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUI2
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 413
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd0ab1b5e691ddb0800000000000000
+      internalID: -4768864617135206919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUI3
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 412
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8997c73c68ce86e60800000000000000
+      internalID: 7955868805299468696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUI4
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 415
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4959f5715d8f42b70800000000000000
+      internalID: 8873490759930582420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charactercreatorUI 1_56
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 410
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce02f161621b7b2b0800000000000000
+      internalID: -5568787637082316564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIcat2
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 364
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b301b682f642f50800000000000000
+      internalID: 6855726752150338326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIcat2x
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 356
+        width: 169
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bcfbf1e40446360800000000000000
+      internalID: 7161920011710221067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIwheelchair2
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 255
+        width: 165
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c0dfd6b6a620e30800000000000000
+      internalID: 4468250789944298508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIwheelchair2x
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 253
+        width: 165
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf5a585603d8c3b0800000000000000
+      internalID: -5491907721372737594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XX
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 87
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f8e9dc9605eb940800000000000000
+      internalID: 5313773025695272776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ccUIrandomx
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 703
+        width: 136
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3741249e29a65d0800000000000000
+      internalID: -3068478665565899819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
