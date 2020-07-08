@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322.2, y: 292.95}
-  m_SizeDelta: {x: 185.8, y: 237.13263}
+  m_AnchoredPosition: {x: -300.7, y: 292.95}
+  m_SizeDelta: {x: 247.235, y: 224.3813}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6208072175868769290
 SpriteRenderer:
