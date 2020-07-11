@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6208072175868769291}
   - component: {fileID: 6208072175868769288}
   - component: {fileID: 6208072175868769289}
+  - component: {fileID: 7241738966018916868}
   m_Layer: 5
   m_Name: eye
   m_TagString: Untagged
@@ -36,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300.7, y: 292.95}
+  m_AnchoredPosition: {x: -152, y: 33}
   m_SizeDelta: {x: 247.235, y: 224.3813}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6208072175868769290
@@ -173,3 +174,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &7241738966018916868
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208072175868769295}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6427a6de92d03354cb6dab1f83b5465f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

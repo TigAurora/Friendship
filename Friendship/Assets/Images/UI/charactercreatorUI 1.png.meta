@@ -468,7 +468,7 @@ TextureImporter:
       name: ccUIsunglasses1
       rect:
         serializedVersion: 2
-        x: 2345
+        x: 2344
         y: 1911
         width: 167
         height: 92
@@ -531,7 +531,7 @@ TextureImporter:
       name: ccUIsunglasses2
       rect:
         serializedVersion: 2
-        x: 2345
+        x: 2344
         y: 1815
         width: 167
         height: 92
