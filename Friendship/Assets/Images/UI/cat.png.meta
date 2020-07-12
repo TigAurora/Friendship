@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: 83d4fda87f2978649b1be180e63db0e8
+guid: 7d85e20bf3a64e146940412bba907fbc
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1075993247170539406
-    second: cat_0
+    second: cat0x
   - first:
       213: 3463857228526754693
-    second: cat_1
+    second: cat1x
   - first:
       213: 7196534093254501055
-    second: cat_2
+    second: cat2x
   - first:
       213: 5076971892968362947
-    second: cat_3
+    second: cat3x
   - first:
       213: 4516387037990142955
-    second: cat_4
+    second: cat4x
   - first:
       213: 4785180388622165704
-    second: cat_5
+    second: cat5x
   - first:
       213: -2666075053548052033
-    second: cat_6
+    second: cat6x
   - first:
       213: -1452714511649490640
-    second: cat_7
+    second: cat7x
   - first:
       213: 7780358614470776179
-    second: cat_8
+    second: cat8x
   - first:
       213: 7892033834191237442
-    second: cat_9
+    second: cat9x
   - first:
       213: 4015063438408095402
-    second: cat_10
+    second: cat10x
   - first:
       213: -2653735917790409300
-    second: cat_11
+    second: cat11x
   - first:
       213: -4762345550913035320
-    second: cat_12
+    second: cat12x
   - first:
       213: -5607423812347924107
-    second: cat_13
+    second: cat13x
   - first:
       213: 7067646878219523604
-    second: cat_14
+    second: cat14x
   - first:
       213: -8183501194736795486
     second: cat_15
@@ -58,124 +58,25 @@ TextureImporter:
     second: cat_17
   - first:
       213: -962452503970461453
-    second: cat_0x
+    second: cat_18
   - first:
       213: 1402343792810867211
-    second: cat_1x
+    second: cat_19
   - first:
       213: 1814841896407691742
-    second: cat_2x
+    second: cat_20
   - first:
       213: 8994069460169432890
-    second: cat_3x
+    second: cat_21
   - first:
       213: 5850746420685760223
-    second: cat_4x
+    second: cat_22
   - first:
       213: 22797412263831086
-    second: cat_5x
+    second: cat_23
   - first:
       213: -1450499486565631765
-    second: cat_6x
-  - first:
-      213: -1759533010204427464
-    second: cat_7x
-  - first:
-      213: 4207106177059746982
-    second: cat_8x
-  - first:
-      213: 4238875406199508272
-    second: cat_9x
-  - first:
-      213: 4798630443320371394
-    second: cat_10x
-  - first:
-      213: -5119705434168272699
-    second: cat_11x
-  - first:
-      213: 7921504526205116523
-    second: cat_12x
-  - first:
-      213: 5943522070454545206
-    second: cat_13x
-  - first:
-      213: -7851364157194835669
-    second: cat_14x
-  - first:
-      213: -6999461949777507088
-    second: cat_15x
-  - first:
-      213: -1192939570940672332
-    second: cat_16x
-  - first:
-      213: 5845836546776353014
-    second: cat_17x
-  - first:
-      213: -5602632722932226820
-    second: cat_36
-  - first:
-      213: -6346649758418962521
-    second: cat_37
-  - first:
-      213: 5487749004899278433
-    second: cat_38
-  - first:
-      213: 277491880262348826
-    second: cat_39
-  - first:
-      213: -1458209519371847755
-    second: cat_40
-  - first:
-      213: -8535780398230943200
-    second: cat_41
-  - first:
-      213: 5126907949268806210
-    second: cat_42
-  - first:
-      213: -7914764227976393271
-    second: cat_43
-  - first:
-      213: -5509444329160948909
-    second: cat_44
-  - first:
-      213: -2318334019580702211
-    second: cat_45
-  - first:
-      213: -6957217826605171322
-    second: cat_46
-  - first:
-      213: -3516411625257453280
-    second: cat_47
-  - first:
-      213: 8493436978793288368
-    second: cat_48
-  - first:
-      213: 5451869592031408293
-    second: cat_49
-  - first:
-      213: -1050877180797733020
-    second: cat_50
-  - first:
-      213: 5161578868808474557
-    second: cat_51
-  - first:
-      213: 3292895312964674571
-    second: cat_52
-  - first:
-      213: 4120641244781099100
-    second: cat_53
-  - first:
-      213: -8723632819739958267
-    second: cat_54
-  - first:
-      213: 7609851171477314438
-    second: cat_55
-  - first:
-      213: -8028898601303193912
-    second: cat_56
-  - first:
-      213: -5389391514443097853
-    second: cat_57
+    second: cat_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -235,10 +136,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -247,10 +148,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -261,15 +162,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat_0
+      name: cat0x
       rect:
         serializedVersion: 2
-        x: 86
-        y: 913
-        width: 105
-        height: 60
+        x: 42
+        y: 223
+        width: 90
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -282,15 +183,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_1
+      name: cat1x
       rect:
         serializedVersion: 2
-        x: 267
-        y: 886
-        width: 152
-        height: 83
+        x: 199
+        y: 216
+        width: 169
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,15 +204,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_2
+      name: cat2x
       rect:
         serializedVersion: 2
-        x: 473
-        y: 912
-        width: 125
-        height: 45
+        x: 414
+        y: 154
+        width: 104
+        height: 166
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,15 +225,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_3
+      name: cat3x
       rect:
         serializedVersion: 2
-        x: 661
-        y: 915
-        width: 119
-        height: 39
+        x: 573
+        y: 219
+        width: 140
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -345,15 +246,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_4
+      name: cat4x
       rect:
         serializedVersion: 2
-        x: 876
-        y: 805
-        width: 103
-        height: 166
+        x: 772
+        y: 229
+        width: 159
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,15 +267,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_5
+      name: cat5x
       rect:
         serializedVersion: 2
-        x: 61
-        y: 795
-        width: 187
-        height: 77
+        x: 1007
+        y: 224
+        width: 168
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -387,15 +288,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_6
+      name: cat6x
       rect:
         serializedVersion: 2
-        x: 308
-        y: 759
-        width: 73
-        height: 103
+        x: 1259
+        y: 223
+        width: 127
+        height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -408,15 +309,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_7
+      name: cat7x
       rect:
         serializedVersion: 2
-        x: 473
-        y: 798
-        width: 71
-        height: 49
+        x: 1468
+        y: 214
+        width: 137
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -429,15 +330,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_8
+      name: cat8x
       rect:
         serializedVersion: 2
-        x: 637
-        y: 805
-        width: 163
-        height: 52
+        x: 1696
+        y: 209
+        width: 125
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -450,15 +351,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_9
+      name: cat9x
       rect:
         serializedVersion: 2
-        x: 100
-        y: 698
-        width: 125
-        height: 64
+        x: 85
+        y: 55
+        width: 71
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -471,15 +372,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_10
+      name: cat10x
       rect:
         serializedVersion: 2
-        x: 306
-        y: 667
-        width: 134
-        height: 41
+        x: 240
+        y: 41
+        width: 73
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -492,15 +393,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_11
+      name: cat11x
       rect:
         serializedVersion: 2
-        x: 504
-        y: 676
-        width: 156
-        height: 35
+        x: 395
+        y: 43
+        width: 187
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -513,15 +414,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_12
+      name: cat12x
       rect:
         serializedVersion: 2
-        x: 754
-        y: 694
-        width: 79
-        height: 44
+        x: 673
+        y: 53
+        width: 121
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -534,15 +435,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_13
+      name: cat13x
       rect:
         serializedVersion: 2
-        x: 913
-        y: 713
-        width: 35
-        height: 58
+        x: 908
+        y: 40
+        width: 152
+        height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -555,15 +456,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_14
+      name: cat14x
       rect:
         serializedVersion: 2
-        x: 94
-        y: 553
-        width: 133
-        height: 100
+        x: 1147
+        y: 48
+        width: 105
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,451 +476,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: cat_15
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 554
-        width: 167
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a08abc750d5e6e80800000000000000
-      internalID: -8183501194736795486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_16
-      rect:
-        serializedVersion: 2
-        x: 598
-        y: 565
-        width: 129
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc03cbad73afaf6d0800000000000000
-      internalID: -2955775087615397681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_17
-      rect:
-        serializedVersion: 2
-        x: 908
-        y: 602
-        width: 40
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cce014719f97c1c80800000000000000
-      internalID: -8350665498307785012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_0x
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 419
-        width: 105
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f8c7a30c8ea4a2f0800000000000000
-      internalID: -962452503970461453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_1x
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 392
-        width: 152
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0a3777ef30267310800000000000000
-      internalID: 1402343792810867211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_2x
-      rect:
-        serializedVersion: 2
-        x: 466
-        y: 419
-        width: 125
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed170eed61d9f2910800000000000000
-      internalID: 1814841896407691742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_3x
-      rect:
-        serializedVersion: 2
-        x: 653
-        y: 421
-        width: 119
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3f969a758a51dc70800000000000000
-      internalID: 8994069460169432890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_4x
-      rect:
-        serializedVersion: 2
-        x: 868
-        y: 311
-        width: 103
-        height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd6ecdbfed6023150800000000000000
-      internalID: 5850746420685760223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_5x
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 301
-        width: 187
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e26a8cb202ef05000800000000000000
-      internalID: 22797412263831086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_6x
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 265
-        width: 73
-        height: 103
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be87e5ce66acedbe0800000000000000
-      internalID: -1450499486565631765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_7x
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 304
-        width: 71
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83bf034bc02e497e0800000000000000
-      internalID: -1759533010204427464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_8x
-      rect:
-        serializedVersion: 2
-        x: 629
-        y: 311
-        width: 163
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a47fff17c4a26a30800000000000000
-      internalID: 4207106177059746982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_9x
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 204
-        width: 125
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03d49a139b283da30800000000000000
-      internalID: 4238875406199508272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_10x
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 173
-        width: 134
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c86c76c6f8289240800000000000000
-      internalID: 4798630443320371394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_11x
-      rect:
-        serializedVersion: 2
-        x: 496
-        y: 182
-        width: 156
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c853c1780723f8b0800000000000000
-      internalID: -5119705434168272699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_12x
-      rect:
-        serializedVersion: 2
-        x: 746
-        y: 200
-        width: 79
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b60ea1b8566deed60800000000000000
-      internalID: 7921504526205116523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_13x
-      rect:
-        serializedVersion: 2
-        x: 905
-        y: 219
-        width: 35
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63b232c35d1ab7250800000000000000
-      internalID: 5943522070454545206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_14x
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 59
-        width: 133
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b29ea28b5e95a0390800000000000000
-      internalID: -7851364157194835669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_15x
-      rect:
-        serializedVersion: 2
-        x: 318
-        y: 60
-        width: 167
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fc06a0017aecde90800000000000000
-      internalID: -6999461949777507088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_16x
-      rect:
-        serializedVersion: 2
-        x: 590
-        y: 71
-        width: 129
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b6039bd7c3d17fe0800000000000000
-      internalID: -1192939570940672332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_17x
-      rect:
-        serializedVersion: 2
-        x: 901
-        y: 108
-        width: 38
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f8c991ed55902150800000000000000
-      internalID: 5845836546776353014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2c7992ceea231af45b54b11eacc6cbda
+    spriteID: bcce836395461b74e9f0158ac533d725
     internalID: 0
     vertices: []
     indices: 

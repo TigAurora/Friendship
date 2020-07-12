@@ -4,106 +4,106 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8624616599934999286
-    second: mouth_0
+    second: mouth0x
   - first:
       213: 1509186045285368620
-    second: mouth_1
+    second: mouth1x
   - first:
       213: 3220628360340490107
-    second: mouth_2
+    second: mouth2x
   - first:
       213: -1591138769514089575
-    second: mouth_3
+    second: mouth3x
   - first:
       213: -1112364623034764786
-    second: mouth_4
+    second: mouth4x
   - first:
       213: -2504721509555679109
-    second: mouth_5
+    second: mouth5x
   - first:
       213: 4489937094590954368
-    second: mouth_6
+    second: mouth7x
   - first:
       213: 9032507178476392762
-    second: mouth_7
+    second: mouth8x
   - first:
       213: -9124960821002505329
-    second: mouth_8
+    second: mouth9x
   - first:
       213: 8952027800926999300
-    second: mouth_9
+    second: mouth11x
   - first:
       213: 1382395835005254344
-    second: mouth_10
+    second: mouth13x
   - first:
       213: 8233917270520499482
-    second: mouth_11
+    second: mouth14x
   - first:
       213: 1711588202686787154
-    second: mouth_12
+    second: mouth15x
   - first:
       213: 3277719209145788818
-    second: mouth_13
+    second: mouth16x
   - first:
       213: 1499479410078694767
-    second: mouth_14
+    second: mouth17x
   - first:
       213: 5930698784764533282
-    second: mouth_15
+    second: mouth18x
   - first:
       213: -507106749782767513
-    second: mouth_16
+    second: mouth19x
   - first:
       213: -60130544500891370
-    second: mouth_17
+    second: mouth20x
   - first:
       213: 1894198900460698056
-    second: mouth_18
+    second: mouth21x
   - first:
       213: -2978152281819602841
-    second: mouth_19
+    second: mouth22x
   - first:
       213: 1591362878996971360
-    second: mouth_20
+    second: mouth23x
   - first:
       213: -6360201694938932118
-    second: mouth_21
+    second: mouth24x
   - first:
       213: -5802953070994715349
-    second: mouth_22
+    second: mouth25x
   - first:
       213: 4890352376826403995
-    second: mouth_23
+    second: mouth26x
   - first:
       213: 3371109665986948226
-    second: mouth_24
+    second: mouth27x
   - first:
       213: -6343082028741820816
-    second: mouth_25
+    second: mouth29x
   - first:
       213: 6640287516671776927
-    second: mouth_26
+    second: mouth28x
   - first:
       213: 6199923878802010275
-    second: mouth_27
+    second: mouth30x
   - first:
       213: -7418755460044796422
-    second: mouth_28
+    second: mouth31x
   - first:
       213: -3559722500890356905
-    second: mouth_29
+    second: mouth32x
   - first:
       213: -7407704098939911581
-    second: mouth_30
+    second: mouth33x
   - first:
       213: -2102050385586579864
-    second: mouth_31
+    second: mouth6x
   - first:
       213: -601858414791557323
-    second: mouth_32
+    second: mouth12x
   - first:
       213: -4743044464327593084
-    second: mouth_33
+    second: mouth10x
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -163,10 +163,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -175,10 +175,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -189,7 +189,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mouth_0
+      name: mouth0x
       rect:
         serializedVersion: 2
         x: 35
@@ -197,7 +197,7 @@ TextureImporter:
         width: 10
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_1
+      name: mouth1x
       rect:
         serializedVersion: 2
         x: 65
@@ -218,7 +218,7 @@ TextureImporter:
         width: 33
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,15 +231,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_2
+      name: mouth2x
       rect:
         serializedVersion: 2
         x: 128
-        y: 208
+        y: 209
         width: 32
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_3
+      name: mouth3x
       rect:
         serializedVersion: 2
         x: 195
@@ -260,7 +260,7 @@ TextureImporter:
         width: 24
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_4
+      name: mouth4x
       rect:
         serializedVersion: 2
         x: 255
@@ -281,7 +281,7 @@ TextureImporter:
         width: 12
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_5
+      name: mouth5x
       rect:
         serializedVersion: 2
         x: 292
@@ -302,7 +302,7 @@ TextureImporter:
         width: 29
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_6
+      name: mouth7x
       rect:
         serializedVersion: 2
         x: 32
@@ -323,7 +323,7 @@ TextureImporter:
         width: 16
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_7
+      name: mouth8x
       rect:
         serializedVersion: 2
         x: 73
@@ -344,7 +344,7 @@ TextureImporter:
         width: 23
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_8
+      name: mouth9x
       rect:
         serializedVersion: 2
         x: 124
@@ -365,7 +365,7 @@ TextureImporter:
         width: 25
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_9
+      name: mouth11x
       rect:
         serializedVersion: 2
         x: 226
@@ -386,7 +386,7 @@ TextureImporter:
         width: 8
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_10
+      name: mouth13x
       rect:
         serializedVersion: 2
         x: 306
@@ -407,7 +407,7 @@ TextureImporter:
         width: 21
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,7 +420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_11
+      name: mouth14x
       rect:
         serializedVersion: 2
         x: 345
@@ -428,7 +428,7 @@ TextureImporter:
         width: 6
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,7 +441,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_12
+      name: mouth15x
       rect:
         serializedVersion: 2
         x: 29
@@ -449,7 +449,7 @@ TextureImporter:
         width: 33
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,7 +462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_13
+      name: mouth16x
       rect:
         serializedVersion: 2
         x: 78
@@ -470,7 +470,7 @@ TextureImporter:
         width: 14
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,7 +483,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_14
+      name: mouth17x
       rect:
         serializedVersion: 2
         x: 120
@@ -491,7 +491,7 @@ TextureImporter:
         width: 31
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,7 +504,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_15
+      name: mouth18x
       rect:
         serializedVersion: 2
         x: 181
@@ -512,7 +512,7 @@ TextureImporter:
         width: 14
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,7 +525,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_16
+      name: mouth19x
       rect:
         serializedVersion: 2
         x: 223
@@ -533,7 +533,7 @@ TextureImporter:
         width: 37
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,7 +546,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_17
+      name: mouth20x
       rect:
         serializedVersion: 2
         x: 280
@@ -554,7 +554,7 @@ TextureImporter:
         width: 15
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -567,7 +567,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_18
+      name: mouth21x
       rect:
         serializedVersion: 2
         x: 316
@@ -575,7 +575,7 @@ TextureImporter:
         width: 26
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -588,7 +588,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_19
+      name: mouth22x
       rect:
         serializedVersion: 2
         x: 361
@@ -596,7 +596,7 @@ TextureImporter:
         width: 10
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -609,7 +609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_20
+      name: mouth23x
       rect:
         serializedVersion: 2
         x: 30
@@ -617,7 +617,7 @@ TextureImporter:
         width: 35
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -630,7 +630,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_21
+      name: mouth24x
       rect:
         serializedVersion: 2
         x: 90
@@ -638,7 +638,7 @@ TextureImporter:
         width: 27
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -651,7 +651,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_22
+      name: mouth25x
       rect:
         serializedVersion: 2
         x: 145
@@ -659,7 +659,7 @@ TextureImporter:
         width: 16
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -672,7 +672,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_23
+      name: mouth26x
       rect:
         serializedVersion: 2
         x: 184
@@ -680,7 +680,7 @@ TextureImporter:
         width: 22
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -693,7 +693,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_24
+      name: mouth27x
       rect:
         serializedVersion: 2
         x: 231
@@ -701,7 +701,7 @@ TextureImporter:
         width: 22
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -714,7 +714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_25
+      name: mouth29x
       rect:
         serializedVersion: 2
         x: 322
@@ -722,7 +722,7 @@ TextureImporter:
         width: 28
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -735,7 +735,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_26
+      name: mouth28x
       rect:
         serializedVersion: 2
         x: 274
@@ -743,7 +743,7 @@ TextureImporter:
         width: 33
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -756,7 +756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_27
+      name: mouth30x
       rect:
         serializedVersion: 2
         x: 33
@@ -764,7 +764,7 @@ TextureImporter:
         width: 27
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -777,7 +777,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_28
+      name: mouth31x
       rect:
         serializedVersion: 2
         x: 93
@@ -785,7 +785,7 @@ TextureImporter:
         width: 25
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -798,7 +798,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_29
+      name: mouth32x
       rect:
         serializedVersion: 2
         x: 143
@@ -806,7 +806,7 @@ TextureImporter:
         width: 21
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -819,7 +819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_30
+      name: mouth33x
       rect:
         serializedVersion: 2
         x: 187
@@ -827,7 +827,7 @@ TextureImporter:
         width: 16
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -840,7 +840,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_31
+      name: mouth6x
       rect:
         serializedVersion: 2
         x: 339
@@ -848,7 +848,7 @@ TextureImporter:
         width: 2
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -861,7 +861,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_32
+      name: mouth12x
       rect:
         serializedVersion: 2
         x: 257
@@ -869,7 +869,7 @@ TextureImporter:
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -882,7 +882,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mouth_33
+      name: mouth10x
       rect:
         serializedVersion: 2
         x: 174
@@ -890,7 +890,7 @@ TextureImporter:
         width: 24
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

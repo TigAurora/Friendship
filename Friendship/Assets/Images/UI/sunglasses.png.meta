@@ -1,52 +1,70 @@
 fileFormatVersion: 2
-guid: 66f09b3eb5e2f024284e4198b52ced4b
+guid: da5640af22ee5f047a3e028d1d2c2a49
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3460598817795432408
-    second: sunglasses_0
+    second: sunglasses0x
   - first:
       213: -2274561084551524469
-    second: sunglasses_1
+    second: sunglasses1x
   - first:
       213: -9004760396938858669
-    second: sunglasses_2
+    second: sunglasses2x
   - first:
       213: -7320704373310246101
-    second: sunglasses_3
+    second: sunglasses3x
   - first:
       213: -3327611353931193715
-    second: sunglasses_4
+    second: sunglasses4x
   - first:
       213: -6707702844492077706
-    second: sunglasses_5
+    second: sunglasses5x
   - first:
       213: -2656116378693518231
-    second: sunglasses_6
+    second: sunglasses6x
   - first:
       213: -67266296114632252
-    second: sunglasses_7
+    second: sunglasses7x
   - first:
       213: -8808083381744385885
-    second: sunglasses_8
+    second: sunglasses8x
   - first:
       213: -7930066963303259138
-    second: sunglasses_9
+    second: sunglasses9x
   - first:
       213: -6832956923102128048
-    second: sunglasses_10
+    second: sunglasses10x
   - first:
       213: -4874182623011301904
-    second: sunglasses_11
+    second: sunglasses11x
   - first:
       213: 5642795954425547876
-    second: sunglasses_12
+    second: sunglasses12x
   - first:
       213: 4530203469429178796
-    second: sunglasses_13
+    second: sunglasses13x
   - first:
       213: -4023255920306226436
-    second: sunglasses_14
+    second: sunglasses14x
+  - first:
+      213: -7251608150444787800
+    second: sunglasses15x
+  - first:
+      213: 8557270293979821276
+    second: sunglasses16x
+  - first:
+      213: -3239223191342075729
+    second: sunglasses17x
+  - first:
+      213: 6598290245633548733
+    second: sunglasses18x
+  - first:
+      213: 8778892463860474302
+    second: sunglasses19x
+  - first:
+      213: -7360747449541176886
+    second: sunglasses_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,10 +124,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,10 +136,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,13 +150,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sunglasses_0
+      name: sunglasses0x
       rect:
         serializedVersion: 2
-        x: 36
-        y: 239
-        width: 84
-        height: 20
+        x: 59
+        y: 196
+        width: 90
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,13 +171,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_1
+      name: sunglasses1x
       rect:
         serializedVersion: 2
-        x: 148
-        y: 239
+        x: 196
+        y: 231
         width: 85
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,13 +192,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_2
+      name: sunglasses2x
       rect:
         serializedVersion: 2
-        x: 273
-        y: 236
-        width: 86
-        height: 30
+        x: 335
+        y: 228
+        width: 85
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,13 +213,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_3
+      name: sunglasses3x
       rect:
         serializedVersion: 2
-        x: 41
-        y: 181
-        width: 85
-        height: 27
+        x: 460
+        y: 233
+        width: 76
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,13 +234,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_4
+      name: sunglasses4x
       rect:
         serializedVersion: 2
-        x: 159
-        y: 183
-        width: 85
-        height: 26
+        x: 577
+        y: 224
+        width: 91
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,13 +255,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_5
+      name: sunglasses5x
       rect:
         serializedVersion: 2
-        x: 275
-        y: 177
-        width: 86
-        height: 42
+        x: 695
+        y: 230
+        width: 84
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,13 +276,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_6
+      name: sunglasses6x
       rect:
         serializedVersion: 2
-        x: 40
-        y: 131
+        x: 61
+        y: 137
         width: 86
-        height: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,13 +297,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_7
+      name: sunglasses7x
       rect:
         serializedVersion: 2
-        x: 156
-        y: 126
-        width: 92
-        height: 43
+        x: 204
+        y: 147
+        width: 85
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,13 +318,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_8
+      name: sunglasses8x
       rect:
         serializedVersion: 2
-        x: 272
-        y: 133
-        width: 90
-        height: 21
+        x: 336
+        y: 152
+        width: 85
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,13 +339,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_9
+      name: sunglasses9x
       rect:
         serializedVersion: 2
-        x: 37
-        y: 79
+        x: 462
+        y: 159
         width: 86
-        height: 28
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,13 +360,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_10
+      name: sunglasses10x
       rect:
         serializedVersion: 2
-        x: 159
-        y: 83
-        width: 87
-        height: 18
+        x: 592
+        y: 157
+        width: 86
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,13 +381,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_11
+      name: sunglasses11x
       rect:
         serializedVersion: 2
-        x: 277
-        y: 76
+        x: 708
+        y: 159
         width: 87
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,13 +402,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_12
+      name: sunglasses12x
       rect:
         serializedVersion: 2
-        x: 38
-        y: 24
-        width: 86
-        height: 30
+        x: 56
+        y: 80
+        width: 79
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,13 +423,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_13
+      name: sunglasses13x
       rect:
         serializedVersion: 2
-        x: 152
-        y: 29
-        width: 78
-        height: 22
+        x: 195
+        y: 83
+        width: 79
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,12 +444,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sunglasses_14
+      name: sunglasses14x
       rect:
         serializedVersion: 2
-        x: 270
-        y: 23
-        width: 88
+        x: 320
+        y: 82
+        width: 86
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -446,10 +464,115 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sunglasses15x
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 77
+        width: 89
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7396ececc1d5b90800000000000000
+      internalID: -7251608150444787800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunglasses16x
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 81
+        width: 86
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd47ba77ef781c670800000000000000
+      internalID: 8557270293979821276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunglasses17x
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 89
+        width: 86
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa039db6ba7fb03d0800000000000000
+      internalID: -3239223191342075729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunglasses18x
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 20
+        width: 89
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1a9e7e406d19b50800000000000000
+      internalID: 6598290245633548733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunglasses19x
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 18
+        width: 86
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1e1cdee24e4d970800000000000000
+      internalID: 8778892463860474302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8642d0ae6602e3a44bfb19afa9f2ab0f
+    spriteID: 161aa1d03293c5f4da20544f4f85a89a
     internalID: 0
     vertices: []
     indices: 

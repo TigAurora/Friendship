@@ -4,52 +4,52 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3078226200369244658
-    second: eyebrow_0
+    second: eyebrow0x
   - first:
       213: 792538450687254331
-    second: eyebrow_1
+    second: eyebrow1x
   - first:
       213: 1560319577188664042
-    second: eyebrow_2
+    second: eyebrow2x
   - first:
       213: -1792986976208679661
-    second: eyebrow_3
+    second: eyebrow3x
   - first:
       213: 5028712287604099812
-    second: eyebrow_4
+    second: eyebrow4x
   - first:
       213: 4046153673784143958
-    second: eyebrow_5
+    second: eyebrow5x
   - first:
       213: 3111587231640472432
-    second: eyebrow_6
+    second: eyebrow6x
   - first:
       213: -9200250246077429175
-    second: eyebrow_7
+    second: eyebrow7x
   - first:
       213: -2351923050801929675
-    second: eyebrow_8
+    second: eyebrow8x
   - first:
       213: 4995724293937494373
-    second: eyebrow_9
+    second: eyebrow9x
   - first:
       213: -1697902452808628044
-    second: eyebrow_10
+    second: eyebrow10x
   - first:
       213: -8715572066470145357
-    second: eyebrow_11
+    second: eyebrow11x
   - first:
       213: 360845186955672914
-    second: eyebrow_12
+    second: eyebrow12x
   - first:
       213: 3449550652918320973
-    second: eyebrow_13
+    second: eyebrow13x
   - first:
       213: -8875789517713455462
-    second: eyebrow_14
+    second: eyebrow14x
   - first:
       213: 5716150535909200265
-    second: eyebrow_15
+    second: eyebrow15x
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,10 +109,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,10 +121,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -135,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyebrow_0
+      name: eyebrow0x
       rect:
         serializedVersion: 2
         x: 30
@@ -143,7 +143,7 @@ TextureImporter:
         width: 56
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,7 +156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_1
+      name: eyebrow1x
       rect:
         serializedVersion: 2
         x: 119
@@ -164,7 +164,7 @@ TextureImporter:
         width: 41
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,7 +177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_2
+      name: eyebrow2x
       rect:
         serializedVersion: 2
         x: 190
@@ -185,7 +185,7 @@ TextureImporter:
         width: 64
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,7 +198,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_3
+      name: eyebrow3x
       rect:
         serializedVersion: 2
         x: 281
@@ -206,7 +206,7 @@ TextureImporter:
         width: 59
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_4
+      name: eyebrow4x
       rect:
         serializedVersion: 2
         x: 26
@@ -227,7 +227,7 @@ TextureImporter:
         width: 58
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,7 +240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_5
+      name: eyebrow5x
       rect:
         serializedVersion: 2
         x: 116
@@ -248,7 +248,7 @@ TextureImporter:
         width: 70
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -261,7 +261,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_6
+      name: eyebrow6x
       rect:
         serializedVersion: 2
         x: 210
@@ -269,7 +269,7 @@ TextureImporter:
         width: 58
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -282,7 +282,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_7
+      name: eyebrow7x
       rect:
         serializedVersion: 2
         x: 291
@@ -290,7 +290,7 @@ TextureImporter:
         width: 53
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,7 +303,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_8
+      name: eyebrow8x
       rect:
         serializedVersion: 2
         x: 24
@@ -311,7 +311,7 @@ TextureImporter:
         width: 65
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,7 +324,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_9
+      name: eyebrow9x
       rect:
         serializedVersion: 2
         x: 119
@@ -332,7 +332,7 @@ TextureImporter:
         width: 57
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -345,7 +345,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_10
+      name: eyebrow10x
       rect:
         serializedVersion: 2
         x: 202
@@ -353,7 +353,7 @@ TextureImporter:
         width: 58
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,7 +366,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_11
+      name: eyebrow11x
       rect:
         serializedVersion: 2
         x: 288
@@ -374,7 +374,7 @@ TextureImporter:
         width: 61
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -387,7 +387,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_12
+      name: eyebrow12x
       rect:
         serializedVersion: 2
         x: 25
@@ -395,7 +395,7 @@ TextureImporter:
         width: 58
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -408,7 +408,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_13
+      name: eyebrow13x
       rect:
         serializedVersion: 2
         x: 110
@@ -416,7 +416,7 @@ TextureImporter:
         width: 63
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -429,7 +429,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_14
+      name: eyebrow14x
       rect:
         serializedVersion: 2
         x: 198
@@ -437,7 +437,7 @@ TextureImporter:
         width: 65
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -450,7 +450,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow_15
+      name: eyebrow15x
       rect:
         serializedVersion: 2
         x: 293
@@ -458,7 +458,7 @@ TextureImporter:
         width: 59
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
