@@ -16,8 +16,8 @@ MonoBehaviour:
   - m_Name: sunglasses
     m_Hash: -361765034
     m_CategoryList:
-    - m_Name: normal
-      m_Hash: 562391268
+    - m_Name: sunglasses6
+      m_Hash: -1621434062
       m_Sprite: {fileID: 2341159091343231971, guid: e9864cdca810bf54ea81f59773c25395,
         type: 3}
     - m_Name: sunglasses1

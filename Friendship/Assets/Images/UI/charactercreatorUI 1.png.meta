@@ -172,7 +172,7 @@ TextureImporter:
     second: ccUI4
   - first:
       213: -5568787637082316564
-    second: charactercreatorUI 1_56
+    second: ccUI5
   - first:
       213: 6855726752150338326
     second: ccUIcat2
@@ -1452,7 +1452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charactercreatorUI 1_56
+      name: ccUI5
       rect:
         serializedVersion: 2
         x: 1741

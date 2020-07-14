@@ -11,6 +11,8 @@ public class ButtonClick : MonoBehaviour
     public Sprite normal;
     public Sprite pressed;
 
+    [Header("Animation")]
+    public Animation x2;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +27,17 @@ public class ButtonClick : MonoBehaviour
     public void onClick_select()
     {
         GameObject parent = this.transform.parent.gameObject;
-        foreach (Transform item in parent.GetComponent<Transform>())
-            item.gameObject.GetComponent<Image>().sprite = normal;
+        string tag = parent.tag;
+        GameObject cv = GameObject.Find("Canvas");
+        foreach (Transform obj in cv.GetComponent<Transform>())
+        {
+            if (obj.gameObject.tag == tag)
+            {
+                foreach (Transform item in obj.GetComponent<Transform>())
+                    item.gameObject.GetComponent<Image>().sprite = normal;
+            }
+        }
         this.GetComponent<Image>().sprite = pressed;
+        //this.GetComponent<Animation>().
     }
 }
