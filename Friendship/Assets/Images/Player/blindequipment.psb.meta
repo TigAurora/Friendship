@@ -659,6 +659,9 @@ ScriptedImporter:
   - first:
       213: 2128129234900629917
     second: blindequipment_202
+  - first:
+      213: 8484467619224907594
+    second: blindequipment_1
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -37384,8 +37387,8 @@ ScriptedImporter:
     uvTransform: {x: -106, y: 1249}
   - name: hairb18
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.15438038, y: 0.16994351}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -37406,14 +37409,14 @@ ScriptedImporter:
     uvTransform: {x: 287, y: 1354}
   - name: cat1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.66682446, y: 0.17326619}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 463
       y: 1396
-      width: 65
+      width: 143
       height: 58
     spriteID: 640e5541e1bf87a70800000000000000
     internalID: 0
