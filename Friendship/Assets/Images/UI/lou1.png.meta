@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1194622927508344610
-    second: haira20x
+    second: haira1x
   - first:
       213: 4232938117851231077
     second: haira3x
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: haira20x
+      name: haira1x
       rect:
         serializedVersion: 2
         x: 31

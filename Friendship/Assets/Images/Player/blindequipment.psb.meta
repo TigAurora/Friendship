@@ -58,13 +58,13 @@ ScriptedImporter:
     second: blindequipment_0
   - first:
       213: 8484467619224907594
-    second: blindequipment_1
+    second: hairb18
   - first:
       213: 8825079576441249862
-    second: blindequipment_2
+    second: cat1
   - first:
       213: 5991266730848154489
-    second: blindequipment_3
+    second: hairc1
   - first:
       213: -3421803523332869016
     second: blindequipment_4
@@ -37382,17 +37382,17 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -106, y: 1249}
-  - name: hairc1
+  - name: hairb18
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 553
-      y: 1898
-      width: 78
-      height: 74
+      x: 287
+      y: 1354
+      width: 110
+      height: 79
     spriteID: a4f6438d852eeb570800000000000000
     internalID: 0
     spriteBone: []
@@ -37403,7 +37403,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 553, y: 1898}
+    uvTransform: {x: 287, y: 1354}
   - name: cat1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -37411,10 +37411,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 515
-      y: 1733
-      width: 58
-      height: 51
+      x: 463
+      y: 1396
+      width: 65
+      height: 58
     spriteID: 640e5541e1bf87a70800000000000000
     internalID: 0
     spriteBone: []
@@ -37425,7 +37425,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 515, y: 1733}
+    uvTransform: {x: 463, y: 1396}
   - name: blindequipment_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -37448,6 +37448,28 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1748, y: 275}
+  - name: hairc1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 537
+      y: 1508
+      width: 43
+      height: 48
+    spriteID: 973f1de3951452350800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 537, y: 1508}
   platformSettings:
   - name: Default
     overridden: 1

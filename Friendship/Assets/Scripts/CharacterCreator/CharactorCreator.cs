@@ -18,6 +18,14 @@ public class CharactorCreator : MonoBehaviour
     public GameObject sunglasses;
     public GameObject wheelchair;
 
+    [Header("Images")]
+    public Sprite normal;
+    public Sprite pressed;
+
+    [Header("RuntimeAnimatorController")]
+    public RuntimeAnimatorController x1;
+    public RuntimeAnimatorController x2;
+
     public List<SpriteResolver> spriteResolvers = new List<SpriteResolver>();
 
     SpriteResolver hairaResolver;
@@ -33,18 +41,6 @@ public class CharactorCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("myCharacter") == 0)
-        {
-            //components.Blind.SetActive(true);
-            //eye.SetActive(false);
-            //wheelchair.SetActive(false);
-        }
-        else
-        {
-            //components.Deaf.SetActive(true);
-            //sunglasses.SetActive(false);
-        }
-
 
         foreach (var resolver in FindObjectsOfType<SpriteResolver>())
         {
@@ -85,6 +81,17 @@ public class CharactorCreator : MonoBehaviour
             {
                 mouthResolver = resolver;
             }
+            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            {
+                //components.Blind.SetActive(true);
+                //eye.SetActive(false);
+                //wheelchair.SetActive(false);
+            }
+            else
+            {
+                //components.Deaf.SetActive(true);
+                //sunglasses.SetActive(false);
+            }
         }
     }
 
@@ -93,20 +100,64 @@ public class CharactorCreator : MonoBehaviour
     {
     }
 
+    //Randomize character
+    public void onClick_randomize()
+    {
+        mouthResolver.SetCategoryAndLabel("mouth", "mouth" + UnityEngine.Random.Range(1, 35));
+        hairbResolver.SetCategoryAndLabel("hairb", "hairb" + UnityEngine.Random.Range(1, 33));
+        if (hairbResolver.GetLabel() == "hairb1")
+        {
+            hairaResolver.SetCategoryAndLabel("haira", "haira20");
+            haircResolver.SetCategoryAndLabel("hairc", "hairc1");
+            catResolver.SetCategoryAndLabel("cat", "cat1");
+        }
+        else
+        {
+            hairaResolver.SetCategoryAndLabel("haira", "haira" + UnityEngine.Random.Range(1, 20));
+            haircResolver.SetCategoryAndLabel("hairc", "hairc" + UnityEngine.Random.Range(1, 16));
+            catResolver.SetCategoryAndLabel("cat", "cat" + UnityEngine.Random.Range(1, 16));
+        }
+        if (PlayerPrefs.GetInt("myCharacter") == 0)
+        {
+            sunglassesResolver.SetCategoryAndLabel("sunglasses", "sunglasses" + UnityEngine.Random.Range(1, 20));
+        }
+        else
+        {
+            //eyeResolver.SetCategoryAndLabel("eye", "eye" + UnityEngine.Random.Range(0, 0));
+            //wheelchairResolver.SetCategoryAndLabel("wheelchair", "wheelchair" + UnityEngine.Random.Range(0, 0));
+        }
+        eyebrowResolver.SetCategoryAndLabel("eyebrow", "eyebrow" + UnityEngine.Random.Range(1, 17));
+    }
+
     public void onClick_mouth(string type)
     {
         mouthResolver.SetCategoryAndLabel("mouth", type);
     }
     public void onClick_haira(string type)
     {
+        if (hairbResolver.GetLabel() == "hairb1")
+        {
+            hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
+        }
         hairaResolver.SetCategoryAndLabel("haira", type);
     }
     public void onClick_hairb(string type)
     {
+        if (type == "hairb1")
+        {
+            hairaResolver.SetCategoryAndLabel("haira", "haira20");
+            haircResolver.SetCategoryAndLabel("hairc", "hairc1");
+            catResolver.SetCategoryAndLabel("cat", "cat1");
+        }
         hairbResolver.SetCategoryAndLabel("hairb", type);
     }
     public void onClick_hairc(string type)
     {
+        if (hairbResolver.GetLabel() == "hairb1")
+        {
+            hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
+            hairaResolver.SetCategoryAndLabel("haira", "haira1");
+        }
         haircResolver.SetCategoryAndLabel("hairc", type);
     }
     public void onClick_eye(string type)
@@ -119,6 +170,11 @@ public class CharactorCreator : MonoBehaviour
     }
     public void onClick_cat(string type)
     {
+        if (hairbResolver.GetLabel() == "hairb1")
+        {
+            hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
+            hairaResolver.SetCategoryAndLabel("haira", "haira1");
+        }
         catResolver.SetCategoryAndLabel("cat", type);
     }
     public void onClick_sunglasses(string type)

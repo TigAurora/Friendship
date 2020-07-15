@@ -11,8 +11,9 @@ public class ButtonClick : MonoBehaviour
     public Sprite normal;
     public Sprite pressed;
 
-    [Header("Animation")]
-    public Animation x2;
+    [Header("RuntimeAnimatorController")]
+    public RuntimeAnimatorController x1;
+    public RuntimeAnimatorController x2;
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +35,13 @@ public class ButtonClick : MonoBehaviour
             if (obj.gameObject.tag == tag)
             {
                 foreach (Transform item in obj.GetComponent<Transform>())
+                {
                     item.gameObject.GetComponent<Image>().sprite = normal;
+                    item.gameObject.GetComponent<Animator>().runtimeAnimatorController = x1;
+                }                 
             }
         }
         this.GetComponent<Image>().sprite = pressed;
-        //this.GetComponent<Animation>().
+        this.GetComponent<Animator>().runtimeAnimatorController = x2;
     }
 }
