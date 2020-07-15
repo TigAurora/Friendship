@@ -4,61 +4,61 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -112968808170193824
-    second: eye0x
+    second: eye19x
   - first:
       213: 4361698900330920347
-    second: eye1x
+    second: eye19x
   - first:
       213: -4777996582122725895
-    second: eye2x
+    second: eye19x
   - first:
       213: 6747079671284440124
-    second: eye3x
+    second: eye19x
   - first:
       213: 2017221507833849691
-    second: eye4x
+    second: eye19x
   - first:
       213: 2929798753575806136
-    second: eye5x
+    second: eye19x
   - first:
       213: 670305724555681049
-    second: eye6x
+    second: eye19x
   - first:
       213: 9054242445587310593
-    second: eye7x
+    second: eye19x
   - first:
       213: 6516775661550113808
-    second: eye8x
+    second: eye19x
   - first:
       213: -8022291644397711216
-    second: eye9x
+    second: eye19x
   - first:
       213: -5508840526352134504
-    second: eye10x
+    second: eye19x
   - first:
       213: -953578288544360726
-    second: eye11x
+    second: eye19x
   - first:
       213: 3292253872143672755
-    second: eye12x
+    second: eye19x
   - first:
       213: -4760041859919732676
-    second: eye13x
+    second: eye19x
   - first:
       213: -1107078707639340782
-    second: eye14x
+    second: eye19x
   - first:
       213: 2959735758222806235
-    second: eye15x
+    second: eye19x
   - first:
       213: -1439334400258170386
-    second: eye16x
+    second: eye19x
   - first:
       213: -4547566685656084454
-    second: eye17x
+    second: eye19x
   - first:
       213: 6606982944713300046
-    second: eye18x
+    second: eye19x
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,7 +144,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eye0x
+      name: eye1x
       rect:
         serializedVersion: 2
         x: 28
@@ -152,7 +152,7 @@ TextureImporter:
         width: 78
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye1x
+      name: eye2x
       rect:
         serializedVersion: 2
         x: 207
@@ -173,7 +173,7 @@ TextureImporter:
         width: 90
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye2x
+      name: eye3x
       rect:
         serializedVersion: 2
         x: 366
@@ -194,7 +194,7 @@ TextureImporter:
         width: 90
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye3x
+      name: eye4x
       rect:
         serializedVersion: 2
         x: 532
@@ -215,7 +215,7 @@ TextureImporter:
         width: 89
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye4x
+      name: eye5x
       rect:
         serializedVersion: 2
         x: 674
@@ -236,7 +236,7 @@ TextureImporter:
         width: 78
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye5x
+      name: eye6x
       rect:
         serializedVersion: 2
         x: 815
@@ -257,7 +257,7 @@ TextureImporter:
         width: 78
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye6x
+      name: eye7x
       rect:
         serializedVersion: 2
         x: 968
@@ -278,7 +278,7 @@ TextureImporter:
         width: 75
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye7x
+      name: eye8x
       rect:
         serializedVersion: 2
         x: 21
@@ -299,7 +299,7 @@ TextureImporter:
         width: 73
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye8x
+      name: eye9x
       rect:
         serializedVersion: 2
         x: 203
@@ -320,7 +320,7 @@ TextureImporter:
         width: 84
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye9x
+      name: eye10x
       rect:
         serializedVersion: 2
         x: 384
@@ -341,7 +341,7 @@ TextureImporter:
         width: 66
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye10x
+      name: eye11x
       rect:
         serializedVersion: 2
         x: 547
@@ -362,7 +362,7 @@ TextureImporter:
         width: 75
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye11x
+      name: eye12x
       rect:
         serializedVersion: 2
         x: 705
@@ -383,7 +383,7 @@ TextureImporter:
         width: 86
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye12x
+      name: eye13x
       rect:
         serializedVersion: 2
         x: 866
@@ -404,7 +404,7 @@ TextureImporter:
         width: 89
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye13x
+      name: eye14x
       rect:
         serializedVersion: 2
         x: 1042
@@ -425,7 +425,7 @@ TextureImporter:
         width: 70
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye14x
+      name: eye15x
       rect:
         serializedVersion: 2
         x: 25
@@ -446,7 +446,7 @@ TextureImporter:
         width: 60
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye15x
+      name: eye16x
       rect:
         serializedVersion: 2
         x: 195
@@ -467,7 +467,7 @@ TextureImporter:
         width: 81
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye16x
+      name: eye17x
       rect:
         serializedVersion: 2
         x: 376
@@ -488,7 +488,7 @@ TextureImporter:
         width: 70
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye17x
+      name: eye18x
       rect:
         serializedVersion: 2
         x: 541
@@ -509,7 +509,7 @@ TextureImporter:
         width: 56
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye18x
+      name: eye19x
       rect:
         serializedVersion: 2
         x: 681
@@ -530,7 +530,7 @@ TextureImporter:
         width: 66
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

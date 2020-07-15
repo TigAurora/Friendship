@@ -87,7 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: hairc
+  - name: hairc15x
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0

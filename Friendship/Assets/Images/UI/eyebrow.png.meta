@@ -4,52 +4,52 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3078226200369244658
-    second: eyebrow0x
+    second: eyebrow16x
   - first:
       213: 792538450687254331
-    second: eyebrow1x
+    second: eyebrow16x
   - first:
       213: 1560319577188664042
-    second: eyebrow2x
+    second: eyebrow16x
   - first:
       213: -1792986976208679661
-    second: eyebrow3x
+    second: eyebrow16x
   - first:
       213: 5028712287604099812
-    second: eyebrow4x
+    second: eyebrow16x
   - first:
       213: 4046153673784143958
-    second: eyebrow5x
+    second: eyebrow16x
   - first:
       213: 3111587231640472432
-    second: eyebrow6x
+    second: eyebrow16x
   - first:
       213: -9200250246077429175
-    second: eyebrow7x
+    second: eyebrow16x
   - first:
       213: -2351923050801929675
-    second: eyebrow8x
+    second: eyebrow16x
   - first:
       213: 4995724293937494373
-    second: eyebrow9x
+    second: eyebrow16x
   - first:
       213: -1697902452808628044
-    second: eyebrow10x
+    second: eyebrow16x
   - first:
       213: -8715572066470145357
-    second: eyebrow11x
+    second: eyebrow16x
   - first:
       213: 360845186955672914
-    second: eyebrow12x
+    second: eyebrow16x
   - first:
       213: 3449550652918320973
-    second: eyebrow13x
+    second: eyebrow16x
   - first:
       213: -8875789517713455462
-    second: eyebrow14x
+    second: eyebrow16x
   - first:
       213: 5716150535909200265
-    second: eyebrow15x
+    second: eyebrow16x
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyebrow0x
+      name: eyebrow1x
       rect:
         serializedVersion: 2
         x: 30
@@ -156,7 +156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow1x
+      name: eyebrow2x
       rect:
         serializedVersion: 2
         x: 119
@@ -177,7 +177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow2x
+      name: eyebrow3x
       rect:
         serializedVersion: 2
         x: 190
@@ -198,7 +198,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow3x
+      name: eyebrow4x
       rect:
         serializedVersion: 2
         x: 281
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow4x
+      name: eyebrow5x
       rect:
         serializedVersion: 2
         x: 26
@@ -240,7 +240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow5x
+      name: eyebrow6x
       rect:
         serializedVersion: 2
         x: 116
@@ -261,7 +261,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow6x
+      name: eyebrow7x
       rect:
         serializedVersion: 2
         x: 210
@@ -282,7 +282,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow7x
+      name: eyebrow8x
       rect:
         serializedVersion: 2
         x: 291
@@ -303,7 +303,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow8x
+      name: eyebrow9x
       rect:
         serializedVersion: 2
         x: 24
@@ -324,7 +324,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow9x
+      name: eyebrow10x
       rect:
         serializedVersion: 2
         x: 119
@@ -345,7 +345,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow10x
+      name: eyebrow11x
       rect:
         serializedVersion: 2
         x: 202
@@ -366,7 +366,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow11x
+      name: eyebrow12x
       rect:
         serializedVersion: 2
         x: 288
@@ -387,7 +387,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow12x
+      name: eyebrow13x
       rect:
         serializedVersion: 2
         x: 25
@@ -408,7 +408,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow13x
+      name: eyebrow14x
       rect:
         serializedVersion: 2
         x: 110
@@ -429,7 +429,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow14x
+      name: eyebrow15x
       rect:
         serializedVersion: 2
         x: 198
@@ -450,7 +450,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyebrow15x
+      name: eyebrow16x
       rect:
         serializedVersion: 2
         x: 293

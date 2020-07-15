@@ -4,52 +4,52 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -6658969528892427094
-    second: eye19x
+    second: eye21x
   - first:
       213: 639553351758688200
-    second: eye20x
+    second: eye21x
   - first:
       213: -1111220168050797589
-    second: hairc0x
+    second: hairc14x
   - first:
       213: 1594639889582600573
-    second: hairc1x
+    second: hairc14x
   - first:
       213: -8198671285702444422
-    second: hairc2x
+    second: hairc14x
   - first:
       213: -7756639588793527996
-    second: hairc3x
+    second: hairc14x
   - first:
       213: -5120945306070173424
-    second: hairc4x
+    second: hairc14x
   - first:
       213: 8796994257266601664
-    second: hairc5x
+    second: hairc14x
   - first:
       213: 3659307555093682456
-    second: hairc6x
+    second: hairc14x
   - first:
       213: 169599639550829369
-    second: hairc7x
+    second: hairc14x
   - first:
       213: -272979250259987413
-    second: hairc8x
+    second: hairc14x
   - first:
       213: 836678019650504301
-    second: hairc9x
+    second: hairc14x
   - first:
       213: -3573557054899453071
-    second: hairc10x
+    second: hairc14x
   - first:
       213: 1236186283368298326
-    second: hairc11x
+    second: hairc14x
   - first:
       213: -2554376545623919885
-    second: hairc12x
+    second: hairc14x
   - first:
       213: -8039106637666109886
-    second: hairc13x
+    second: hairc14x
   - first:
       213: 7696116533518107110
     second: hairc_16
@@ -150,7 +150,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eye19x
+      name: eye20x
       rect:
         serializedVersion: 2
         x: 241
@@ -158,7 +158,7 @@ TextureImporter:
         width: 81
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eye20x
+      name: eye21x
       rect:
         serializedVersion: 2
         x: 412
@@ -179,7 +179,7 @@ TextureImporter:
         width: 85
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc0x
+      name: hairc1x
       rect:
         serializedVersion: 2
         x: 23
@@ -200,7 +200,7 @@ TextureImporter:
         width: 90
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc1x
+      name: hairc2x
       rect:
         serializedVersion: 2
         x: 171
@@ -221,7 +221,7 @@ TextureImporter:
         width: 44
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc2x
+      name: hairc3x
       rect:
         serializedVersion: 2
         x: 279
@@ -242,7 +242,7 @@ TextureImporter:
         width: 25
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc3x
+      name: hairc4x
       rect:
         serializedVersion: 2
         x: 361
@@ -263,7 +263,7 @@ TextureImporter:
         width: 16
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc4x
+      name: hairc5x
       rect:
         serializedVersion: 2
         x: 432
@@ -284,7 +284,7 @@ TextureImporter:
         width: 24
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc5x
+      name: hairc6x
       rect:
         serializedVersion: 2
         x: 495
@@ -305,7 +305,7 @@ TextureImporter:
         width: 58
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc6x
+      name: hairc7x
       rect:
         serializedVersion: 2
         x: 42
@@ -326,7 +326,7 @@ TextureImporter:
         width: 51
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc7x
+      name: hairc8x
       rect:
         serializedVersion: 2
         x: 147
@@ -347,7 +347,7 @@ TextureImporter:
         width: 37
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc8x
+      name: hairc9x
       rect:
         serializedVersion: 2
         x: 232
@@ -368,7 +368,7 @@ TextureImporter:
         width: 45
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc9x
+      name: hairc10x
       rect:
         serializedVersion: 2
         x: 316
@@ -389,7 +389,7 @@ TextureImporter:
         width: 32
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,7 +402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc10x
+      name: hairc11x
       rect:
         serializedVersion: 2
         x: 387
@@ -410,7 +410,7 @@ TextureImporter:
         width: 25
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc11x
+      name: hairc12x
       rect:
         serializedVersion: 2
         x: 463
@@ -431,7 +431,7 @@ TextureImporter:
         width: 79
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc12x
+      name: hairc13x
       rect:
         serializedVersion: 2
         x: 45
@@ -452,7 +452,7 @@ TextureImporter:
         width: 35
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairc13x
+      name: hairc14x
       rect:
         serializedVersion: 2
         x: 143
@@ -473,7 +473,7 @@ TextureImporter:
         width: 38
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

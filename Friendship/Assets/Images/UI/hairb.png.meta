@@ -4,94 +4,97 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5624270017623418620
-    second: hairb0x
+    second: hairb1x
   - first:
       213: 8945869794728301172
     second: hairb1x
   - first:
       213: -7743725848809038171
-    second: hairb2x
-  - first:
-      213: -6929655587755947258
-    second: hairb3x
-  - first:
-      213: 6973178354705402454
-    second: hairb4x
-  - first:
-      213: -23759667815183096
-    second: hairb5x
-  - first:
-      213: -133196808603882218
-    second: hairb6x
-  - first:
-      213: -518269264277267477
-    second: hairb7x
-  - first:
-      213: -8268878616021539485
-    second: hairb8x
-  - first:
-      213: -6506131791458594223
-    second: hairb9x
-  - first:
-      213: 2368826184047093367
-    second: hairb10x
-  - first:
-      213: 5256054813653224310
-    second: hairb11x
-  - first:
-      213: 5698673514979372222
-    second: hairb12x
-  - first:
-      213: -1398614307484194666
-    second: hairb13x
-  - first:
-      213: 6277133326406500901
-    second: hairb14x
-  - first:
-      213: 4174390335587319327
     second: hairb15x
   - first:
+      213: -6929655587755947258
+    second: hairb15x
+  - first:
+      213: 6973178354705402454
+    second: hairb15x
+  - first:
+      213: -23759667815183096
+    second: hairb15x
+  - first:
+      213: -133196808603882218
+    second: hairb15x
+  - first:
+      213: -518269264277267477
+    second: hairb15x
+  - first:
+      213: -8268878616021539485
+    second: hairb15x
+  - first:
+      213: -6506131791458594223
+    second: hairb15x
+  - first:
+      213: 2368826184047093367
+    second: hairb15x
+  - first:
+      213: 5256054813653224310
+    second: hairb15x
+  - first:
+      213: 5698673514979372222
+    second: hairb15x
+  - first:
+      213: -1398614307484194666
+    second: hairb15x
+  - first:
+      213: 6277133326406500901
+    second: hairb15x
+  - first:
+      213: 4174390335587319327
+    second: hairb30x
+  - first:
       213: -82864954603276726
-    second: hairb16x
+    second: hairb30x
   - first:
       213: -4105594617503551320
-    second: hairb17x
+    second: hairb30x
   - first:
       213: -3720392625061685727
-    second: hairb18x
+    second: hairb30x
   - first:
       213: -1161635967477137626
-    second: hairb19x
+    second: hairb30x
   - first:
       213: -6438612094806035435
-    second: hairb20x
+    second: hairb30x
   - first:
       213: -3551496969310975308
-    second: hairb21x
+    second: hairb30x
   - first:
       213: -6414842001821189911
-    second: hairb22x
+    second: hairb30x
   - first:
       213: -6977188425505635145
-    second: hairb23x
+    second: hairb30x
   - first:
       213: 334049346330896268
-    second: hairb24x
+    second: hairb30x
   - first:
       213: 2769448915460132627
-    second: hairb25x
+    second: hairb30x
   - first:
       213: -5167727892187959846
-    second: hairb26x
+    second: hairb30x
   - first:
       213: -6914077497349905843
-    second: hairb27x
+    second: hairb30x
   - first:
       213: 4476359174310781853
-    second: hairb28x
+    second: hairb30x
   - first:
       213: 1942688880651989067
-    second: hairb29x
+    second: hairb30x
+  - first:
+      213: 8945869794728301172
+    second: hairb_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -177,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hairb0x
+      name: hairb1x
       rect:
         serializedVersion: 2
         x: 19
@@ -198,28 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb1x
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 539
-        width: 111
-        height: 117
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4725da95e2d162c70800000000000000
-      internalID: 8945869794728301172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hairb2x
+      name: hairb3x
       rect:
         serializedVersion: 2
         x: 314
@@ -240,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb3x
+      name: hairb4x
       rect:
         serializedVersion: 2
         x: 553
@@ -261,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb4x
+      name: hairb5x
       rect:
         serializedVersion: 2
         x: 690
@@ -282,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb5x
+      name: hairb6x
       rect:
         serializedVersion: 2
         x: 923
@@ -303,7 +285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb6x
+      name: hairb7x
       rect:
         serializedVersion: 2
         x: 1088
@@ -324,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb7x
+      name: hairb8x
       rect:
         serializedVersion: 2
         x: 1292
@@ -345,7 +327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb8x
+      name: hairb9x
       rect:
         serializedVersion: 2
         x: 1480
@@ -366,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb9x
+      name: hairb10x
       rect:
         serializedVersion: 2
         x: 1695
@@ -387,7 +369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb10x
+      name: hairb11x
       rect:
         serializedVersion: 2
         x: 53
@@ -408,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb11x
+      name: hairb12x
       rect:
         serializedVersion: 2
         x: 263
@@ -429,7 +411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb12x
+      name: hairb13x
       rect:
         serializedVersion: 2
         x: 440
@@ -450,7 +432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb13x
+      name: hairb14x
       rect:
         serializedVersion: 2
         x: 658
@@ -471,7 +453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb14x
+      name: hairb15x
       rect:
         serializedVersion: 2
         x: 885
@@ -492,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb15x
+      name: hairb16x
       rect:
         serializedVersion: 2
         x: 1089
@@ -513,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb16x
+      name: hairb17x
       rect:
         serializedVersion: 2
         x: 1306
@@ -534,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb17x
+      name: hairb18x
       rect:
         serializedVersion: 2
         x: 1509
@@ -555,7 +537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb18x
+      name: hairb19x
       rect:
         serializedVersion: 2
         x: 1704
@@ -576,7 +558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb19x
+      name: hairb20x
       rect:
         serializedVersion: 2
         x: 61
@@ -597,7 +579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb20x
+      name: hairb21x
       rect:
         serializedVersion: 2
         x: 271
@@ -618,7 +600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb21x
+      name: hairb22x
       rect:
         serializedVersion: 2
         x: 471
@@ -639,7 +621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb22x
+      name: hairb23x
       rect:
         serializedVersion: 2
         x: 658
@@ -660,7 +642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb23x
+      name: hairb24x
       rect:
         serializedVersion: 2
         x: 903
@@ -681,7 +663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb24x
+      name: hairb25x
       rect:
         serializedVersion: 2
         x: 1117
@@ -702,7 +684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb25x
+      name: hairb26x
       rect:
         serializedVersion: 2
         x: 1303
@@ -723,7 +705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb26x
+      name: hairb27x
       rect:
         serializedVersion: 2
         x: 1550
@@ -744,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb27x
+      name: hairb28x
       rect:
         serializedVersion: 2
         x: 1710
@@ -765,7 +747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb28x
+      name: hairb29x
       rect:
         serializedVersion: 2
         x: 70
@@ -786,7 +768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hairb29x
+      name: hairb30x
       rect:
         serializedVersion: 2
         x: 268
