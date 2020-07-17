@@ -10,9 +10,6 @@ using UnityEngine.Experimental.U2D.Animation;
 public class CharactorCreator : MonoBehaviour
 {
 
-    [Header("Components")]
-    public CharactorCreatorComponents components;
-
     [Header("CharacterFeature")]
     public GameObject eye;
     public GameObject sunglasses;
@@ -25,6 +22,17 @@ public class CharactorCreator : MonoBehaviour
     [Header("RuntimeAnimatorController")]
     public RuntimeAnimatorController x1;
     public RuntimeAnimatorController x2;
+
+    [Header("Default Body Parts")]
+    public int dhaira;
+    public int dhairb;
+    public int dhairc;
+    public int dcat;
+    public int dmouth;
+    public int deye;
+    public int dwheelchair;
+    public int dsunglasses;
+    public int deyebrow;
 
     public List<SpriteResolver> spriteResolvers = new List<SpriteResolver>();
 
@@ -41,7 +49,6 @@ public class CharactorCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         foreach (var resolver in FindObjectsOfType<SpriteResolver>())
         {
             spriteResolvers.Add(resolver);
@@ -93,6 +100,8 @@ public class CharactorCreator : MonoBehaviour
                 //sunglasses.SetActive(false);
             }
         }
+
+        defaultbody_pressed();
     }
 
     // Update is called once per frame
@@ -103,41 +112,94 @@ public class CharactorCreator : MonoBehaviour
     //Randomize character
     public void onClick_randomize()
     {
-        mouthResolver.SetCategoryAndLabel("mouth", "mouth" + UnityEngine.Random.Range(1, 35));
-        hairbResolver.SetCategoryAndLabel("hairb", "hairb" + UnityEngine.Random.Range(1, 33));
+        string tpname;
+
+        tpname = randBody("mouth", 35);
+        mouthResolver.SetCategoryAndLabel("mouth", tpname);
+        unselectbody("mouth");
+        selectbody(tpname);
+
+        tpname = randBody("hairb", 33);
+        hairbResolver.SetCategoryAndLabel("hairb", tpname);
+        unselectbody("hairb");
+        selectbody(tpname);
+        
+
         if (hairbResolver.GetLabel() == "hairb1")
         {
-            hairaResolver.SetCategoryAndLabel("haira", "haira20");
+            int which = UnityEngine.Random.Range(0, 2);
+            //which haira with hairb1
+            if (which == 0)
+            {
+                hairaResolver.SetCategoryAndLabel("haira", "haira20");
+                unselectbody("haira");
+                selectbody("haira20");
+            }
+            else
+            {
+                hairaResolver.SetCategoryAndLabel("haira", "haira10");
+                unselectbody("haira");
+                selectbody("haira10");
+            }
+
             haircResolver.SetCategoryAndLabel("hairc", "hairc1");
+            unselectbody("hairc");
+            selectbody("hairc1");
+
             catResolver.SetCategoryAndLabel("cat", "cat1");
+            unselectbody("cat");
+            selectbody("cat1");
         }
         else
         {
-            hairaResolver.SetCategoryAndLabel("haira", "haira" + UnityEngine.Random.Range(1, 20));
-            haircResolver.SetCategoryAndLabel("hairc", "hairc" + UnityEngine.Random.Range(1, 16));
-            catResolver.SetCategoryAndLabel("cat", "cat" + UnityEngine.Random.Range(1, 16));
+            tpname = randBody("haira", 20);
+            hairaResolver.SetCategoryAndLabel("haira", tpname);
+            unselectbody("haira");
+            selectbody(tpname);
+
+            tpname = randBody("hairc", 16);
+            haircResolver.SetCategoryAndLabel("hairc", tpname);
+            unselectbody("hairc");
+            selectbody(tpname);
+
+
+            tpname = randBody("cat", 16);
+            catResolver.SetCategoryAndLabel("cat", tpname);
+            unselectbody("cat");
+            selectbody(tpname);
         }
         if (PlayerPrefs.GetInt("myCharacter") == 0)
         {
-            sunglassesResolver.SetCategoryAndLabel("sunglasses", "sunglasses" + UnityEngine.Random.Range(1, 20));
+            tpname = randBody("sunglasses", 20);
+            sunglassesResolver.SetCategoryAndLabel("sunglasses", tpname);
+            unselectbody("sunglasses");
+            selectbody(tpname);
         }
         else
         {
             //eyeResolver.SetCategoryAndLabel("eye", "eye" + UnityEngine.Random.Range(0, 0));
             //wheelchairResolver.SetCategoryAndLabel("wheelchair", "wheelchair" + UnityEngine.Random.Range(0, 0));
         }
-        eyebrowResolver.SetCategoryAndLabel("eyebrow", "eyebrow" + UnityEngine.Random.Range(1, 17));
+        tpname = randBody("eyebrow", 17);
+        eyebrowResolver.SetCategoryAndLabel("eyebrow", tpname);
+        unselectbody("eyebrow");
+        selectbody(tpname);
     }
 
+    //body parts onClick
     public void onClick_mouth(string type)
     {
         mouthResolver.SetCategoryAndLabel("mouth", type);
     }
     public void onClick_haira(string type)
     {
-        if (hairbResolver.GetLabel() == "hairb1")
+        //Debug.Log("outside: " + "hairb.getlabel() = " + hairbResolver.GetLabel() + ", type = " + type);
+        if (hairbResolver.GetLabel() == "hairb1" && type != "haira10")
         {
             hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
+            unselectbody("hairb");
+            selectbody("hairb2");
+            //Debug.Log("inside");
         }
         hairaResolver.SetCategoryAndLabel("haira", type);
     }
@@ -146,9 +208,24 @@ public class CharactorCreator : MonoBehaviour
         if (type == "hairb1")
         {
             hairaResolver.SetCategoryAndLabel("haira", "haira20");
+            unselectbody("haira");
+            selectbody("haira20");
+
             haircResolver.SetCategoryAndLabel("hairc", "hairc1");
+            unselectbody("hairc");
+            selectbody("hairc1");
+
             catResolver.SetCategoryAndLabel("cat", "cat1");
+            unselectbody("cat");
+            selectbody("cat1");
         }
+        else if(hairbResolver.GetLabel() == "hairb1")
+        {
+            hairaResolver.SetCategoryAndLabel("haira", "haira1");
+            unselectbody("haira");
+            selectbody("haira1");
+        }
+
         hairbResolver.SetCategoryAndLabel("hairb", type);
     }
     public void onClick_hairc(string type)
@@ -156,7 +233,12 @@ public class CharactorCreator : MonoBehaviour
         if (hairbResolver.GetLabel() == "hairb1")
         {
             hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
+            unselectbody("hairb");
+            selectbody("hairb2");
+
             hairaResolver.SetCategoryAndLabel("haira", "haira1");
+            unselectbody("haira");
+            selectbody("haira1");
         }
         haircResolver.SetCategoryAndLabel("hairc", type);
     }
@@ -173,7 +255,12 @@ public class CharactorCreator : MonoBehaviour
         if (hairbResolver.GetLabel() == "hairb1")
         {
             hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
+            unselectbody("hairb");
+            selectbody("hairb2");
+
             hairaResolver.SetCategoryAndLabel("haira", "haira1");
+            unselectbody("haira");
+            selectbody("haira1");
         }
         catResolver.SetCategoryAndLabel("cat", type);
     }
@@ -186,17 +273,171 @@ public class CharactorCreator : MonoBehaviour
         wheelchairResolver.SetCategoryAndLabel("wheelchair", type);
     }
 
-
-    //Components container
-    [Serializable]
-    public struct CharactorCreatorComponents
+    //Initialize default body part squares with pressed sprite and animation
+    private void defaultbody_pressed()
     {
-        [HideInInspector] public CharactorCreator menuNetwork;
+        string tpname;
 
+        if (PlayerPrefs.GetInt("myCharacter") == 1)
+        {
+            tpname = "eye" + deye;
+            unselectbody("eye");
+            selectbody(tpname);
+        }
 
-        [Header("Player")]
-        public GameObject Blind;
-        public GameObject Deaf;
+        tpname = "eyebrow" + deyebrow;
+        unselectbody("eyebrow");
+        selectbody(tpname);
 
+        tpname = "haira" + dhaira;
+        unselectbody("haira");
+        selectbody(tpname);
+
+        tpname = "hairb" + dhairb;
+        unselectbody("hairb");
+        selectbody(tpname);
+
+        tpname = "hairc" + dhairc;
+        unselectbody("hairc");
+        selectbody(tpname);
+
+        tpname = "cat" + dcat;
+        unselectbody("cat");
+        selectbody(tpname);
+
+        tpname = "mouth" + dmouth;
+        unselectbody("mouth");
+        selectbody(tpname);
+
+        if (PlayerPrefs.GetInt("myCharacter") == 0)
+        {
+            tpname = "sunglasses" + dsunglasses;
+            unselectbody("eye");
+            selectbody(tpname);
+        }
+
+        if (PlayerPrefs.GetInt("myCharacter") == 1)
+        {
+            tpname = "wheelchair" + dwheelchair;
+            unselectbody("eye");
+            selectbody(tpname);
+        }
+
+    }
+
+    //revert (sample)haira1 to (sample haira(1)
+    private string revert(string name)
+    {
+        string type = getType(name);
+        int num = getNum(name);
+        if (num % 12 == 0)
+        {
+            num = 12;
+        }
+        else
+        {
+            num = num % 12;
+        }
+        //Debug.Log(type + "(" + num + ")");
+        return type + " (" + num + ")";
+    }
+
+    //Randomize bodypart with numbers(not include)
+    private string randBody(string name, int limit)
+    {
+        //Debug.Log("randBody name:" + name + UnityEngine.Random.Range(1, limit));
+        return name + UnityEngine.Random.Range(1, limit);
+    }
+
+    //get body part type/tag
+    private string getType(string name)
+    {
+        //Debug.Log("getType name:" + name);
+        string trg = "";
+        for (int i = 0; i < name.Length; ++i)
+        {
+            if (name[i] >= '0' && name[i] <= '9')
+            {
+                i = name.Length;
+            }
+            else
+            {
+                trg += name[i];
+            }
+        }
+
+        return trg;
+    }
+
+    //Find object in p1 or p2, name sample: haira24
+    private string whichPage(string name)
+    {
+        string type = getType(name);
+        int num = getNum(name);
+        if (num % 12 == 0)
+        {
+            num = num / 12;
+        }
+        else
+        {
+            num = num / 12 + 1;
+        }
+        //Debug.Log("ori: name, " + name + "after: " + type + 'p' + num);
+        return type + 'p' + num;
+    }
+
+    //Get integer in a string
+    private int getNum(string name)
+    {
+        string num = "";
+        for (int i = 0; i < name.Length; ++i)
+        {
+            if (name[i] >= '0' && name[i] <= '9')
+            {
+                num += name[i];
+            }
+        }
+
+        return int.Parse(num);
+    }
+
+    //find gameobjects(body parts) and unselect them all
+    private void unselectbody(string name)
+    {
+        GameObject cv = GameObject.Find("Canvas");
+        string tag = getType(name);
+        foreach (Transform obj in cv.GetComponent<Transform>())
+        {
+            if (obj.gameObject.tag == tag)
+            {
+                foreach (Transform item in obj.GetComponent<Transform>())
+                {
+                    item.gameObject.GetComponent<Image>().sprite = normal;
+                    item.gameObject.GetComponent<Animator>().runtimeAnimatorController = x1;
+                }
+            }
+        }
+    }
+
+    //find gameobject(body parts) and select it
+    private void selectbody(string name)
+    {
+        GameObject cv = GameObject.Find("Canvas");
+        string revertname = revert(name);
+        string pagename = whichPage(name);
+        foreach (Transform obj in cv.GetComponent<Transform>())
+        {
+            if (obj.gameObject.name == pagename)
+            {
+                foreach (Transform item in obj.GetComponent<Transform>())
+                {
+                    if (item.gameObject.name == revertname)
+                    {
+                        item.gameObject.GetComponent<Image>().sprite = pressed;
+                        item.gameObject.GetComponent<Animator>().runtimeAnimatorController = x2;
+                    }
+                }
+            }
+        }
     }
 }
