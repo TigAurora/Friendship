@@ -379,7 +379,7 @@ MonoBehaviour:
         type: 3}
     - m_Name: haira20
       m_Hash: 825604578
-      m_Sprite: {fileID: 7005754235359629000, guid: fd3678ab33d172941ac33a7b372260f2,
+      m_Sprite: {fileID: 1723412885731210286, guid: fd3678ab33d172941ac33a7b372260f2,
         type: 3}
   - m_Name: hairb
     m_Hash: 357150808
@@ -454,7 +454,7 @@ MonoBehaviour:
         type: 3}
     - m_Name: hairb18
       m_Hash: 377871434
-      m_Sprite: {fileID: 5699794723788650232, guid: fd3678ab33d172941ac33a7b372260f2,
+      m_Sprite: {fileID: 4489188857108849906, guid: e9864cdca810bf54ea81f59773c25395,
         type: 3}
     - m_Name: hairb19
       m_Hash: 1635970268
@@ -517,7 +517,7 @@ MonoBehaviour:
     m_CategoryList:
     - m_Name: hairc1
       m_Hash: -27111808
-      m_Sprite: {fileID: -63086178811856426, guid: e9864cdca810bf54ea81f59773c25395,
+      m_Sprite: {fileID: 4489188857108849906, guid: e9864cdca810bf54ea81f59773c25395,
         type: 3}
     - m_Name: hairc2
       m_Hash: 1718296378
