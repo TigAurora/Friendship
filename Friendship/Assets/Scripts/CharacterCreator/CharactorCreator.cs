@@ -46,6 +46,7 @@ public class CharactorCreator : MonoBehaviour
     SpriteResolver eyebrowResolver;
     SpriteResolver wheelchairResolver;
 
+    #region //Initialization
     // Start is called before the first frame update
     void Start()
     {
@@ -101,14 +102,73 @@ public class CharactorCreator : MonoBehaviour
             }
         }
 
-        defaultbody_pressed();
+        defaultbody_pressed_selected();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    //Initialize default body part squares with pressed sprite and animation
+    private void defaultbody_pressed_selected()
     {
-    }
+        string tpname;
 
+        if (PlayerPrefs.GetInt("myCharacter") == 1)
+        {
+            tpname = "eye" + deye;
+            unselectbody("eye");
+            selectbody(tpname);
+            eyeResolver.SetCategoryAndLabel("eye", tpname);
+        }
+
+        tpname = "eyebrow" + deyebrow;
+        unselectbody("eyebrow");
+        selectbody(tpname);
+        eyebrowResolver.SetCategoryAndLabel("eyebrow", tpname);
+
+        tpname = "haira" + dhaira;
+        unselectbody("haira");
+        selectbody(tpname);
+        hairaResolver.SetCategoryAndLabel("haira", tpname);
+
+        tpname = "hairb" + dhairb;
+        unselectbody("hairb");
+        selectbody(tpname);
+        hairbResolver.SetCategoryAndLabel("hairb", tpname);
+
+        tpname = "hairc" + dhairc;
+        unselectbody("hairc");
+        selectbody(tpname);
+        haircResolver.SetCategoryAndLabel("hairc", tpname);
+
+        tpname = "cat" + dcat;
+        unselectbody("cat");
+        selectbody(tpname);
+        catResolver.SetCategoryAndLabel("cat", tpname);
+
+        tpname = "mouth" + dmouth;
+        unselectbody("mouth");
+        selectbody(tpname);
+        mouthResolver.SetCategoryAndLabel("mouth", tpname);
+
+        if (PlayerPrefs.GetInt("myCharacter") == 0)
+        {
+            tpname = "sunglasses" + dsunglasses;
+            unselectbody("sunglasses");
+            selectbody(tpname);
+            sunglassesResolver.SetCategoryAndLabel("sunglasses", tpname);
+        }
+
+        if (PlayerPrefs.GetInt("myCharacter") == 1)
+        {
+            tpname = "wheelchair" + dwheelchair;
+            unselectbody("wheelchair");
+            selectbody(tpname);
+            wheelchairResolver.SetCategoryAndLabel("wheelchair", tpname);
+        }
+
+    }
+    #endregion
+
+    #region //Buttonfunctions
     //Randomize character
     public void onClick_randomize()
     {
@@ -187,25 +247,25 @@ public class CharactorCreator : MonoBehaviour
     }
 
     //body parts onClick
-    public void onClick_mouth(string type)
+    public void onClick_mouth()
     {
-        mouthResolver.SetCategoryAndLabel("mouth", type);
+        mouthResolver.SetCategoryAndLabel("mouth", getNamefromBtn());
     }
-    public void onClick_haira(string type)
+    public void onClick_haira()
     {
         //Debug.Log("outside: " + "hairb.getlabel() = " + hairbResolver.GetLabel() + ", type = " + type);
-        if (hairbResolver.GetLabel() == "hairb1" && type != "haira10")
+        if (hairbResolver.GetLabel() == "hairb1" && getNamefromBtn() != "haira10")
         {
             hairbResolver.SetCategoryAndLabel("hairb", "hairb2");
             unselectbody("hairb");
             selectbody("hairb2");
             //Debug.Log("inside");
         }
-        hairaResolver.SetCategoryAndLabel("haira", type);
+        hairaResolver.SetCategoryAndLabel("haira", getNamefromBtn());
     }
-    public void onClick_hairb(string type)
+    public void onClick_hairb()
     {
-        if (type == "hairb1")
+        if (getNamefromBtn() == "hairb1")
         {
             hairaResolver.SetCategoryAndLabel("haira", "haira20");
             unselectbody("haira");
@@ -226,9 +286,9 @@ public class CharactorCreator : MonoBehaviour
             selectbody("haira1");
         }
 
-        hairbResolver.SetCategoryAndLabel("hairb", type);
+        hairbResolver.SetCategoryAndLabel("hairb", getNamefromBtn());
     }
-    public void onClick_hairc(string type)
+    public void onClick_hairc()
     {
         if (hairbResolver.GetLabel() == "hairb1")
         {
@@ -240,17 +300,17 @@ public class CharactorCreator : MonoBehaviour
             unselectbody("haira");
             selectbody("haira1");
         }
-        haircResolver.SetCategoryAndLabel("hairc", type);
+        haircResolver.SetCategoryAndLabel("hairc", getNamefromBtn());
     }
-    public void onClick_eye(string type)
+    public void onClick_eye()
     {
-        eyeResolver.SetCategoryAndLabel("eye", type);
+        eyeResolver.SetCategoryAndLabel("eye", getNamefromBtn());
     }
-    public void onClick_eyebrow(string type)
+    public void onClick_eyebrow()
     {
-        eyebrowResolver.SetCategoryAndLabel("eyebrow", type);
+        eyebrowResolver.SetCategoryAndLabel("eyebrow", getNamefromBtn());
     }
-    public void onClick_cat(string type)
+    public void onClick_cat()
     {
         if (hairbResolver.GetLabel() == "hairb1")
         {
@@ -262,67 +322,32 @@ public class CharactorCreator : MonoBehaviour
             unselectbody("haira");
             selectbody("haira1");
         }
-        catResolver.SetCategoryAndLabel("cat", type);
+        catResolver.SetCategoryAndLabel("cat", getNamefromBtn());
     }
-    public void onClick_sunglasses(string type)
+    public void onClick_sunglasses()
     {
-        sunglassesResolver.SetCategoryAndLabel("sunglasses", type);
+        sunglassesResolver.SetCategoryAndLabel("sunglasses", getNamefromBtn());
     }
-    public void onClick_wheelchair(string type)
+    public void onClick_wheelchair()
     {
-        wheelchairResolver.SetCategoryAndLabel("wheelchair", type);
+        wheelchairResolver.SetCategoryAndLabel("wheelchair", getNamefromBtn());
     }
+    #endregion
 
-    //Initialize default body part squares with pressed sprite and animation
-    private void defaultbody_pressed()
+    #region //Supportfunctions
+    //Get current selected parts name from button
+    private string getNamefromBtn()
     {
-        string tpname;
+        var buttonSelf = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
+        int num = getNum(buttonSelf.name);
+        string type = getType(buttonSelf.name);
+        int whichPage = getNum(buttonSelf.transform.parent.gameObject.name);
 
-        if (PlayerPrefs.GetInt("myCharacter") == 1)
-        {
-            tpname = "eye" + deye;
-            unselectbody("eye");
-            selectbody(tpname);
-        }
+        int finalnum = num + 12 * (whichPage - 1);
 
-        tpname = "eyebrow" + deyebrow;
-        unselectbody("eyebrow");
-        selectbody(tpname);
+        //Debug.Log("BtnNum: " + num + ", whichPage: " + whichPage + "result: " + type + finalnum);
 
-        tpname = "haira" + dhaira;
-        unselectbody("haira");
-        selectbody(tpname);
-
-        tpname = "hairb" + dhairb;
-        unselectbody("hairb");
-        selectbody(tpname);
-
-        tpname = "hairc" + dhairc;
-        unselectbody("hairc");
-        selectbody(tpname);
-
-        tpname = "cat" + dcat;
-        unselectbody("cat");
-        selectbody(tpname);
-
-        tpname = "mouth" + dmouth;
-        unselectbody("mouth");
-        selectbody(tpname);
-
-        if (PlayerPrefs.GetInt("myCharacter") == 0)
-        {
-            tpname = "sunglasses" + dsunglasses;
-            unselectbody("eye");
-            selectbody(tpname);
-        }
-
-        if (PlayerPrefs.GetInt("myCharacter") == 1)
-        {
-            tpname = "wheelchair" + dwheelchair;
-            unselectbody("eye");
-            selectbody(tpname);
-        }
-
+        return type + finalnum;
     }
 
     //revert (sample)haira1 to (sample haira(1)
@@ -356,13 +381,13 @@ public class CharactorCreator : MonoBehaviour
         string trg = "";
         for (int i = 0; i < name.Length; ++i)
         {
-            if (name[i] >= '0' && name[i] <= '9')
+            if (name[i] >= 'a' && name[i] <= 'z')
             {
-                i = name.Length;
+                trg += name[i];
             }
             else
             {
-                trg += name[i];
+                i = name.Length;
             }
         }
 
@@ -440,4 +465,5 @@ public class CharactorCreator : MonoBehaviour
             }
         }
     }
+    #endregion
 }
