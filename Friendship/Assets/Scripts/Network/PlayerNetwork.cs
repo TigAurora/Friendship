@@ -128,7 +128,7 @@ namespace Friendship
         [PunRPC]
         void OnPlayersLoaded()
         {
-            GameManager.Instance.StartGame();
+            CharactorCreator.Instance.StartGame();
         }
 
         [PunRPC]

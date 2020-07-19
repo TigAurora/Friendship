@@ -46,11 +46,11 @@ namespace Friendship
             if (photonView.IsMine)
             {
                 //Pause check
-                if (!GameManager.Instance.isPause)
-                    Move();
+                //if (!GameManager.Instance.isPause)
+                    //Move();
             }
-            else //if is another player
-                SmoothMove();
+            //else //if is another player
+                //SmoothMove();
 
             //Animation();
         }

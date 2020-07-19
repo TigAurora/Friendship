@@ -45,35 +45,13 @@ namespace Friendship
             //If you blind character
             if (PlayerPrefs.GetInt("myCharacter") == 0)
             {
-                //Spawm in scene blindplayer prefab
+                //Spawn in scene blindplayer prefab
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs/Player", "blindplayer"), components.blindPlayerStartPosition.position, Quaternion.identity, 0);
+
             }
             else
             {
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs/Player", "deafplayer"), components.deafPlayerStartPosition.position, Quaternion.identity, 0);
-            }
-
-            GameObject[] people = GameObject.FindGameObjectsWithTag("Player");
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
-            {
-
-                for (int i = 0; i < people.Length; i++)
-                {
-                    if (people[i].name.Contains("deaf"))
-                    {
-                        people[i].SetActive(false);
-                    }
-                }
-            }
-            else
-            {
-                for (int i = 0; i < people.Length; i++)
-                {
-                    if (people[i].name.Contains("blind"))
-                    {
-                        people[i].SetActive(false);
-                    }
-                }
             }
         }
 
