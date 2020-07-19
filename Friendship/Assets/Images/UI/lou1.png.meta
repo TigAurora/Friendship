@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -8558564054572435969
     second: hairb2x
+  - first:
+      213: -8048256078068088953
+    second: hairb1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -226,6 +229,27 @@ TextureImporter:
       bones: []
       spriteID: ff578cb665fd93980800000000000000
       internalID: -8558564054572435969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hairb1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 51
+        width: 95
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f7f5d0db9de4090800000000000000
+      internalID: -8048256078068088953
       vertices: []
       indices: 
       edges: []
