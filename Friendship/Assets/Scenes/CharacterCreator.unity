@@ -1379,7 +1379,7 @@ MonoBehaviour:
   maxhairb: 3
   maxhairc: 2
   maxmouth: 3
-  maxcat: 2
+  maxcat: 3
   maxwheelchair: 0
   previousbutton: {fileID: 8952198787115574940}
   nextbutton: {fileID: 8952198787820505465}
