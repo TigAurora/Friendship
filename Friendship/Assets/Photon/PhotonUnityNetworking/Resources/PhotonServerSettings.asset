@@ -52,6 +52,8 @@ MonoBehaviour:
   - RPC_RequestDenied_feedback
   - RPC_RequestConfirm_feedback
   - RPC_CancelRequest
+  - RPC_SsetPlayersPositions
+  - RPC_SetPlayersPositions
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

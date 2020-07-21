@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Game\GameUIManager.cs" />
      <Compile Include="Assets\Scripts\Joystick\VirtualJoystick.cs" />
      <Compile Include="Assets\Scripts\LevelLobby\LevelLobbyManager.cs" />
+     <Compile Include="Assets\Scripts\LevelLobby\LevelLobbyNetwork.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainMenuManager.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainMenuNetwork.cs" />
      <Compile Include="Assets\Scripts\Managers\InputManager.cs" />

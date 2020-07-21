@@ -2864,9 +2864,10 @@ GameObject:
   - component: {fileID: -5151682585384682935}
   - component: {fileID: -1558592792514210829}
   - component: {fileID: 6601784814704097065}
+  - component: {fileID: 1229778790815992135}
   m_Layer: 0
   m_Name: blindplayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2986,6 +2987,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1229778790815992135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7627502404255682843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea46530783834d4bbf93c81d31e1f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7910470463847545949
 GameObject:
   m_ObjectHideFlags: 0

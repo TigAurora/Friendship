@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Friendship.GameManager
     - Friendship.GameNetworkManager
     - Friendship.GameUIManager
+    - Friendship.LevelLobbyNetwork
     - Friendship.MainMenuManager
     - Friendship.MainMenuNetwork
     - Friendship.PlayerCamera
@@ -17,6 +18,7 @@ ScriptsOnlyBuild:
     - Friendship.PlayerNetwork
     - Friendship.PlayerShow
     - Friendship.Popups
+    - LevelLobbyManager
     - PartSelector
     - TheBattle.DontDestroyOnLoad
     - TheBattle.VirtualJoystick
@@ -47,6 +49,7 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.Animation.SpriteSkin
     Unity.2D.IK.Editor.dll:
     - UnityEditor.Experimental.U2D.IK.IKEditorManager
+    - UnityEditor.Experimental.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.Experimental.U2D.IK.IKEditorManagerHelper
     - UnityEngine.Experimental.U2D.IK.IKManager2D
@@ -69,8 +72,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -277,9 +282,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12704}
     - Class: 114
+      Script: {instanceID: 13736}
+    - Class: 114
       Script: {instanceID: 14820}
     - Class: 114
+      Script: {instanceID: 15526}
+    - Class: 114
       Script: {instanceID: 15696}
+    - Class: 114
+      Script: {instanceID: 47554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -2382,6 +2393,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d274b4e79e4b9c9c724909b9b20ecb85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Friendship
+    className: LevelLobbyNetwork
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
