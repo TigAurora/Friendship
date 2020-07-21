@@ -287,7 +287,7 @@ namespace Friendship
             }
             else
             {
-                //eyeResolver.SetCategoryAndLabel("eye", "eye" + UnityEngine.Random.Range(0, 0));
+                eyeResolver.SetCategoryAndLabel("eye", "eye" + UnityEngine.Random.Range(0, 0));
                 //wheelchairResolver.SetCategoryAndLabel("wheelchair", "wheelchair" + UnityEngine.Random.Range(0, 0));
             }
             tpname = randBody("eyebrow", 17);

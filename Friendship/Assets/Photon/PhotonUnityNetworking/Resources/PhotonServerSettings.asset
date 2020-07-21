@@ -54,6 +54,7 @@ MonoBehaviour:
   - RPC_CancelRequest
   - RPC_SsetPlayersPositions
   - RPC_SetPlayersPositions
+  - RPC_syncPlayerUI
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

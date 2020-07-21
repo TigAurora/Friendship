@@ -2929,11 +2929,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   components:
-    hpBar: {fileID: 8982028675706913450, guid: 7437c3c84c1281b458d211e9dfad9798, type: 3}
-  playerID: 0
-  HP: 100
-  hitDamageMin: 5
-  hitDamageMax: 15
+    bodayparts: []
+    photonView: {fileID: 0}
+  whichplayer: 0
+  currentUI: []
 --- !u!114 &-5151682585384682935
 MonoBehaviour:
   m_ObjectHideFlags: 0

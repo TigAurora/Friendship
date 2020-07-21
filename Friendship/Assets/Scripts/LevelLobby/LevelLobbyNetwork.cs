@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using System;
 using System.IO;
+using Photon.Realtime;
 using UnityEngine.SceneManagement;
 
 namespace Friendship
@@ -42,6 +43,7 @@ namespace Friendship
         void Start()
         {
             SetPlayersPositions();
+            SyncPlayerUI();
         }
 
         // Update is called once per frame
@@ -59,14 +61,28 @@ namespace Friendship
             //Sort by playerID
             foreach (GameObject player in players)
             {
-                if (player.name.Contains("blind"))
+                if (player.name.Contains("blindplayer"))
                     components.players[0] = player.gameObject;
-                else
+                else if(player.name.Contains("deafplayer"))
                     components.players[1] = player.gameObject;
             }
 
             //Send all to do reset players positions
             components.photonView.RPC("RPC_SetPlayersPositions", RpcTarget.All);
+        }
+
+        public void SyncPlayerUI()
+        {
+            //Find players in scene
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+            foreach (GameObject player in players)
+            {
+                if (player.GetComponent<PhotonView>().IsMine)
+                {
+                    player.GetComponent<PlayerData>().Confirmcreation();
+                }
+            }
         }
 
         #region //RPC

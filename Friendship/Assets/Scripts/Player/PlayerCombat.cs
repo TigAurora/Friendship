@@ -39,7 +39,7 @@ namespace Friendship
                 //Get enemy photon view
                 PhotonView enemyPhotonView = hitCollider.GetComponent<PhotonView>();
 
-                enemyPhotonView.RPC("RPC_Hit", RpcTarget.All, new object[] { playerData.GetDamagePower() }); //Send all this enemy was hited. In paramaters send damage
+                //enemyPhotonView.RPC("RPC_Hit", RpcTarget.All, new object[] { playerData.GetDamagePower() }); //Send all this enemy was hited. In paramaters send damage
             }
         }
 
@@ -70,7 +70,7 @@ namespace Friendship
         [PunRPC]
         void RPC_Hit(float damage)
         {
-            playerData.GetDamage(damage);
+            //playerData.GetDamage(damage);
         }
 
         #endregion

@@ -57,7 +57,7 @@ namespace Friendship
             //Sort by playerID
             for (int i = 0; i < players.Length; i++)
             {
-                if (players[i].GetComponent<PlayerData>().playerID == 0)
+                if (players[i].GetComponent<PlayerData>().whichplayer == 0)
                     components.players[0] = players[i];
                 else
                     components.players[1] = players[i];
