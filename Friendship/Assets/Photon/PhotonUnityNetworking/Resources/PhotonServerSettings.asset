@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 
+    AppIdRealtime: 01463cff-d6af-4659-b9bd-92bc3fbc9158
     AppIdChat: 
     AppIdVoice: 
     AppVersion: 
@@ -46,6 +46,12 @@ MonoBehaviour:
   - RPC_LoadGameOthers
   - RPC_ResetPlayersPositions
   - RPC_SelectCharacter
+  - RPC_RequestConfirm
+  - RPC_RequestConfirmed
+  - RPC_RequestDenied
+  - RPC_RequestDenied_feedback
+  - RPC_RequestConfirm_feedback
+  - RPC_CancelRequest
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterCreator.unity
     guid: 564f52814b59916459347e1dc15ef03d
+  - enabled: 1
+    path: Assets/Scenes/LevelLobby.unity
+    guid: 987d430475c7894449e31ac12ce6feff
   m_configObjects: {}

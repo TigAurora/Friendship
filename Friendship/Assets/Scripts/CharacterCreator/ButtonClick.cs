@@ -44,4 +44,9 @@ public class ButtonClick : MonoBehaviour
         this.GetComponent<Image>().sprite = pressed;
         this.GetComponent<Animator>().runtimeAnimatorController = x2;
     }
+
+    public void onClick_confirm()
+    {
+
+    }
 }

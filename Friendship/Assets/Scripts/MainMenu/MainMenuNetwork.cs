@@ -29,7 +29,7 @@ namespace Friendship
         {
             //connect to photon using setting file in project
             PhotonNetwork.ConnectUsingSettings();
-            PhotonNetwork.ConnectToRegion("us");
+            PhotonNetwork.ConnectToRegion("usw");
 
             //Disable automatic player scene transition
             PhotonNetwork.AutomaticallySyncScene = false;
@@ -41,7 +41,8 @@ namespace Friendship
             //Creating custom room options
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 2; //Set max players in room
-            roomOptions.IsVisible = isVisible; //Make visible in room list       
+            roomOptions.IsVisible = isVisible; //Make visible in room list    
+            roomOptions.CleanupCacheOnLeave = false;
 
             PhotonNetwork.CreateRoom(roomName, roomOptions, null); //Create room in photon
         }
