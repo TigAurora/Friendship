@@ -39,20 +39,18 @@ MonoBehaviour:
   - Fire
   - OnPlayersLoaded
   - RespawnSpaceship
+  - RPC_CancelRequest
   - RPC_Disconnect
   - RPC_Game_End
   - RPC_Hit
   - RPC_LoadedGameScene
   - RPC_LoadGameOthers
-  - RPC_ResetPlayersPositions
-  - RPC_SelectCharacter
   - RPC_RequestConfirm
   - RPC_RequestConfirmed
   - RPC_RequestDenied
   - RPC_RequestDenied_feedback
-  - RPC_RequestConfirm_feedback
-  - RPC_CancelRequest
-  - RPC_SsetPlayersPositions
+  - RPC_ResetPlayersPositions
+  - RPC_SelectCharacter
   - RPC_SetPlayersPositions
   - RPC_syncPlayerUI
   DisableAutoOpenWizard: 1

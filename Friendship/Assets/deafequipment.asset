@@ -912,8 +912,8 @@ MonoBehaviour:
       m_Hash: 253418228
       m_Sprite: {fileID: 8337723899455653452, guid: fd3678ab33d172941ac33a7b372260f2,
         type: 3}
-    - m_Name: hairb
-      m_Hash: 357150808
+    - m_Name: hairb8
+      m_Hash: -1616525467
       m_Sprite: {fileID: -7500714977222314319, guid: fd3678ab33d172941ac33a7b372260f2,
         type: 3}
     - m_Name: hairb9
