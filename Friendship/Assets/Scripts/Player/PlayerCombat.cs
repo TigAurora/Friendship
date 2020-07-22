@@ -54,13 +54,13 @@ namespace Friendship
             if (photonView.IsMine)
             {
                 //Pause check
-                if (!GameManager.Instance.isPause)
-                    if (InputManager.Attack) //If pressed attack button
-                    {
-                        AttackAnimation(); //Start attack animation
+                //if (!LevelLobbyManager.Instance.isPause)
+                    //if (InputManager.Attack) //If pressed attack button
+                    //{
+                        //AttackAnimation(); //Start attack animation
 
                         //When an animation is playing, Trigger is turned on at once
-                    }
+                    //}
             }
         }
 

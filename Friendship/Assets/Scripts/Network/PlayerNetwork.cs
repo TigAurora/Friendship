@@ -137,6 +137,12 @@ namespace Friendship
             PlayerPrefs.SetInt("myCharacter", character);
         }
 
+        [PunRPC]
+        void RPC_RequestDenied_feedback(int character)
+        {
+            Debug.Log("what");
+        }
+
         #endregion
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Friendship
 {
@@ -19,6 +20,8 @@ namespace Friendship
 
         Vector3 targetPosition;
         Quaternion targetRotation;
+
+        public string currentScene = "";
 
         #region// Unity
 
@@ -42,18 +45,26 @@ namespace Friendship
 
         private void FixedUpdate()
         {
-            //if photonviw is your
-            if (photonView.IsMine)
-            {
-                //Pause check
-                //if (!GameManager.Instance.isPause)
-                    //Move();
-            }
-            //else //if is another player
-                //SmoothMove();
 
+            //Pause check
+            if (SceneManager.GetActiveScene().name == "LevelLobby")
+            {
+                //if photonview is you
+                if (photonView.IsMine)
+                {
+                    if (!LevelLobbyManager.Instance.isPause)
+                    {
+                        Move();
+                    }
+                }
+                else //if is another player
+                {
+                        SmoothMove();
+                }
+            }
             //Animation();
         }
+
 
         //Photon method to send and get data
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -73,9 +84,9 @@ namespace Friendship
         {
             //set local variables
             float xMove = InputManager.Horizontal * speedMove * Time.deltaTime;
-            float yMove = InputManager.Vertical * speedMove * Time.deltaTime;
+            //float yMove = InputManager.Vertical * speedMove * Time.deltaTime;
 
-            Vector2 move = new Vector2(xMove, yMove);
+            Vector2 move = new Vector2(xMove, 0);
 
             return move;
         }

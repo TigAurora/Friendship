@@ -458,6 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMove: 7
   playerSprite: {fileID: 5074533820371150595}
+  currentScene: 
 --- !u!114 &1382132361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,11 +472,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   components:
-    hpBar: {fileID: 8982028675706913450}
-  playerID: 0
-  HP: 100
-  hitDamageMin: 5
-  hitDamageMax: 15
+    bodayparts: []
+    photonView: {fileID: 0}
+  whichplayer: 0
+  currentUI: []
 --- !u!114 &1382132364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +540,7 @@ Transform:
   m_GameObject: {fileID: 5074533820371150652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 1458750662}
   m_Father: {fileID: 5074533819806709156}

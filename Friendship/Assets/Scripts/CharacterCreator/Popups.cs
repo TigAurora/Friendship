@@ -118,6 +118,7 @@ namespace Friendship
             requestanimator.SetTrigger("close");
             requestconfirmp.SetActive(false);
             confirmp.SetActive(false);
+
             PhotonNetwork.LoadLevel("LevelLobby");
             trans.SetActive(false);
         }

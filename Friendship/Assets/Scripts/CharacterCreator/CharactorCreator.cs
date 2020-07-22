@@ -273,7 +273,7 @@ namespace Friendship
                 selectbody(tpname);
 
 
-                tpname = randBody("cat", 16);
+                tpname = randBody("cat", 30);
                 catResolver.SetCategoryAndLabel("cat", tpname);
                 unselectbody("cat");
                 selectbody(tpname);
@@ -287,8 +287,15 @@ namespace Friendship
             }
             else
             {
-                eyeResolver.SetCategoryAndLabel("eye", "eye" + UnityEngine.Random.Range(0, 0));
-                //wheelchairResolver.SetCategoryAndLabel("wheelchair", "wheelchair" + UnityEngine.Random.Range(0, 0));
+                tpname = randBody("eye", 20);
+                eyeResolver.SetCategoryAndLabel("eye", tpname);
+                unselectbody("eye");
+                selectbody(tpname);
+
+                //tpname = randBody("wheelchair", 20);
+                //wheelchairResolver.SetCategoryAndLabel("wheelchair", tpname);
+                //unselectbody("wheelchair");
+                //selectbody(tpname);
             }
             tpname = randBody("eyebrow", 17);
             eyebrowResolver.SetCategoryAndLabel("eyebrow", tpname);

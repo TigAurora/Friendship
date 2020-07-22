@@ -1165,6 +1165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7299208862483646008}
   - component: {fileID: 6035381325054194600}
+  - component: {fileID: 1887007655009433777}
   - component: {fileID: -8293659844842817888}
   - component: {fileID: -102441393140205983}
   - component: {fileID: 8590392066898106220}
@@ -1207,6 +1208,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SpriteLibraryAsset: {fileID: 11400000, guid: 9b5bd80176f141d419ddc74a8425258c,
     type: 2}
+--- !u!50 &1887007655009433777
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208544042652985316}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &-8293659844842817888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1219,8 +1241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1265499a758fbd43a81f0e854ec220c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMove: 0
+  speedMove: 5
   playerSprite: {fileID: 7299208862483646008}
+  currentScene: 
 --- !u!114 &-102441393140205983
 MonoBehaviour:
   m_ObjectHideFlags: 0
