@@ -125,7 +125,7 @@ namespace Friendship
         }
 
         [PunRPC]
-        void RPC_FinishLoading()
+        public void RPC_FinishLoading()
         {
             if (loading.activeSelf)
                 Debug.Log("它曾存在过！！");
