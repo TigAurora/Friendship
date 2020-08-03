@@ -228,6 +228,10 @@ namespace Friendship
         public void OnClick_StartGame()
         {
             components.menuNetwork.StartGame();
+            if (PlayerNetwork.Instance.photonView.IsMine)
+            {
+                PlayerNetwork.Instance.photonView.RPC("RPC_StartLoading", RpcTarget.All);
+            }
         }
 
         //calls when click Browse room list

@@ -64,7 +64,7 @@ namespace Friendship
         {
             if (PhotonNetwork.CurrentRoom.PlayerCount > 1)
             {
-                PhotonNetwork.CurrentRoom.IsOpen = false; //Close room
+                PhotonNetwork.CurrentRoom.IsOpen = false; //Close room               
                 PhotonNetwork.LoadLevel("CharacterCreator"); //Load scene
             }
             else

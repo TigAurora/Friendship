@@ -14,6 +14,9 @@ TagManager:
   - wheelchair
   - mouth
   - sunglasses
+  - Item
+  - Floor
+  - Trigger
   layers:
   - Default
   - TransparentFX
@@ -24,17 +27,17 @@ TagManager:
   - 
   - 
   - PostProcessing
+  - Player
   - 
   - 
+  - Popups
   - 
   - 
+  - PickupItems
+  - PhysicsItems
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Floor
   - 
   - 
   - 
@@ -50,4 +53,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Loading
+    uniqueID: 2634877651
     locked: 0

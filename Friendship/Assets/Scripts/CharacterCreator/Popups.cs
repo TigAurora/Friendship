@@ -80,6 +80,10 @@ namespace Friendship
 
         public void onClick_ConfirmYes()
         {
+            if (PlayerNetwork.Instance.photonView.IsMine)
+            {
+                PlayerNetwork.Instance.photonView.RPC("RPC_StartLoading", RpcTarget.All);
+            }
             photonView.RPC("RPC_RequestConfirmed", RpcTarget.All);
         }
 
@@ -114,13 +118,12 @@ namespace Friendship
         [PunRPC]
         void RPC_RequestConfirmed()
         {
-            confirmanimator.SetTrigger("close");
-            requestanimator.SetTrigger("close");
-            requestconfirmp.SetActive(false);
-            confirmp.SetActive(false);
-
-            PhotonNetwork.LoadLevel("LevelLobby");
-            trans.SetActive(false);
+            //confirmanimator.SetTrigger("close");
+            //requestanimator.SetTrigger("close");
+            //requestconfirmp.SetActive(false);
+            //confirmp.SetActive(false);
+            //trans.SetActive(false);
+            PhotonNetwork.LoadLevel("LevelA");
         }
 
         [PunRPC]

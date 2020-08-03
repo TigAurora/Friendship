@@ -53,6 +53,21 @@ MonoBehaviour:
   - RPC_SelectCharacter
   - RPC_SetPlayersPositions
   - RPC_syncPlayerUI
+  - RPC_Loading
+  - RPC_FinishLoading
+  - RPC_StartLoading
+  - RPC_Blindloaded
+  - RPC_Deafloaded
+  - RPC_SyncAnimation
+  - RPC_LoadedLevelScene
+  - RPC_FinishLevelPositionSet
+  - RPC_SetParent
+  - RPC_SyncPickup
+  - RPC_SyncThrow
+  - RPC_SyncPickuphand
+  - RPC_onTrigger
+  - RPC_iTemonTrigger
+  - RPC_SyncPutdown
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

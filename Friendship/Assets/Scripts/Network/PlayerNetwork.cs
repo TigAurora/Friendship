@@ -4,6 +4,8 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.UI;
+using UnityEngine.Sprites;
 
 namespace Friendship
 {
@@ -16,11 +18,12 @@ namespace Friendship
 
         //Signleton
         public static PlayerNetwork Instance;
+        public GameObject loading;
 
         [HideInInspector] public PhotonView photonView;
 
         public string nickname;
-        int playersInGame;
+        int playersInGame, levelPositionFinish;
 
         #region //Unity
         private void Awake()
@@ -79,68 +82,107 @@ namespace Friendship
             if (scene.name == "CharacterCreator")
             {
                 //Remove event from manager 
-                SceneManager.sceneLoaded -= OnSceneFinishedLoading;
+                //SceneManager.sceneLoaded -= OnSceneFinishedLoading;
 
                 if (IsMaster())
-                    MasterLoadedGame();
+                    MasterLoadedGame("CharacterCreator");
                 else
-                    NonMasterLoadedGame();
+                    NonMasterLoadedGame("CharacterCreator");
+            }
+            if (scene.name == "LevelA")
+            {
+                //Remove event from manager 
+                //SceneManager.sceneLoaded -= OnSceneFinishedLoading;
+                Debug.Log("scene.name == LevelA");
+                //if (IsMaster())
+                    //MasterLoadedGame("LevelA");
+                //else
+                    //NonMasterLoadedGame("LevelA");
             }
         }
 
         #endregion
 
-        void MasterLoadedGame()
+        void MasterLoadedGame(string scene)
         {
             //Master loaded first and wait another
-            photonView.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient); //Send to master "Im loaded"
-            photonView.RPC("RPC_LoadGameOthers", RpcTarget.Others); //Send others players to start load scene
+            photonView.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient, scene); //Send to master "Im loaded"
+            photonView.RPC("RPC_LoadGameOthers", RpcTarget.Others, scene); //Send others players to start load scene
         }
 
-        void NonMasterLoadedGame()
+        void NonMasterLoadedGame(string scene)
         {
-            photonView.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient); //Send to master "Im loaded"
+            photonView.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient, scene); //Send to master "Im loaded"
         }
 
         #region //RPC
 
         //Load scene method
         [PunRPC]
-        void RPC_LoadGameOthers()
+        void RPC_StartLoading()
         {
-            PhotonNetwork.LoadLevel("CharacterCreator");
+            loading.SetActive(true);
+        }
+
+        [PunRPC]
+        void RPC_FinishLoading()
+        {
+            if (loading.activeSelf)
+                Debug.Log("它曾存在过！！");
+            else
+                Debug.Log("它不曾存在过？？？");
+
+            loading.SetActive(false);
+        }
+
+        [PunRPC]
+        void RPC_FinishLevelPositionSet()
+        {
+            levelPositionFinish++; //1 player finish positioning
+            Debug.Log("finishlevel outside");
+
+            if (levelPositionFinish == PhotonNetwork.PlayerList.Length)
+            {
+                photonView.RPC("RPC_FinishLoading", RpcTarget.All); //Send to all "RPC_FinishLoading"
+                levelPositionFinish = 0;
+            }
+        }
+
+        [PunRPC]
+        void RPC_LoadGameOthers(string scene)
+        {
+            PhotonNetwork.LoadLevel(scene);
         }
 
         //Loaded scene method
         [PunRPC]
-        void RPC_LoadedGameScene()
+        void RPC_LoadedGameScene(string scene)
         {
             playersInGame++; //Plus 1 player
 
             //Check loaded players
             if (playersInGame == PhotonNetwork.PlayerList.Length)
             {
-                photonView.RPC("OnPlayersLoaded", RpcTarget.All); //Send to all "All loaded"
+                photonView.RPC("OnPlayersLoaded", RpcTarget.All, scene); //Send to all "All loaded"
             }
         }
 
         //Start game method
         [PunRPC]
-        void OnPlayersLoaded()
+        void OnPlayersLoaded(string scene)
         {
-            CharactorCreator.Instance.StartGame();
+            Debug.Log("OnPlayerLoaded scene name = " + scene);
+            if (scene == "CharacterCreator")
+                CharactorCreator.Instance.StartGame();
+            //else if (scene == "LevelA")
+                //LevelsNetwork.Instance.StartGame();
+            playersInGame = 0;
         }
 
         [PunRPC]
         void RPC_SelectCharacter(int character)
         {
             PlayerPrefs.SetInt("myCharacter", character);
-        }
-
-        [PunRPC]
-        void RPC_RequestDenied_feedback(int character)
-        {
-            Debug.Log("what");
         }
 
         #endregion

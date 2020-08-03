@@ -11,7 +11,7 @@ namespace Friendship
         {
             get
             {
-                if (LevelLobbyManager.Instance.isLobby) //if Game = true
+                if (LevelsManager.Instance.isGame) //if Game = true
                                                  //if PC
 #if UNITY_STANDALONE
                     return Input.GetAxis("Horizontal");
@@ -30,8 +30,19 @@ namespace Friendship
         {
             get
             {
-                if (LevelLobbyManager.Instance.isLobby)
+                if (LevelsManager.Instance.isGame)
                     return Input.GetKeyDown(KeyCode.Escape);
+                else
+                    return false;
+            }
+        }
+
+        public static bool Interact
+        {
+            get
+            {
+                if (LevelsManager.Instance.isGame)
+                    return Input.GetKeyDown(KeyCode.E);
                 else
                     return false;
             }

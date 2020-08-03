@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
+using UnityEngine.Experimental.U2D.Animation;
 
 namespace Friendship
 {
@@ -9,7 +13,11 @@ namespace Friendship
         [Header("Parameters")]
         [SerializeField] float smoothFollow;
         [SerializeField] Vector2 minCameraPos, maxCameraPos; //Min and max camera position
-        [HideInInspector] public Transform player;
+        public Transform player;
+
+        void Start()
+        {
+        }
 
         private void FixedUpdate()
         {
@@ -27,6 +35,7 @@ namespace Friendship
 
             //Make clamp and set camera position
             transform.position = CameraClamp(ref smoothPos);
+            //Debug.Log("Camera moving: camera position = " + transform.position);
         }
 
         //Clam method

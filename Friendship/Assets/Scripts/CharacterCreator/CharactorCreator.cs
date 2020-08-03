@@ -13,6 +13,10 @@ namespace Friendship
     {
 
         public static CharactorCreator Instance;
+        [HideInInspector] public PhotonView photonView;
+        [HideInInspector] public bool Blindloaded = false;
+        [HideInInspector] public bool Deafloaded = false;
+        [HideInInspector] public bool Allloaded = false;
 
         [Header("CharacterFeature")]
         public GameObject eye;
@@ -58,7 +62,32 @@ namespace Friendship
 
         void Update()
         {
-            //setActivePlayer();
+            if (!Allloaded)
+            {
+                GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+                if (players.Length > 0)
+                {
+                    foreach (GameObject player in players)
+                    {
+                        if (player.GetComponent<PhotonView>().IsMine)
+                        {
+                            if (PlayerPrefs.GetInt("myCharacter") == 0)
+                            {
+                                Instance.photonView.RPC("RPC_Blindloaded", RpcTarget.All);
+                            }
+                            else if (PlayerPrefs.GetInt("myCharacter") == 1)
+                            {
+                                Instance.photonView.RPC("RPC_Deafloaded", RpcTarget.All);
+                            }
+                            if (Blindloaded && Deafloaded)
+                            {
+                                PlayerNetwork.Instance.photonView.RPC("RPC_FinishLoading", RpcTarget.All);
+                                Allloaded = true;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         //Support function for test
@@ -80,6 +109,7 @@ namespace Friendship
         #region //Initialization
         void Awake()
         {
+            photonView = GetComponent<PhotonView>();
             SingletonInit();            
         }
 
@@ -217,6 +247,7 @@ namespace Friendship
 
         }
         #endregion
+
 
         #region //Buttonfunctions
         //Randomize character
@@ -523,5 +554,18 @@ namespace Friendship
             }
         }
         #endregion
+
+        //RPC
+        [PunRPC]
+        void RPC_Blindloaded()
+        {
+            Blindloaded = true;
+        }
+
+        [PunRPC]
+        void RPC_Deafloaded()
+        {
+            Deafloaded = true;
+        }
     }
 }
