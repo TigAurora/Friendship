@@ -241,28 +241,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4483, y: 4}
-  - name: g1liftxian
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 15716
-      y: 4
-      width: 228
-      height: 1556
-    spriteID: 6aaf2fb57a401a84a8b15b80c61a01f8
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6350, y: 4}
   - name: g1liftb
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -461,98 +439,10 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 8607, y: 1103}
-  - name: g1receptionistpubils
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 10213
-      y: 2628
-      width: 16
-      height: 12
-    spriteID: a8811785bed157042a753017d29da4e8
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1722, y: 1407}
-  - name: g1receptionistpublib
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 10186
-      y: 2628
-      width: 19
-      height: 22
-    spriteID: f6d21222348f05e4983205d914b312d6
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1690, y: 1358}
-  - name: g1receptionisteyeb
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 10283
-      y: 2564
-      width: 38
-      height: 38
-    spriteID: 8fc95a8a1b70e0941a277c497a4871ad
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1798, y: 1299}
-  - name: g1receptionisteyes
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 10329
-      y: 2565
-      width: 20
-      height: 36
-    spriteID: 0184e1a0aafb7674dbba1168ebca68b2
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1840, y: 1353}
   - name: g1receptionist
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.42193022, y: 0.019177768}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -637,28 +527,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 6502, y: 1107}
-  - name: g1p3phonex
-    originalName: 
-    pivot: {x: 0.44171175, y: 0.018723283}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 12404
-      y: 2552
-      width: 179
-      height: 265
-    spriteID: 83797369c95840c48a87a5d8e585d17d
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 8283, y: 1521}
   - name: g1p3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -747,28 +615,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 7572, y: 1099}
-  - name: g1p1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 11292
-      y: 2018
-      width: 439
-      height: 510
-    spriteID: 68ea1eae92bcb75499e8d02ce89168ec
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 10390, y: 1100}
   - name: g1p1eyes
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -835,28 +681,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 3, y: 2995}
-  - name: g1wall
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1568
-      width: 8854
-      height: 1438
-    spriteID: cb05f08ac493bf2419f81043ea0d899a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1450}
   - name: g1floor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -879,28 +703,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 3548}
-  - name: g1bg
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 10122
-      height: 1556
-    spriteID: 223732310a9f61b4eb6886c1b192da20
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
   platformSettings:
   - name: Default
     overridden: 1

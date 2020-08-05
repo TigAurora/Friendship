@@ -39,34 +39,27 @@ MonoBehaviour:
   - Fire
   - OnPlayersLoaded
   - RespawnSpaceship
+  - RPC_Blindloaded
   - RPC_CancelRequest
+  - RPC_Deafloaded
   - RPC_Disconnect
+  - RPC_FinishLevelPositionSet
+  - RPC_FinishLoading
   - RPC_Game_End
   - RPC_Hit
   - RPC_LoadedGameScene
   - RPC_LoadGameOthers
+  - RPC_onTrigger
   - RPC_RequestConfirm
   - RPC_RequestConfirmed
   - RPC_RequestDenied
-  - RPC_RequestDenied_feedback
   - RPC_ResetPlayersPositions
   - RPC_SelectCharacter
   - RPC_SetPlayersPositions
-  - RPC_syncPlayerUI
-  - RPC_Loading
-  - RPC_FinishLoading
   - RPC_StartLoading
-  - RPC_Blindloaded
-  - RPC_Deafloaded
   - RPC_SyncAnimation
-  - RPC_LoadedLevelScene
-  - RPC_FinishLevelPositionSet
-  - RPC_SetParent
   - RPC_SyncPickup
-  - RPC_SyncThrow
-  - RPC_SyncPickuphand
-  - RPC_onTrigger
-  - RPC_iTemonTrigger
+  - RPC_syncPlayerUI
   - RPC_SyncPutdown
   DisableAutoOpenWizard: 1
   ShowSettings: 0
