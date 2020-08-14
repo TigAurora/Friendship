@@ -17,6 +17,11 @@ TagManager:
   - Item
   - Floor
   - Trigger
+  - Background
+  - Wall
+  - Body
+  - SoundSource
+  - SoundSourceComp
   layers:
   - Default
   - TransparentFX
@@ -28,7 +33,7 @@ TagManager:
   - 
   - PostProcessing
   - Player
-  - 
+  - PlayerBody
   - 
   - Popups
   - 
@@ -38,7 +43,7 @@ TagManager:
   - 
   - 
   - Floor
-  - 
+  - Wall
   - 
   - 
   - 

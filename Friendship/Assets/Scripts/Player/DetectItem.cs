@@ -1,15 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Photon.Pun;
 using UnityEngine;
 
 namespace Friendship
 {
     public class DetectItem : MonoBehaviour
     {
-        private GameObject temp;
+        PhotonView photonView;
+        public GameObject item;
+        DetectWallAndGround detect;
+
         // Start is called before the first frame update
         void Start()
         {
+            photonView = GetComponent<PhotonView>();
+            detect = GetComponent<DetectWallAndGround>();
         }
 
         // Update is called once per frame
@@ -19,25 +23,51 @@ namespace Friendship
 
         void OnTriggerEnter2D(Collider2D other)
         {
-            //Debug.Log("OnTriggerEnter2D I met outside " + other.name);
-            if (other.tag == "Item")
+            //is not being taken by this other
+            if (other.tag == "Player")
             {
-                temp = other.transform.parent.gameObject;
-                if(!GetComponent<PlayerController>().pickableitems.Contains(temp))
-                    GetComponent<PlayerController>().pickableitems.Add(temp);
+                Debug.Log(transform.name + " OnTrigger Enter " + other.name);
+                photonView.RPC("RPC_SyncEnterItems", RpcTarget.All, other.name);
             }
         }
 
         void OnTriggerExit2D(Collider2D other)
         {
-            if (other.tag == "Item" && GetComponent<PlayerController>().isPick == false)
+            //is not being taken by this other
+            if (other.tag == "Player" && item.GetComponent<itemState>().pickuphand != other.GetComponent<PlayerController>().pickuphand && !other.GetComponent<PlayerController>().isPick)
             {
-                temp = other.transform.parent.gameObject;
-                if (GetComponent<PlayerController>().pickableitems.Contains(temp))
-                    GetComponent<PlayerController>().pickableitems.Remove(temp);
+                Debug.Log(transform.name + " OnTrigger Exit " + other.name);
+                photonView.RPC("RPC_SyncExitItems", RpcTarget.All, other.name);
             }
         }
 
 
+        [PunRPC]
+        void RPC_SyncEnterItems(string player)
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject p in players)
+            {
+                if (p.name == player)
+                {
+                    if (!p.GetComponent<PlayerController>().pickableitems.Contains(item))
+                        p.GetComponent<PlayerController>().pickableitems.Add(item);
+                }
+            }
+        }
+
+        [PunRPC]
+        void RPC_SyncExitItems(string player)
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject p in players)
+            {
+                if (p.name == player)
+                {
+                    if (p.GetComponent<PlayerController>().pickableitems.Contains(item))
+                        p.GetComponent<PlayerController>().pickableitems.Remove(item);
+                }
+            }
+        }
     }
 }

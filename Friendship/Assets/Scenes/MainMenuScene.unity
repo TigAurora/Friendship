@@ -6963,6 +6963,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 187629248053855913, guid: 3ccd751883395614b820bad9eedba48e,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.749
+      objectReference: {fileID: 0}
+    - target: {fileID: 187629248053855913, guid: 3ccd751883395614b820bad9eedba48e,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 187629248053855915, guid: 3ccd751883395614b820bad9eedba48e,
         type: 3}
       propertyPath: m_Name

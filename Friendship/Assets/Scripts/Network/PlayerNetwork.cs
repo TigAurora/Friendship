@@ -92,12 +92,12 @@ namespace Friendship
             if (scene.name == "LevelA")
             {
                 //Remove event from manager 
-                //SceneManager.sceneLoaded -= OnSceneFinishedLoading;
+                SceneManager.sceneLoaded -= OnSceneFinishedLoading;
                 Debug.Log("scene.name == LevelA");
-                //if (IsMaster())
-                    //MasterLoadedGame("LevelA");
-                //else
-                    //NonMasterLoadedGame("LevelA");
+                if (IsMaster())
+                    MasterLoadedGame("LevelA");
+                else
+                    NonMasterLoadedGame("LevelA");
             }
         }
 
@@ -174,8 +174,8 @@ namespace Friendship
             Debug.Log("OnPlayerLoaded scene name = " + scene);
             if (scene == "CharacterCreator")
                 CharactorCreator.Instance.StartGame();
-            //else if (scene == "LevelA")
-                //LevelsNetwork.Instance.StartGame();
+            else if (scene == "LevelA")
+                LevelsNetwork.Instance.StartGame();
             playersInGame = 0;
         }
 

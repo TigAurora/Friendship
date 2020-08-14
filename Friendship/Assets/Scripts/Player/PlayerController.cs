@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.U2D.IK;
 
 namespace Friendship
 {
@@ -12,23 +13,29 @@ namespace Friendship
         PhotonView photonView;
         Animator animator, wheelanimator;
         PlayerCamera playerCamera;
+        DetectWallAndGround detect;
 
         [Header("Parameters")]
-        [SerializeField] float speedMove;
-        [Header("Components")]
-        [SerializeField] Transform playerSprite;
+        [SerializeField] public float speedMove;
+        [SerializeField] public float speedShift;
+        [SerializeField] public float validpickrange;
+        [SerializeField] public float validthrowrange;
+        [HideInInspector] public bool isPick = false, isGround = false, isAnima = false, CheckPickAnim = false;
 
-        private bool cameraset = false;
-        //have an item on hand or not
-        public bool isPick = false;
-        public GameObject iteminhand;
-        public List<GameObject> pickableitems;
-        public Transform righthand;
+        [Header("Transforms")]
+        [SerializeField] public Transform playerSprite;
+        [SerializeField] public Transform pickuphand, pickupIK, defaultIK, pointIK, pointDefaultIK, armlDefault;
 
-        Vector3 targetPosition, targetScale;
-        Quaternion targetRotation;
+        [Header("LayerMask")]
+        [SerializeField] public LayerMask groundLayer;
+        [SerializeField] public LayerMask wallLayer;
 
-        public string currentScene = "";
+        [HideInInspector] public bool cameraset = false;
+        [HideInInspector] public GameObject iteminhand;
+        [HideInInspector] public List<GameObject> pickableitems;
+        [HideInInspector] Vector3 targetPosition, targetScale;
+        [HideInInspector] Quaternion targetRotation;
+        [HideInInspector] public string currentScene = "";
 
         #region// Unity
 
@@ -36,6 +43,7 @@ namespace Friendship
         {
             pickableitems = new List<GameObject>();
             photonView = GetComponent<PhotonView>();
+            detect = GetComponent<DetectWallAndGround>();
             if (PlayerPrefs.GetInt("myCharacter") == 0)
             {
                 if (photonView.IsMine)
@@ -94,6 +102,8 @@ namespace Friendship
                     if (!LevelsManager.Instance.isPause)
                     {
                         CheckPickup();
+                        if (detect.IsGround())
+                            isGround = true;
                     }
                 }
             }
@@ -105,33 +115,29 @@ namespace Friendship
             //Pause check
             if (SceneManager.GetActiveScene().name.Contains("Level"))
             {
-                if (!cameraset)
+                if (photonView.IsMine)
                 {
-                    //Find camera
-                    playerCamera = Camera.main.GetComponent<PlayerCamera>();
-
-                    //If photonview is your
-                    if (photonView.IsMine)
+                    if (!cameraset)
                     {
+                        //Find camera
+                        playerCamera = Camera.main.GetComponent<PlayerCamera>();
+                        //If photonview is your
                         //Set player target
                         playerCamera.player = transform;
                         cameraset = true;
                         //Debug.Log("cameraset = true");
                     }
-                }
-                //if photonview is you
-                if (photonView.IsMine)
-                {
                     if (!LevelsManager.Instance.isPause)
                     {
                         Move();
-                        Animation(CheckInput().x, CheckInput().y);
+                        Animation(CheckInput("").x, CheckInput("").y);
                     }
                 }
                 else //if is another player
                 {
                     SmoothMove();
                 }
+
             }
         }
 
@@ -152,50 +158,112 @@ namespace Friendship
         }
 
         //Check input method
-        Vector3 CheckInput()
+        Vector3 CheckInput(string whichWall)
         {
+            float xMove = 0;
+            float isShift = 0;
+
+            if (isAnima)
+                return new Vector2(0, 0);
             //set local variables
-            float xMove = InputManager.Horizontal * speedMove * Time.deltaTime;
+            if (InputManager.GetKey("Speedup"))
+            {
+                isShift = 1;
+            }
+            if (whichWall == "LeftWall")
+            {
+                if (InputManager.Horizontal > 0)
+                    xMove = InputManager.Horizontal * (speedMove + speedShift * isShift) * Time.deltaTime;
+            }
+            else if (whichWall == "RightWall")
+            {
+                if (InputManager.Horizontal < 0)
+                    xMove = InputManager.Horizontal * (speedMove + speedShift * isShift) * Time.deltaTime;
+            }
+            else
+                xMove = InputManager.Horizontal * (speedMove + speedShift * isShift) * Time.deltaTime;
             //float yMove = InputManager.Vertical * speedMove * Time.deltaTime;
 
             Vector2 move = new Vector2(xMove, 0);
 
+
             return move;
         }
 
-        void CheckPickup()
+        public void CheckPickup()
         {
-            if (InputManager.Interact)
+            if (InputManager.GetKeyDown("Interact") && !isAnima && InputManager.Horizontal == 0)
             {
                 Debug.Log("Epressed");
                 if (isPick && iteminhand != null)
                 {
-                    Debug.Log("Putdown");
-                    ManualAnimation("isThrow");
-                    Vector3 temp = iteminhand.transform.parent.position;
-                    iteminhand.transform.SetParent(null);
-                    iteminhand.transform.position = temp;
-                    iteminhand.GetComponent<Rigidbody2D>().gravityScale = 1;
-                    iteminhand.GetComponent<itemState>().pickuphand = null;
-                    iteminhand = null;
-                    photonView.RPC("RPC_SyncPutdown", RpcTarget.Others);
-                    isPick = false;
+                    if (ValidRange(validthrowrange))
+                    {
+                        Putdown(1);
+                    }
                 }
                 else if (pickableitems.Count > 0)
                 {
-                    Debug.Log("Pickup");
-                    iteminhand = pickableitems[0];
-                    ManualAnimation("isPick");
-                    //iteminhand.transform.position = righthand.position;
-                    iteminhand.GetComponent<Rigidbody2D>().gravityScale = 0;
-                    iteminhand.GetComponent<itemState>().pickuphand = righthand;
-                    iteminhand.transform.position = righthand.position;
-                    iteminhand.transform.SetParent(righthand);
-                    photonView.RPC("RPC_SyncPickup", RpcTarget.Others);
-                    isPick = true;
+                    for(int i=0; i < pickableitems.Count; ++i)
+                    {
+                        //Judge whether pick range is valid
+                        if (pickableitems[i].GetComponent<itemState>().isGround)
+                        {
+                            if (ValidRange(validpickrange))
+                            {
+                                if (transform.position.x > pickableitems[0].transform.position.x)
+                                {
+                                    if (transform.localScale.x < 0)
+                                    {
+                                        Debug.Log("Pickup");
+                                        Pickup(1);
+                                        i = pickableitems.Count;
+                                    }
+                                }
+                                else if (transform.position.x < pickableitems[0].transform.position.x)
+                                {
+                                    if (transform.localScale.x > 0)
+                                    {
+                                        Debug.Log("Pickup");
+                                        Pickup(1);
+                                        i = pickableitems.Count;
+                                    }
+                                }
+                                //iteminhand.transform.position = righthand.position;
+                            }
+                        }
+                    }
                 }
             }
  
+        }
+
+        bool ValidRange(float distance)
+        {
+            //Face Left
+            if (transform.localScale.x < 0)
+            {
+                if (detect.DistanceFromWall(1) < distance && detect.DistanceFromWall(1) != -1)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else if (transform.localScale.x > 0)
+            {
+                if (detect.DistanceFromWall(2) < distance && detect.DistanceFromWall(2) != -1)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         Vector3 CheckSmoothMove()
@@ -213,9 +281,14 @@ namespace Friendship
         void Move()
         {
             //Rotate by X move 
-            Rotation(CheckInput().x);
+            Rotation(CheckInput("").x);
 
-            transform.Translate(CheckInput());
+            if(detect.IsWall() == 1)
+                transform.Translate(CheckInput("LeftWall"));
+            else if (detect.IsWall() == 2)
+                transform.Translate(CheckInput("RightWall"));
+            else
+                transform.Translate(CheckInput(""));
         }
 
         //Smooth move, if controller is another player
@@ -238,64 +311,193 @@ namespace Friendship
                 playerSprite.localScale = new Vector2(Mathf.Abs(playerSprite.localScale.x) * -1 , Mathf.Abs(playerSprite.localScale.y));
         }
 
+        public void TestChange()
+        {
+            defaultIK.position = new Vector3(10,10,10);
+        }
+
         //Animation method
         void Animation(float x, float y)
         {
             //If player is't stay
             if (x != 0 || y != 0)
             {
-                animator.SetBool("isWalk", true);
-                photonView.RPC("RPC_SyncAnimation", RpcTarget.Others, "isWalk", true);
+                if ((x > 0 && (detect.IsWall() != 2)) || (x < 0 && (detect.IsWall() != 1)))
+                {
+                    if (InputManager.GetKey("Speedup"))
+                    {
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", true);
+                    }
+                    else
+                    {
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false);
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", true);
+                    }
+                }
+                else
+                {
+                    photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false);
+                    photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false);
+                }
             }
             else
             {
-                animator.SetBool("isWalk", false);
-                photonView.RPC("RPC_SyncAnimation", RpcTarget.Others, "isWalk", false);
+                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false);
+                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false);
             }
+
         }
 
-        void ManualAnimation(string aniName)
+        #region //Support functions      
+        public void ThrowItem()
         {
-            if (aniName == "isPick")
+            if (photonView.IsMine)
+                photonView.RPC("RPC_SyncThrowItem", RpcTarget.All, transform.name);
+        }
+
+        public void Putdown(int stage)
+        {
+            if (photonView.IsMine)
+                photonView.RPC("RPC_SyncPutdown", RpcTarget.All, transform.name, stage);
+        }
+
+        public void Pickup(int stage)
+        {
+            if (photonView.IsMine)
             {
-                animator.SetTrigger("isPick");
-                photonView.RPC("RPC_SyncAnimation", RpcTarget.Others, "isPick", true);
-            }
-            else if (aniName == "isThrow")
-            {
-                animator.SetTrigger("isThrow");
-                //photonView.RPC("RPC_SyncAnimation", RpcTarget.Others, "isThrow", true);
+                if (stage == 2)
+                {
+                    CheckPickAnim = false;
+                }
+                photonView.RPC("RPC_SyncPickup", RpcTarget.All, transform.name, stage);
             }
         }
 
-        //RPC functions
+        public void Anim_CorrectLeftArmPickSec()
+        {
+            //StartCoroutine(MoveOverSeconds(pointIK.gameObject, pointDefaultIK.position, 0.3f));
+            CheckPickAnim = true;
+            StartCoroutine(MoveOverSeconds(pointIK.gameObject, pointDefaultIK.position, 0.4f));
+        }
+
+        public void Anim_CorrectLeftArmPickFst()
+        {
+            StartCoroutine(MoveOverSeconds(pickupIK.gameObject, iteminhand.transform.position, 0.2f));
+        }
+
+        public void StartAnim()
+        {
+            isAnima = true;
+        }
+
+        public void FinishAnim()
+        {
+            isAnima = false;
+        }
+
+        public IEnumerator MoveOverSeconds(GameObject objectToMove, Vector3 end, float seconds)
+        {
+            //Debug.Log("MoveOverSeconds: Objecttomovename:" + objectToMove.name + "checkPickAnim = " + CheckPickAnim);
+            float elapsedTime = 0;
+            Vector3 startingPos = objectToMove.transform.position;
+            while (elapsedTime < seconds)
+            {
+                objectToMove.transform.position = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
+                elapsedTime += Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+            objectToMove.transform.position = end;
+        }
+
+        #endregion
+
+        #region        //RPC functions
         [PunRPC]
-        void RPC_SyncAnimation(string animation, bool state)
+        void RPC_SyncTrigger(string animation)
         {
-            if (!photonView.IsMine)
-                animator.SetBool(animation, state);
+            animator.SetTrigger(animation);
         }
 
         [PunRPC]
-        void RPC_SyncPickup()
+        void RPC_SyncBool(string animation, bool state)
         {
-            if (!photonView.IsMine)
-            {
-                iteminhand = pickableitems[0];
-                iteminhand.GetComponent<itemState>().pickuphand = righthand;
-                iteminhand.transform.SetParent(righthand);
-            }
+            animator.SetBool(animation, state);
         }
 
         [PunRPC]
-        void RPC_SyncPutdown()
+        void RPC_SyncThrowItem(string player)
         {
-            if (!photonView.IsMine)
+            Debug.Log("ThrowItem");
+            if (transform.name == player && iteminhand != null)
             {
-                iteminhand.GetComponent<itemState>().pickuphand = null;
+                Debug.Log("ThrowItemInner");
+                Vector3 temp = iteminhand.transform.parent.position;
                 iteminhand.transform.SetParent(null);
+                iteminhand.transform.position = temp;
+                iteminhand.GetComponent<Rigidbody2D>().gravityScale = 1;
+                iteminhand.GetComponent<itemState>().pickuphand = null;
+                iteminhand = null;
+            }
+
+        }
+
+        [PunRPC]
+        void RPC_SyncPutdown(string player, int stage)
+        {
+            //3 isThrow Trigger for 3 transition
+            if (transform.name == player && stage == 1)
+            {
+                Debug.Log("isThrow");
+                animator.SetTrigger("isThrow");
+            }
+            else if (transform.name == player && stage == 2)
+            {
+                Debug.Log("isThrow1");
+                animator.SetTrigger("isThrow1");
+            }
+            else if (transform.name == player && stage == 3)
+            {
+                Debug.Log("isThrow2");
+                animator.SetTrigger("isThrow2");
+                isPick = false;
             }
         }
 
+        [PunRPC]
+        void RPC_SyncPickup(string player, int stage)
+        {
+            //3 isPick Trigger for 3 transition
+            if (transform.name == player && stage == 1)
+            {
+                Debug.Log("isPick");
+                isPick = true;
+                CheckPickAnim = true;
+                iteminhand = pickableitems[0];
+                //pointIK.transform.position = new Vector3(iteminhand.transform.position.x,
+                    //iteminhand.transform.position.y + iteminhand.GetComponent<itemState>().halfheight,
+                    //iteminhand.transform.position.z);
+                animator.SetTrigger("isPick");
+            }
+            else if (transform.name == player && stage == 2)
+            {
+                Debug.Log("isPick1");
+                pointIK.transform.position = iteminhand.transform.position;
+                iteminhand.GetComponent<Rigidbody2D>().gravityScale = 0;
+                iteminhand.GetComponent<itemState>().pickuphand = pickuphand;
+                iteminhand.transform.SetParent(pickuphand);
+                pickupIK.GetComponent<LimbSolver2D>().GetChain(0).target = pointIK;
+                //CheckPickAnim = true;
+                animator.SetTrigger("isPick1");
+            }
+            else if (transform.name == player && stage == 3)
+            {
+                Debug.Log("isPick2");
+                CheckPickAnim = false;
+                pickupIK.transform.position = armlDefault.position;
+                pickupIK.GetComponent<LimbSolver2D>().GetChain(0).target = defaultIK;
+                animator.SetTrigger("isPick2");
+            }
+        }
+        #endregion
     }
 }

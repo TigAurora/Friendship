@@ -80,11 +80,8 @@ namespace Friendship
 
         public void onClick_ConfirmYes()
         {
-            if (PlayerNetwork.Instance.photonView.IsMine)
-            {
-                PlayerNetwork.Instance.photonView.RPC("RPC_StartLoading", RpcTarget.All);
-            }
-            photonView.RPC("RPC_RequestConfirmed", RpcTarget.All);
+            PlayerNetwork.Instance.photonView.RPC("RPC_StartLoading", RpcTarget.All);
+            photonView.RPC("RPC_RequestConfirmed", RpcTarget.MasterClient);
         }
 
         public void onClick_ConfirmNo()

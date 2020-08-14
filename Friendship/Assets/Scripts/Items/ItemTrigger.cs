@@ -22,24 +22,30 @@ namespace Friendship
             if (whichTrigger == "gravity")
             {
                 if (other.tag == "Player")
-                {
-                    triggeriTem.GetComponent<Rigidbody2D>().gravityScale = 1;
-                    photonView.RPC("RPC_onTrigger", RpcTarget.All);
+                {                   
+                    photonView.RPC("RPC_onTriggerGravity", RpcTarget.All);
                 }
             }
             else if (whichTrigger == "animation&sound")
             {
                 if (other.tag == "Player")
                 {
-                    triggeriTem.GetComponent<Animator>().enabled = true;
-                    gameObject.SetActive(false);
+                    photonView.RPC("RPC_onTriggerAnimation", RpcTarget.All);
                 }
             }
         }
 
         [PunRPC]
-        void RPC_onTrigger()
+        void RPC_onTriggerGravity()
         {
+            triggeriTem.GetComponent<Rigidbody2D>().gravityScale = 1;
+            gameObject.SetActive(false);
+        }
+
+        [PunRPC]
+        void RPC_onTriggerAnimation()
+        {
+            triggeriTem.GetComponent<Animator>().enabled = true;
             gameObject.SetActive(false);
         }
     }

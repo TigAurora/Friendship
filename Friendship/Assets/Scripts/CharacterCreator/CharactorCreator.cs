@@ -42,10 +42,9 @@ namespace Friendship
         public int dsunglasses;
         public int deyebrow;
 
-        [Header("Test player")]
-        public int whichPlayer;
-        public GameObject deaf;
-        public GameObject blind;
+        [Header("Player Ground")]
+        public GameObject deafground;
+        public GameObject blindground;
 
         private CharactorCreatorNetworkManager networkmanager;
         public List<SpriteResolver> spriteResolvers = new List<SpriteResolver>();
@@ -60,22 +59,6 @@ namespace Friendship
         SpriteResolver eyebrowResolver;
         SpriteResolver wheelchairResolver;
 
-
-        //Support function for test
-        private void setActivePlayer()
-        {
-            PlayerPrefs.SetInt("myCharacter", whichPlayer);
-            if (whichPlayer == 0)
-            {
-                deaf.SetActive(false);
-                blind.SetActive(true);
-            }
-            else
-            {
-                deaf.SetActive(true);
-                blind.SetActive(false);
-            }
-        }
 
         #region //Initialization
         void Awake()
@@ -157,11 +140,19 @@ namespace Friendship
         // Start is called before the first frame update
         void Start()
         {
+            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            {
+                deafground.SetActive(false); 
+            }
+            else
+            {
+                blindground.SetActive(false);
+            }
         }
 
         void Update()
         {
-            if (!Allloaded)
+            if (!(Blindloaded && Deafloaded))
             {
                 GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
                 if (players.Length > 0)

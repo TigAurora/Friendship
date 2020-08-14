@@ -57,10 +57,20 @@ MonoBehaviour:
   - RPC_SelectCharacter
   - RPC_SetPlayersPositions
   - RPC_StartLoading
-  - RPC_SyncAnimation
   - RPC_SyncPickup
   - RPC_syncPlayerUI
   - RPC_SyncPutdown
+  - RPC_SyncTrigger
+  - RPC_SyncBool
+  - RPC_SyncEnterItems
+  - RPC_SyncExitItems
+  - RPC_SyncHandMove
+  - RPC_SyncPickUp
+  - RPC_SyncThrowItem
+  - RPC_SyncCorrectArm
+  - RPC_onTriggerAnimation
+  - RPC_onTriggerGravity
+  - RPC_SyncEyeMove
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

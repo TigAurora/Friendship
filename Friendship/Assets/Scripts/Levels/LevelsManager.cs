@@ -36,7 +36,6 @@ namespace Friendship
         // Start is called before the first frame update
         void Start()
         {
-            isGame = true;
         }
 
         //Pause method
@@ -52,6 +51,11 @@ namespace Friendship
             {
                 Pause();
             }
+        }
+
+        public void EndGame()
+        {
+            isGame = false;
         }
 
         //Components container

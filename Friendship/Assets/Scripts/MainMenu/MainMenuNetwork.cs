@@ -42,7 +42,8 @@ namespace Friendship
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 2; //Set max players in room
             roomOptions.IsVisible = isVisible; //Make visible in room list    
-            roomOptions.CleanupCacheOnLeave = false;
+            //roomOptions.CleanupCacheOnLeave = false;
+            roomOptions.PlayerTtl = 300000;
 
             PhotonNetwork.CreateRoom(roomName, roomOptions, null); //Create room in photon
         }
