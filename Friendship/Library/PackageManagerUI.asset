@@ -11,22 +11,12 @@
             "test": 0
         },
         {
-            "PackageName": "com.unity.2d.entities",
-            "publishTarget": "",
-            "test": 0
-        },
-        {
             "PackageName": "com.unity.2d.psdimporter",
             "publishTarget": "",
             "test": 0
         },
         {
-            "PackageName": "com.unity.2d.sprite",
-            "publishTarget": "",
-            "test": 0
-        },
-        {
-            "PackageName": "com.unity.2d.pixel-perfect",
+            "PackageName": "com.unity.2d.path",
             "publishTarget": "",
             "test": 0
         }

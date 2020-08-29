@@ -355,7 +355,7 @@ MonoBehaviour:
   - {fileID: 1774800453426104098}
   m_Weight: 1
   m_SolverEditorData:
-  - color: {r: 0.40784317, g: 0.28627452, b: 0.18039216, a: 1}
+  - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
@@ -1868,7 +1868,7 @@ PrefabInstance:
     - target: {fileID: -5203826914300249456, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -5203826914300249456, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
@@ -1888,7 +1888,7 @@ PrefabInstance:
     - target: {fileID: -4766699955362851425, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -4673049044113468301, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
@@ -2258,7 +2258,7 @@ PrefabInstance:
     - target: {fileID: -1824235971721243241, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -1586455351012675947, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
@@ -3421,7 +3421,7 @@ PrefabInstance:
     - target: {fileID: 7195694863867661985, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7374543505609518183, guid: 0491b858dfbe44445a1f7045f935c2fa,
         type: 3}

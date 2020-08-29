@@ -49,7 +49,8 @@ MonoBehaviour:
   - RPC_Hit
   - RPC_LoadedGameScene
   - RPC_LoadGameOthers
-  - RPC_onTrigger
+  - RPC_onTriggerAnimation
+  - RPC_onTriggerGravity
   - RPC_RequestConfirm
   - RPC_RequestConfirmed
   - RPC_RequestDenied
@@ -57,20 +58,15 @@ MonoBehaviour:
   - RPC_SelectCharacter
   - RPC_SetPlayersPositions
   - RPC_StartLoading
-  - RPC_SyncPickup
-  - RPC_syncPlayerUI
-  - RPC_SyncPutdown
-  - RPC_SyncTrigger
   - RPC_SyncBool
   - RPC_SyncEnterItems
   - RPC_SyncExitItems
-  - RPC_SyncHandMove
-  - RPC_SyncPickUp
-  - RPC_SyncThrowItem
-  - RPC_SyncCorrectArm
-  - RPC_onTriggerAnimation
-  - RPC_onTriggerGravity
   - RPC_SyncEyeMove
+  - RPC_SyncPickup
+  - RPC_syncPlayerUI
+  - RPC_SyncPutdown
+  - RPC_SyncThrowItem
+  - RPC_SyncTrigger
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
