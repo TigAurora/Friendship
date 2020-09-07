@@ -39,10 +39,10 @@ namespace Friendship
         }
         void Start()
         {
-            if (Instance != null && PlayerPrefs.HasKey("myCharacter"))
-            {
-                Instance.myCharacter = PlayerPrefs.GetInt("myCharacter");
-            }
+            //if (Instance != null && PlayerPrefs.HasKey("myCharacter"))
+            //{
+                //Instance.myCharacter = PlayerPrefs.GetInt("myCharacter");
+            //}
         }
         #endregion
 
@@ -61,6 +61,11 @@ namespace Friendship
             nickname = name;
             //Set Photon name
             PhotonNetwork.NickName = name;
+        }
+
+        public void Set_Character(int which)
+        {
+            myCharacter = which;
         }
 
         //Master check method
@@ -127,10 +132,10 @@ namespace Friendship
         [PunRPC]
         public void RPC_FinishLoading()
         {
-            if (loading.activeSelf)
-                Debug.Log("它曾存在过！！");
-            else
-                Debug.Log("它不曾存在过？？？");
+            //if (loading.activeSelf)
+                //Debug.Log("它曾存在过！！");
+            //else
+                //Debug.Log("它不曾存在过？？？");
 
             loading.SetActive(false);
         }
@@ -183,6 +188,7 @@ namespace Friendship
         void RPC_SelectCharacter(int character)
         {
             PlayerPrefs.SetInt("myCharacter", character);
+            myCharacter = character;
         }
 
         #endregion

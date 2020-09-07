@@ -7,13 +7,11 @@ namespace Friendship
     {
         PhotonView photonView;
         public GameObject item;
-        DetectWallAndGround detect;
 
         // Start is called before the first frame update
         void Start()
         {
             photonView = GetComponent<PhotonView>();
-            detect = GetComponent<DetectWallAndGround>();
         }
 
         // Update is called once per frame
@@ -26,7 +24,7 @@ namespace Friendship
             //is not being taken by this other
             if (other.tag == "Player")
             {
-                Debug.Log(transform.name + " OnTrigger Enter " + other.name);
+                //Debug.Log(transform.name + " OnTrigger Enter " + other.name);
                 photonView.RPC("RPC_SyncEnterItems", RpcTarget.All, other.name);
             }
         }
@@ -36,7 +34,7 @@ namespace Friendship
             //is not being taken by this other
             if (other.tag == "Player" && item.GetComponent<itemState>().pickuphand != other.GetComponent<PlayerController>().pickuphand && !other.GetComponent<PlayerController>().isPick)
             {
-                Debug.Log(transform.name + " OnTrigger Exit " + other.name);
+                //Debug.Log(transform.name + " OnTrigger Exit " + other.name);
                 photonView.RPC("RPC_SyncExitItems", RpcTarget.All, other.name);
             }
         }

@@ -1620,8 +1620,9 @@ MonoBehaviour:
     m_Bits: 1048576
   cameraset: 0
   iteminhand: {fileID: 0}
-  pickableitems: []
   currentScene: 
+  pickableitems: []
+  interactiveitems: []
 --- !u!114 &-102441393140205983
 MonoBehaviour:
   m_ObjectHideFlags: 0

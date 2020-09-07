@@ -8,8 +8,8 @@ namespace Friendship
     public class SoundWithAnim : MonoBehaviour
     {
         public float TimeLoop;
-        public float time;
-        public bool isPlaying = false, isStart = false, isLoop = false;
+        float time;
+        public bool isPlaying = false, isStart = false, isLoop = false, isEnd = false;
         public Animator anim;
 
         // Start is called before the first frame update
@@ -24,9 +24,10 @@ namespace Friendship
             if (anim.enabled && !isStart)
             {
                 isStart = true;
+                isEnd = false;
                 anim.SetTrigger("Play");
             }
-            if (!isPlaying && isStart && isLoop)
+            if (!isPlaying && isStart && isLoop & !isEnd)
             {
                 if (time >= TimeLoop)
                 {
@@ -46,6 +47,13 @@ namespace Friendship
             StartSound();
             isPlaying = true;
         }
+
+        //Stop ALL (anim & sound & loop)
+        public void End()
+        {
+            isEnd = true;
+        }
+
         //Use at the end of the animation, MUST be used by all anim
         public void AnimEnd()
         {
@@ -62,8 +70,6 @@ namespace Friendship
         {
             return GetComponent<Animator>().enabled;
         }
-
-
 
         public void StartSound()
         {

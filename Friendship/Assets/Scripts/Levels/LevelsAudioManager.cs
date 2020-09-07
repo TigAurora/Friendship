@@ -58,8 +58,35 @@ namespace Friendship
         //Play sound base on environment
         public void SetClip(GameObject Obj, string environment)
         {
+            //Set AudioClip and Volume for Correct or Wrong Answer
+            if (Obj.gameObject.name.Contains("lamp"))
+            {
+                if (environment == "correct")
+                {
+                    Obj.gameObject.GetComponent<AudioSource>().clip = components.audioManager["CorrectAnswer"];
+                }
+                else if (environment == "wrong")
+                {
+                    Obj.gameObject.GetComponent<AudioSource>().clip = components.audioManager["WrongAnswer"];
+                }
+                Obj.gameObject.GetComponent<AudioSource>().Play();
+            }
+            //Set AudioClip and Volume for Frog and Chick button
+            if (Obj.gameObject.name.Contains("g1p4horn"))
+            {
+                if (environment == "frog")
+                {
+                    Obj.gameObject.GetComponent<AudioSource>().clip = components.audioManager["Frog"];
+                }
+                else if (environment == "chick")
+                {
+                    Obj.gameObject.GetComponent<AudioSource>().clip = components.audioManager["Chick"];
+                }
+                Obj.gameObject.GetComponent<AudioSource>().Play();
+            }
+
             //Set AudioClip and Volume for apple
-            if (Obj.gameObject.name.Contains("apple"))
+                if (Obj.gameObject.name.Contains("apple"))
             {
                 if (environment == "wood")
                 {
@@ -104,7 +131,7 @@ namespace Friendship
                 {
                     Obj.gameObject.GetComponent<AudioSource>().clip = components.audioManager["ElevatorDoorClose"];
                 }
-
+                Obj.gameObject.GetComponent<AudioSource>().enabled = true;
                 Obj.gameObject.GetComponent<AudioSource>().Play();
             }
         }

@@ -39,8 +39,10 @@ MonoBehaviour:
   - Fire
   - OnPlayersLoaded
   - RespawnSpaceship
+  - RPC_AllPassed
   - RPC_Blindloaded
   - RPC_CancelRequest
+  - RPC_CorrectAnswer
   - RPC_Deafloaded
   - RPC_Disconnect
   - RPC_FinishLevelPositionSet
@@ -65,8 +67,17 @@ MonoBehaviour:
   - RPC_SyncPickup
   - RPC_syncPlayerUI
   - RPC_SyncPutdown
+  - RPC_SyncPuzzleBlocks
+  - RPC_SyncTeleInteraction
   - RPC_SyncThrowItem
   - RPC_SyncTrigger
+  - RPC_Update
+  - RPC_WrongAnswer
+  - RPC_RandomSound
+  - RPC_Start
+  - RPC_CharacterGetIn
+  - RPC_CharacterGetOut
+  - RPC_ButtonFalse
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

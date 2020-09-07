@@ -49,7 +49,6 @@ namespace Friendship
             {
                 GetComponent<AudioSource>().Stop();
             }
-            DetectPlayerPos();
         }
 
         public void DeleteCollider(string which)
@@ -59,40 +58,6 @@ namespace Friendship
                 g1Collider.SetActive(false);
             }
         }
-
-        public void DetectPlayerPos()
-        {
-            if (LiftCollider.GetComponent<Collider2D>().bounds.Contains(players[0].transform.position))
-            {
-                isContainB = true;
-            }
-            else
-            {
-                isContainB = false;
-            }
-            if (LiftCollider.GetComponent<Collider2D>().bounds.Contains(players[1].transform.position))
-            {
-                isContainD = true;
-            }
-            else
-            {
-                isContainD = false;
-            }
-
-            if (isContainB && isContainD)
-            {
-                PlayersinLift = 2;
-            }
-            else if (!isContainB && !isContainD)
-            {
-                PlayersinLift = 0;
-            }
-            else if (isContainB || isContainD)
-            {
-                PlayersinLift = 1;
-            }
-        }
-
 
         //Control Lights
         //0 = CLOSE, 1 = OPEN
@@ -133,6 +98,7 @@ namespace Friendship
             GetComponent<AudioSource>().volume = Mathf.Lerp(GetComponent<AudioSource>().volume, 0, 2f);
             LevelsAudioManager.Instance.SetClip(Floor, "LiftFloorArrive");
             LevelsAudioManager.Instance.SetClip(Bell, "LiftBellArrive");
+            Bell.GetComponent<Animator>().SetTrigger("Play");
         }
 
         public void LiftBell()

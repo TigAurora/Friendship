@@ -72,7 +72,6 @@ namespace Friendship
                     {
                         if (Obj == "Player")
                         {
-                            r.material = DefaultMaterial;
                             r.color = new Color(0f, 0f, 0f, 0f);
                         }
                     }

@@ -42,13 +42,13 @@ namespace Friendship
             currentUI = new string[] {"", "", "", "", "", "", "", "", ""};
             if (GetComponent<PhotonView>().IsMine)
             {
-                whichplayer = PlayerPrefs.GetInt("myCharacter");
+                whichplayer = PlayerNetwork.Instance.myCharacter;
             }
             else
             {
-                if (PlayerPrefs.GetInt("myCharacter") == 0)
+                if (PlayerNetwork.Instance.myCharacter == 0)
                     whichplayer = 1;
-                else if (PlayerPrefs.GetInt("myCharacter") == 1)
+                else if (PlayerNetwork.Instance.myCharacter == 1)
                     whichplayer = 0;
             }
             getResolver(whichplayer);

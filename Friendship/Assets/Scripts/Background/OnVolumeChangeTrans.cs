@@ -23,7 +23,7 @@ namespace Friendship
         // Start is called before the first frame update
         void Start()
         {
-            if (PlayerPrefs.GetInt("myCharacter") == 1)
+            if (PlayerNetwork.Instance.myCharacter == 1)
             {
                 transform.gameObject.GetComponent<OnVolumeChangeTrans>().enabled = false;
             }

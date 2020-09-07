@@ -55,21 +55,8 @@ namespace Friendship
 
         public void StartGame()
         {
-            Debug.Log("LevelsNetwork startgame");
+            //Debug.Log("LevelsNetwork startgame");
             StartCoroutine(WaitforPositionReset());
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
-            {
-                components.BlindView.TurnBlack("Background");
-                components.BlindView.TurnBlack("Floor");
-                components.BlindView.TurnBlack("Player");
-                components.BlindView.TurnOpposite("Item");
-                components.BlindView.TurnOpposite("SoundSource");
-                components.BlindView.TurnOpposite("SoundSourceComp");
-            }
-            else if (PlayerPrefs.GetInt("myCharacter") == 1)
-            {
-                Camera.main.GetComponent<AudioListener>().enabled = false;
-            }
         }
 
         // Update is called once per frame
@@ -83,10 +70,7 @@ namespace Friendship
         {
             SetPlayersPositions(1);
             SyncPlayerUI();
-            yield return new WaitForSeconds(1f);
-            PlayerNetwork.Instance.photonView.RPC("RPC_FinishLevelPositionSet", RpcTarget.MasterClient);
-            components.LevelAManager.isGame = true;
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 playerCamera = Camera.main.GetComponent<PlayerCamera>();
                 playerCamera.player = components.players[0].transform;
@@ -96,6 +80,24 @@ namespace Friendship
                 playerCamera = Camera.main.GetComponent<PlayerCamera>();
                 playerCamera.player = components.players[1].transform;
             }
+            if (PlayerNetwork.Instance.myCharacter == 0)
+            {
+                components.BlindView.TurnBlack("Background");
+                components.BlindView.TurnBlack("Floor");
+                components.BlindView.TurnBlack("Player");
+                components.BlindView.TurnOpposite("Item");
+                components.BlindView.TurnOpposite("SoundSource");
+                components.BlindView.TurnOpposite("SoundSourceComp");
+            }
+            else if (PlayerNetwork.Instance.myCharacter == 1)
+            {
+                AudioListener.volume = 0;
+            }
+            yield return new WaitForSeconds(0f);
+            PlayerNetwork.Instance.photonView.RPC("RPC_FinishLevelPositionSet", RpcTarget.MasterClient);
+            components.LevelAManager.isGame = true;
+
+
         }
 
         public void SetPlayersPositions(int whichLevel)
@@ -155,7 +157,7 @@ namespace Friendship
         void RPC_SetPlayersPositions(int whichLevel)
         {
             //Reset cached player positions
-            components.players[0].transform.position = components.blindPlayerStartPosition[whichLevel-1].position;
+            components.players[0].transform.position = components.blindPlayerStartPosition[whichLevel - 1].position;
             components.players[0].transform.localScale = new Vector3(0.75f, 0.75f, 1);
 
             components.players[1].transform.position = components.deafPlayerStartPosition[whichLevel - 1].position;

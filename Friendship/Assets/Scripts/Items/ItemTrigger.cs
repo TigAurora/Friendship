@@ -7,8 +7,9 @@ namespace Friendship
 {
     public class ItemTrigger : MonoBehaviour
     {
-        public GameObject triggeriTem;
+        public GameObject[] triggeriTem;
         public string whichTrigger;
+        public float AnyDelay;
         public PhotonView photonView;
 
         void Start()
@@ -19,10 +20,16 @@ namespace Friendship
         // Start is called before the first frame update
         void OnTriggerEnter2D(Collider2D other)
         {
+            StartCoroutine(WaitForXs(other));
+        }
+
+        IEnumerator WaitForXs(Collider2D other)
+        {
+            yield return new WaitForSeconds(AnyDelay);
             if (whichTrigger == "gravity")
             {
                 if (other.tag == "Player")
-                {                   
+                {
                     photonView.RPC("RPC_onTriggerGravity", RpcTarget.All);
                 }
             }
@@ -38,14 +45,20 @@ namespace Friendship
         [PunRPC]
         void RPC_onTriggerGravity()
         {
-            triggeriTem.GetComponent<Rigidbody2D>().gravityScale = 1;
+            foreach (GameObject item in triggeriTem)
+            {
+                item.GetComponent<Rigidbody2D>().gravityScale = 1;
+            }
             gameObject.SetActive(false);
         }
 
         [PunRPC]
         void RPC_onTriggerAnimation()
         {
-            triggeriTem.GetComponent<Animator>().enabled = true;
+            foreach (GameObject item in triggeriTem)
+            {
+                item.GetComponent<Animator>().enabled = true;
+            }
             gameObject.SetActive(false);
         }
     }

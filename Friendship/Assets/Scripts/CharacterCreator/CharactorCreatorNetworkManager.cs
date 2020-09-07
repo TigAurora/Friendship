@@ -42,8 +42,8 @@ namespace Friendship
         //Start game event
         public void OnGame_Started()
         {
-            //If you blind character
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            //If you are the blind character
+            if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 //Spawn in scene blindplayer prefab
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs/Player", "blindplayer"), components.blindPlayerStartPosition.position, Quaternion.identity, 0);

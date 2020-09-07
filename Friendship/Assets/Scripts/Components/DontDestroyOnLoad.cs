@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TheBattle
+namespace Friendship
 {
     //This class need for multy-scene object
     //more https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html

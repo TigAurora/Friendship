@@ -80,8 +80,7 @@ namespace Friendship
 
         public void onClick_ConfirmYes()
         {
-            PlayerNetwork.Instance.photonView.RPC("RPC_StartLoading", RpcTarget.All);
-            photonView.RPC("RPC_RequestConfirmed", RpcTarget.MasterClient);
+            StartCoroutine(WaitForX()); 
         }
 
         public void onClick_ConfirmNo()
@@ -91,7 +90,21 @@ namespace Friendship
             trans.SetActive(false);
         }
 
+        IEnumerator WaitForX()
+        {
+            photonView.RPC("RPC_ButtonFalse", RpcTarget.Others);
+            PlayerNetwork.Instance.photonView.RPC("RPC_StartLoading", RpcTarget.All);
+            yield return new WaitForFixedUpdate();
+            photonView.RPC("RPC_RequestConfirmed", RpcTarget.MasterClient);
+        }
+
         #region //RPC
+
+        [PunRPC]
+        void RPC_ButtonFalse()
+        {
+            Cancel.GetComponent<Button>().interactable = false;
+        }
 
         //receiving request
         [PunRPC]

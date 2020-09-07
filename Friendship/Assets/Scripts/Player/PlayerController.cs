@@ -32,19 +32,22 @@ namespace Friendship
 
         [HideInInspector] public bool cameraset = false;
         [HideInInspector] public GameObject iteminhand;
-        [HideInInspector] public List<GameObject> pickableitems;
         [HideInInspector] Vector3 targetPosition, targetScale;
         [HideInInspector] Quaternion targetRotation;
         [HideInInspector] public string currentScene = "";
+
+        [HideInInspector] public List<GameObject> pickableitems;
+        [HideInInspector] public List<GameObject> interactiveitems;
 
         #region// Unity
 
         private void Start()
         {
             pickableitems = new List<GameObject>();
+            interactiveitems = new List<GameObject>();
             photonView = GetComponent<PhotonView>();
             detect = GetComponent<DetectWallAndGround>();
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 if (photonView.IsMine)
                 {
@@ -58,7 +61,7 @@ namespace Friendship
                         {
                             animator = obj.gameObject.GetComponentInChildren<Animator>();
                         }
-                        else if (obj.gameObject.name == "wheelchair walk")
+                        else if (obj.gameObject.name == "wheelchair")
                         {
                             wheelanimator = obj.gameObject.GetComponentInChildren<Animator>();
                         }
@@ -76,7 +79,7 @@ namespace Friendship
                         {
                             animator = obj.gameObject.GetComponentInChildren<Animator>();
                         }
-                        else if (obj.gameObject.name == "wheelchair walk")
+                        else if (obj.gameObject.name == "wheelchair")
                         {
                             wheelanimator = obj.gameObject.GetComponentInChildren<Animator>();
                         }
@@ -101,7 +104,7 @@ namespace Friendship
                 {
                     if (!LevelsManager.Instance.isPause)
                     {
-                        CheckPickup();
+                        CheckInteraction();
                         if (detect.IsGround())
                             isGround = true;
                     }
@@ -190,12 +193,16 @@ namespace Friendship
             return move;
         }
 
-        public void CheckPickup()
+        public void CheckInteraction()
         {
             if (InputManager.GetKeyDown("Interact") && !isAnima && InputManager.Horizontal == 0)
             {
                 Debug.Log("Epressed");
-                if (isPick && iteminhand != null)
+                if (interactiveitems.Count > 0)
+                {
+                    interactiveitems[0].GetComponent<InteractiveItem>().InteractiveAction();
+                }
+                else if (isPick && iteminhand != null)
                 {
                     if (ValidRange(validthrowrange))
                     {
@@ -204,7 +211,7 @@ namespace Friendship
                 }
                 else if (pickableitems.Count > 0)
                 {
-                    for(int i=0; i < pickableitems.Count; ++i)
+                    for (int i = 0; i < pickableitems.Count; ++i)
                     {
                         //Judge whether pick range is valid
                         if (pickableitems[i].GetComponent<itemState>().isGround)
@@ -327,6 +334,7 @@ namespace Friendship
                     if (InputManager.GetKey("Speedup"))
                     {
                         photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", true);
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false);
                     }
                     else
                     {
@@ -416,6 +424,10 @@ namespace Friendship
         void RPC_SyncTrigger(string animation)
         {
             animator.SetTrigger(animation);
+            if (transform.name.Contains("deaf"))
+            {
+                wheelanimator.SetTrigger(animation);
+            }
         }
 
         [PunRPC]

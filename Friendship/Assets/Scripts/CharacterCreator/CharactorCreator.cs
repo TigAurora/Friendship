@@ -121,7 +121,7 @@ namespace Friendship
                     mouthResolver = resolver;
                 }
 
-                if (PlayerPrefs.GetInt("myCharacter") == 0)
+                if (PlayerNetwork.Instance.myCharacter == 0)
                 {
                     //blind.SetActive(true);
                     eye.SetActive(false);
@@ -131,8 +131,8 @@ namespace Friendship
                 {
                     //deaf.SetActive(true);
                     sunglasses.SetActive(false);
+                }   
                 }
-            }
 
             defaultbody_pressed_selected();
         }
@@ -140,7 +140,7 @@ namespace Friendship
         // Start is called before the first frame update
         void Start()
         {
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 deafground.SetActive(false); 
             }
@@ -161,11 +161,11 @@ namespace Friendship
                     {
                         if (player.GetComponent<PhotonView>().IsMine)
                         {
-                            if (PlayerPrefs.GetInt("myCharacter") == 0)
+                            if (PlayerNetwork.Instance.myCharacter == 0)
                             {
                                 Instance.photonView.RPC("RPC_Blindloaded", RpcTarget.All);
                             }
-                            else if (PlayerPrefs.GetInt("myCharacter") == 1)
+                            else if (PlayerNetwork.Instance.myCharacter == 1)
                             {
                                 Instance.photonView.RPC("RPC_Deafloaded", RpcTarget.All);
                             }
@@ -210,7 +210,7 @@ namespace Friendship
             selectbody(tpname);
             mouthResolver.SetCategoryAndLabel("mouth", tpname);
 
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 tpname = "sunglasses" + dsunglasses;
                 unselectbody("sunglasses");
@@ -218,7 +218,7 @@ namespace Friendship
                 sunglassesResolver.SetCategoryAndLabel("sunglasses", tpname);
             }
 
-            if (PlayerPrefs.GetInt("myCharacter") == 1)
+            if (PlayerNetwork.Instance.myCharacter == 1)
             {
                 tpname = "eye" + deye;
                 unselectbody("eye");
@@ -295,7 +295,7 @@ namespace Friendship
                 unselectbody("cat");
                 selectbody(tpname);
             }
-            if (PlayerPrefs.GetInt("myCharacter") == 0)
+            if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 tpname = randBody("sunglasses", 20);
                 sunglassesResolver.SetCategoryAndLabel("sunglasses", tpname);
