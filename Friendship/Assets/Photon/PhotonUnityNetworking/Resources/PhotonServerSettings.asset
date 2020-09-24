@@ -41,7 +41,10 @@ MonoBehaviour:
   - RespawnSpaceship
   - RPC_AllPassed
   - RPC_Blindloaded
+  - RPC_ButtonFalse
   - RPC_CancelRequest
+  - RPC_CharacterGetIn
+  - RPC_CharacterGetOut
   - RPC_CorrectAnswer
   - RPC_Deafloaded
   - RPC_Disconnect
@@ -53,12 +56,14 @@ MonoBehaviour:
   - RPC_LoadGameOthers
   - RPC_onTriggerAnimation
   - RPC_onTriggerGravity
+  - RPC_RandomSound
   - RPC_RequestConfirm
   - RPC_RequestConfirmed
   - RPC_RequestDenied
   - RPC_ResetPlayersPositions
   - RPC_SelectCharacter
   - RPC_SetPlayersPositions
+  - RPC_Start
   - RPC_StartLoading
   - RPC_SyncBool
   - RPC_SyncEnterItems
@@ -73,11 +78,6 @@ MonoBehaviour:
   - RPC_SyncTrigger
   - RPC_Update
   - RPC_WrongAnswer
-  - RPC_RandomSound
-  - RPC_Start
-  - RPC_CharacterGetIn
-  - RPC_CharacterGetOut
-  - RPC_ButtonFalse
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

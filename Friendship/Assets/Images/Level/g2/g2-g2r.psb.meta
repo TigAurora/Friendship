@@ -1,28 +1,10 @@
 fileFormatVersion: 2
-guid: 61c599f6919f7464b9da22ef10ca29b0
+guid: f4dd845c947546046a5083c75bed0c01
 ScriptedImporter:
   internalIDToNameTable:
   - first:
       213: -9178992466935564322
-    second: g2rfishp3
-  - first:
-      213: -2856746642118752349
-    second: g2rfishp6
-  - first:
-      213: -8227004480739887095
-    second: g2rfishp7
-  - first:
-      213: 5638891288359647661
-    second: g2rfishp2
-  - first:
-      213: -3046683638641984329
-    second: g2rfishp5
-  - first:
-      213: 8338640456809037483
-    second: g2rfishp4
-  - first:
-      213: -9178992466935564322
-    second: g2-g2r_0
+    second: g2rfishbubble0
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -108,6 +90,182 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: g2applelampw
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7596
+      y: 418
+      width: 79
+      height: 78
+    spriteID: 351c64537d2c71b4591ce95df81db290
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4822, y: -515}
+  - name: g2applelampb
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7683
+      y: 418
+      width: 79
+      height: 78
+    spriteID: 44234af827e8f2e4887adf2034740b51
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4909, y: -515}
+  - name: g2rapplelamp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6360
+      y: 514
+      width: 362
+      height: 106
+    spriteID: 05b734886f501694a8a9d13d939c33cd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3604, y: -404}
+  - name: g2ranglec
+    originalName: 
+    pivot: {x: 0.97325236, y: 0.283329}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6986
+      y: 438
+      width: 77
+      height: 40
+    spriteID: 66e8017ec0c954349816b0e0b412b54e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6612, y: -265}
+  - name: g2ranglec2
+    originalName: 
+    pivot: {x: 0.024166752, y: 0.28826293}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7071
+      y: 438
+      width: 77
+      height: 40
+    spriteID: 207a3d64f46a9cd4a9676c55a4e7ffe8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6573, y: -265}
+  - name: g2rangleh
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6986
+      y: 486
+      width: 64
+      height: 15
+    spriteID: 8124de5cc6477b04f889f24f050d157b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6542, y: -299}
+  - name: g2rangle
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7850
+      y: 121
+      width: 61
+      height: 174
+    spriteID: fdff04591668a0e4c9a0529d08436e72
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7407, y: -483}
+  - name: g2ranglep
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7267
+      y: 4
+      width: 321
+      height: 450
+    spriteID: d7951379a744b2c4a9da6dd874d5b889
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6936, y: -461}
   - name: g2rpearl
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -115,11 +273,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6806
-      y: 3645
+      x: 7850
+      y: 4
       width: 293
       height: 109
-    spriteID: 53827578fa308d94896ef5d5186abc86
+    spriteID: 09d70a4e870d3504e96dff8708e07fa7
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -129,19 +287,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4358, y: 2939}
+    uvTransform: {x: 6192, y: -666}
   - name: g2rtail
     originalName: 
-    pivot: {x: 0.7437957, y: 0.050654102}
+    pivot: {x: 0.7390313, y: 0.05522619}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6806
-      y: 3132
+      x: 6360
+      y: 4
       width: 470
-      height: 505
-    spriteID: 03044bd407670594499de86f40dfc331
+      height: 502
+    spriteID: fd17a7de4f224494b812fb4abbf78f3c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -151,7 +309,73 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4550, y: 2418}
+    uvTransform: {x: 4894, y: -677}
+  - name: g2rshell
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6838
+      y: 4
+      width: 421
+      height: 426
+    spriteID: 8568cee690b25dd4bbfa9d81fc25820a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5277, y: -622}
+  - name: g2rfishchairfins
+    originalName: 
+    pivot: {x: 0.5, y: 0.0062479232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7596
+      y: 4
+      width: 246
+      height: 406
+    spriteID: 785d7dcd6abca33499eec356374f9701
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4200, y: -404}
+  - name: g2rfishchair
+    originalName: 
+    pivot: {x: 0.9129754, y: 0.35633102}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7979
+      y: 396
+      width: 53
+      height: 94
+    spriteID: 737ca4d61a08de64f8552c6201406eac
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4618, y: -277}
   - name: g2rbell2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -159,11 +383,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6806
-      y: 4626
+      x: 6838
+      y: 438
       width: 9
       height: 5
-    spriteID: 2932e0a3f1b25744993ea44865ef546b
+    spriteID: a42c15b3556f9fc42a7813ed35ca1a8c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -173,7 +397,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3560, y: 3593}
+    uvTransform: {x: 4534, y: -595}
   - name: g2rbell
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -181,11 +405,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6923
-      y: 3762
+      x: 6911
+      y: 438
       width: 67
       height: 46
-    spriteID: b00b869d0fdc66949816dc612d2bdfaa
+    spriteID: ca4796f3c939f7b4ebd1d8baaaf370ae
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -195,7 +419,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3706, y: 2775}
+    uvTransform: {x: 4636, y: -549}
   - name: g2r
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -204,230 +428,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 3132
-      width: 6794
-      height: 1556
-    spriteID: 41fff160b6496034f883834bacf5b18c
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -929, y: 3132}
-  - name: g2rcolor
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4696
-      width: 6773
-      height: 1556
-    spriteID: fb97378bf6162cc49aba6d7d6f2e6dc9
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -946, y: 4696}
-  - name: g2rfishm7
-    originalName: 
-    pivot: {x: 0.647583, y: 0.0017590919}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 3982
-      width: 44
-      height: 119
-    spriteID: c56534a1e75d5604c8b692c6dba4470a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4090, y: 2781}
-  - name: g2rfishm6
-    originalName: 
-    pivot: {x: 0.6774414, y: 0.0018695453}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 4219
-      width: 45
-      height: 120
-    spriteID: c6e87387411f58f47b965247f65f0e8f
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4092, y: 3018}
-  - name: g2rfishm5
-    originalName: 
-    pivot: {x: 0.7108301, y: 0.0021915075}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 3762
-      width: 50
-      height: 119
-    spriteID: b4a7bd71bdc2b8f408cf2e303f22779c
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4097, y: 2561}
-  - name: g2rfishm4
-    originalName: 
-    pivot: {x: 0.6961646, y: 0.0028144333}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6864
-      y: 3762
-      width: 51
-      height: 119
-    spriteID: a37d6417415c91849ab44e4b5b1e7492
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4155, y: 2561}
-  - name: g2rfishm3
-    originalName: 
-    pivot: {x: 0.71435547, y: 0.0025107479}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 4449
-      width: 47
-      height: 119
-    spriteID: 024f2b5384726de45a3081ab025f1213
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4095, y: 3248}
-  - name: g2rfishm2
-    originalName: 
-    pivot: {x: 0.6838827, y: 0.0030212402}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6864
-      y: 3967
-      width: 49
-      height: 119
-    spriteID: f0025694b92cdc24998eb73dcdf468a2
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4153, y: 2766}
-  - name: g2rfishm1
-    originalName: 
-    pivot: {x: 0.64733887, y: 0.003873698}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6864
-      y: 4127
-      width: 44
-      height: 120
-    spriteID: 8d0a5dbdfc132e04dafe2522c228a3a1
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4148, y: 2926}
-  - name: g2rfish
-    originalName: 
-    pivot: {x: 0.91416436, y: 0.5912252}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 6260
-      width: 3329
-      height: 732
-    spriteID: 346cf49b806a87641b62e452b7115b25
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -2738, y: 5436}
-  - name: g2rbg
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
       y: 4
-      width: 7803
+      width: 6348
       height: 1556
-    spriteID: 293b67c81cd60554d93b25e328a9a5ed
+    spriteID: f4814ab2ca60ac043a8add2a3018f73d
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -438,7 +442,359 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-  - name: "\u80CC\u666F"
+  - name: g2rfishbubble8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6360
+      y: 628
+      width: 34
+      height: 135
+    spriteID: 2fd30c4d91109624586c1fc93d191e0a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4579, y: -755}
+  - name: g2rfishbubble7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7919
+      y: 300
+      width: 44
+      height: 186
+    spriteID: a8d9a5b643253c64e8c2f50c1a4d12ca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6146, y: -1022}
+  - name: g2rfishbubble6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7919
+      y: 121
+      width: 52
+      height: 171
+    spriteID: d2d469f59c67fc6448303798a35d4299
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6155, y: -1205}
+  - name: g2rfishbubble5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7850
+      y: 303
+      width: 57
+      height: 164
+    spriteID: 029d4b6707749884a9d916304551d138
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6088, y: -998}
+  - name: g2rfishbubble4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7979
+      y: 121
+      width: 61
+      height: 139
+    spriteID: 7d6871159b318ca4bbaa453820118fa0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6220, y: -1172}
+  - name: g2rfishbubble3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7770
+      y: 418
+      width: 60
+      height: 86
+    spriteID: 19b2d071acd8a024487f0eaca3e48d5b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6012, y: -911}
+  - name: g2rfishbubble2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8151
+      y: 4
+      width: 31
+      height: 53
+    spriteID: 2c22450cce972c64ca98f0a900ba2eb2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6386, y: -1310}
+  - name: g2rfishbubble1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8151
+      y: 65
+      width: 20
+      height: 31
+    spriteID: f05f2ebdba8a5184ab8a8cbe65a9dc0d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6383, y: -1232}
+  - name: g2rfishmouth7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8048
+      y: 249
+      width: 44
+      height: 119
+    spriteID: 8e189a2cf3baf4b4293caa877e0ffe96
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6274, y: -952}
+  - name: g2rfishmouth6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8100
+      y: 121
+      width: 43
+      height: 120
+    spriteID: d841956c0a786714e8d80f4b2e5ce0bf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6326, y: -1080}
+  - name: g2rfishmouth5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8100
+      y: 249
+      width: 43
+      height: 119
+    spriteID: 56561cbcd98b99b48921112a57f14628
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6326, y: -952}
+  - name: g2rfishmouth4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8048
+      y: 376
+      width: 44
+      height: 119
+    spriteID: 103590d8738fa694c841e36ef53473cd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6274, y: -825}
+  - name: g2rfishmouth3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8100
+      y: 376
+      width: 42
+      height: 119
+    spriteID: 432c25c04f1cebf43ae1bf46139f3b5a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6326, y: -825}
+  - name: g2rfishmouth2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7979
+      y: 268
+      width: 44
+      height: 120
+    spriteID: 2eee7174d7586654ea531dec774ef2b3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6205, y: -933}
+  - name: g2rfishmouth1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8048
+      y: 121
+      width: 44
+      height: 120
+    spriteID: 23d2783b71a882d49b047609feb9104c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6274, y: -1080}
+  - name: g2rfish
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3132
+      width: 3329
+      height: 732
+    spriteID: e6244f2207ab5ba469beb1e009b7863f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1796, y: 2308}
+  - name: g2rbg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -447,9 +803,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 1568
-      width: 7803
+      width: 6348
       height: 1556
-    spriteID: f81a2e146d68b0944b106e2f6dc9d751
+    spriteID: b3d015d3ceaf6d94896a63afa9a978b5
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -460,17 +816,17 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 1568}
-  - name: g2rfishp3
+  - name: g2rfishbubble0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6806
-      y: 4597
-      width: 12
-      height: 21
+      x: 7771
+      y: 528
+      width: 43
+      height: 37
     spriteID: ed7b154dbfaad9080800000000000000
     internalID: 0
     spriteBone: []
@@ -481,117 +837,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 6806, y: 4597}
-  - name: g2rfishp6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 4425
-      width: 8
-      height: 16
-    spriteID: 3a7c83f801cca58d0800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6806, y: 4425}
-  - name: g2rfishp7
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 4201
-      width: 6
-      height: 10
-    spriteID: 908b3f7630fc3dd80800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6806, y: 4201}
-  - name: g2rfishp2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6864
-      y: 4105
-      width: 12
-      height: 14
-    spriteID: da9b8b920cd514e40800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6864, y: 4105}
-  - name: g2rfishp5
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6806
-      y: 3955
-      width: 15
-      height: 19
-    spriteID: 7bcffb76f5108b5d0800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6806, y: 3955}
-  - name: g2rfishp4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 6864
-      y: 3927
-      width: 14
-      height: 32
-    spriteID: baebdc1c05dc8b370800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6864, y: 3927}
+    uvTransform: {x: 7771, y: 528}
   platformSettings:
   - name: Default
     overridden: 1
@@ -610,7 +856,7 @@ ScriptedImporter:
   importHiddenLayers: 0
   importedTextureWidth: 8192
   importedTextureHeight: 8192
-  documentSize: {x: 7803, y: 1556}
+  documentSize: {x: 6348, y: 1556}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
@@ -622,124 +868,236 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: g2r
-    spriteName: 
-    isGroup: 1
+  - name: g2applelampw
+    spriteName: g2applelampw
+    isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 2875
-    mosaicPosition: {x: 0, y: 0}
+    spriteID: 351c64537d2c71b4591ce95df81db290
+    layerID: 4648
+    mosaicPosition: {x: 7596, y: 418}
+  - name: g2applelampb
+    spriteName: g2applelampb
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 44234af827e8f2e4887adf2034740b51
+    layerID: 4647
+    mosaicPosition: {x: 7683, y: 418}
+  - name: g2rapplelamp
+    spriteName: g2rapplelamp
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 05b734886f501694a8a9d13d939c33cd
+    layerID: 4659
+    mosaicPosition: {x: 6360, y: 514}
+  - name: g2ranglec
+    spriteName: g2ranglec
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 66e8017ec0c954349816b0e0b412b54e
+    layerID: 4346
+    mosaicPosition: {x: 6986, y: 438}
+  - name: g2ranglec2
+    spriteName: g2ranglec2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 207a3d64f46a9cd4a9676c55a4e7ffe8
+    layerID: 4286
+    mosaicPosition: {x: 7071, y: 438}
+  - name: g2rangleh
+    spriteName: g2rangleh
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8124de5cc6477b04f889f24f050d157b
+    layerID: 4292
+    mosaicPosition: {x: 6986, y: 486}
+  - name: g2rangle
+    spriteName: g2rangle
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fdff04591668a0e4c9a0529d08436e72
+    layerID: 4288
+    mosaicPosition: {x: 7850, y: 121}
+  - name: g2ranglep
+    spriteName: g2ranglep
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d7951379a744b2c4a9da6dd874d5b889
+    layerID: 4316
+    mosaicPosition: {x: 7267, y: 4}
   - name: g2rpearl
     spriteName: g2rpearl
     isGroup: 0
-    parentIndex: 0
-    spriteID: 53827578fa308d94896ef5d5186abc86
+    parentIndex: -1
+    spriteID: 09d70a4e870d3504e96dff8708e07fa7
     layerID: 3452
-    mosaicPosition: {x: 6806, y: 3645}
+    mosaicPosition: {x: 7850, y: 4}
   - name: g2rtail
     spriteName: g2rtail
     isGroup: 0
-    parentIndex: 0
-    spriteID: 03044bd407670594499de86f40dfc331
+    parentIndex: -1
+    spriteID: fd17a7de4f224494b812fb4abbf78f3c
     layerID: 3335
-    mosaicPosition: {x: 6806, y: 3132}
+    mosaicPosition: {x: 6360, y: 4}
+  - name: g2rshell
+    spriteName: g2rshell
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8568cee690b25dd4bbfa9d81fc25820a
+    layerID: 3451
+    mosaicPosition: {x: 6838, y: 4}
+  - name: g2rfishchairfins
+    spriteName: g2rfishchairfins
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 785d7dcd6abca33499eec356374f9701
+    layerID: 6604
+    mosaicPosition: {x: 7596, y: 4}
+  - name: g2rfishchair
+    spriteName: g2rfishchair
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 737ca4d61a08de64f8552c6201406eac
+    layerID: 6572
+    mosaicPosition: {x: 7979, y: 396}
   - name: g2rbell2
     spriteName: g2rbell2
     isGroup: 0
-    parentIndex: 0
-    spriteID: 2932e0a3f1b25744993ea44865ef546b
+    parentIndex: -1
+    spriteID: a42c15b3556f9fc42a7813ed35ca1a8c
     layerID: 3013
-    mosaicPosition: {x: 6806, y: 4626}
+    mosaicPosition: {x: 6838, y: 438}
   - name: g2rbell
     spriteName: g2rbell
     isGroup: 0
-    parentIndex: 0
-    spriteID: b00b869d0fdc66949816dc612d2bdfaa
+    parentIndex: -1
+    spriteID: ca4796f3c939f7b4ebd1d8baaaf370ae
     layerID: 2971
-    mosaicPosition: {x: 6923, y: 3762}
+    mosaicPosition: {x: 6911, y: 438}
   - name: g2r
     spriteName: g2r
     isGroup: 0
-    parentIndex: 0
-    spriteID: 41fff160b6496034f883834bacf5b18c
-    layerID: 3922
-    mosaicPosition: {x: 4, y: 3132}
-  - name: g2rcolor
-    spriteName: g2rcolor
-    isGroup: 0
-    parentIndex: 0
-    spriteID: fb97378bf6162cc49aba6d7d6f2e6dc9
+    parentIndex: -1
+    spriteID: f4814ab2ca60ac043a8add2a3018f73d
     layerID: 3334
-    mosaicPosition: {x: 4, y: 4696}
-  - name: g2rfishm7
-    spriteName: g2rfishm7
+    mosaicPosition: {x: 4, y: 4}
+  - name: g2rfishbubble8
+    spriteName: g2rfishbubble8
     isGroup: 0
-    parentIndex: 0
-    spriteID: c56534a1e75d5604c8b692c6dba4470a
+    parentIndex: -1
+    spriteID: 2fd30c4d91109624586c1fc93d191e0a
+    layerID: 4840
+    mosaicPosition: {x: 6360, y: 628}
+  - name: g2rfishbubble7
+    spriteName: g2rfishbubble7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a8d9a5b643253c64e8c2f50c1a4d12ca
+    layerID: 4838
+    mosaicPosition: {x: 7919, y: 300}
+  - name: g2rfishbubble6
+    spriteName: g2rfishbubble6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d2d469f59c67fc6448303798a35d4299
+    layerID: 4837
+    mosaicPosition: {x: 7919, y: 121}
+  - name: g2rfishbubble5
+    spriteName: g2rfishbubble5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 029d4b6707749884a9d916304551d138
+    layerID: 4836
+    mosaicPosition: {x: 7850, y: 303}
+  - name: g2rfishbubble4
+    spriteName: g2rfishbubble4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7d6871159b318ca4bbaa453820118fa0
+    layerID: 4835
+    mosaicPosition: {x: 7979, y: 121}
+  - name: g2rfishbubble3
+    spriteName: g2rfishbubble3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 19b2d071acd8a024487f0eaca3e48d5b
+    layerID: 4834
+    mosaicPosition: {x: 7770, y: 418}
+  - name: g2rfishbubble2
+    spriteName: g2rfishbubble2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2c22450cce972c64ca98f0a900ba2eb2
+    layerID: 4833
+    mosaicPosition: {x: 8151, y: 4}
+  - name: g2rfishbubble1
+    spriteName: g2rfishbubble1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f05f2ebdba8a5184ab8a8cbe65a9dc0d
+    layerID: 4832
+    mosaicPosition: {x: 8151, y: 65}
+  - name: g2rfishmouth7
+    spriteName: g2rfishmouth7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8e189a2cf3baf4b4293caa877e0ffe96
     layerID: 2986
-    mosaicPosition: {x: 6806, y: 3982}
-  - name: g2rfishm6
-    spriteName: g2rfishm6
+    mosaicPosition: {x: 8048, y: 249}
+  - name: g2rfishmouth6
+    spriteName: g2rfishmouth6
     isGroup: 0
-    parentIndex: 0
-    spriteID: c6e87387411f58f47b965247f65f0e8f
+    parentIndex: -1
+    spriteID: d841956c0a786714e8d80f4b2e5ce0bf
     layerID: 2985
-    mosaicPosition: {x: 6806, y: 4219}
-  - name: g2rfishm5
-    spriteName: g2rfishm5
+    mosaicPosition: {x: 8100, y: 121}
+  - name: g2rfishmouth5
+    spriteName: g2rfishmouth5
     isGroup: 0
-    parentIndex: 0
-    spriteID: b4a7bd71bdc2b8f408cf2e303f22779c
+    parentIndex: -1
+    spriteID: 56561cbcd98b99b48921112a57f14628
     layerID: 2984
-    mosaicPosition: {x: 6806, y: 3762}
-  - name: g2rfishm4
-    spriteName: g2rfishm4
+    mosaicPosition: {x: 8100, y: 249}
+  - name: g2rfishmouth4
+    spriteName: g2rfishmouth4
     isGroup: 0
-    parentIndex: 0
-    spriteID: a37d6417415c91849ab44e4b5b1e7492
+    parentIndex: -1
+    spriteID: 103590d8738fa694c841e36ef53473cd
     layerID: 2983
-    mosaicPosition: {x: 6864, y: 3762}
-  - name: g2rfishm3
-    spriteName: g2rfishm3
+    mosaicPosition: {x: 8048, y: 376}
+  - name: g2rfishmouth3
+    spriteName: g2rfishmouth3
     isGroup: 0
-    parentIndex: 0
-    spriteID: 024f2b5384726de45a3081ab025f1213
+    parentIndex: -1
+    spriteID: 432c25c04f1cebf43ae1bf46139f3b5a
     layerID: 2982
-    mosaicPosition: {x: 6806, y: 4449}
-  - name: g2rfishm2
-    spriteName: g2rfishm2
+    mosaicPosition: {x: 8100, y: 376}
+  - name: g2rfishmouth2
+    spriteName: g2rfishmouth2
     isGroup: 0
-    parentIndex: 0
-    spriteID: f0025694b92cdc24998eb73dcdf468a2
+    parentIndex: -1
+    spriteID: 2eee7174d7586654ea531dec774ef2b3
     layerID: 2980
-    mosaicPosition: {x: 6864, y: 3967}
-  - name: g2rfishm1
-    spriteName: g2rfishm1
+    mosaicPosition: {x: 7979, y: 268}
+  - name: g2rfishmouth1
+    spriteName: g2rfishmouth1
     isGroup: 0
-    parentIndex: 0
-    spriteID: 8d0a5dbdfc132e04dafe2522c228a3a1
+    parentIndex: -1
+    spriteID: 23d2783b71a882d49b047609feb9104c
     layerID: 2979
-    mosaicPosition: {x: 6864, y: 4127}
+    mosaicPosition: {x: 8048, y: 121}
   - name: g2rfish
     spriteName: g2rfish
     isGroup: 0
-    parentIndex: 0
-    spriteID: 346cf49b806a87641b62e452b7115b25
+    parentIndex: -1
+    spriteID: e6244f2207ab5ba469beb1e009b7863f
     layerID: 2889
-    mosaicPosition: {x: 4, y: 6260}
+    mosaicPosition: {x: 4, y: 3132}
   - name: g2rbg
     spriteName: g2rbg
     isGroup: 0
-    parentIndex: 0
-    spriteID: 293b67c81cd60554d93b25e328a9a5ed
-    layerID: 2929
-    mosaicPosition: {x: 4, y: 4}
-  - name: "\u80CC\u666F"
-    spriteName: "\u80CC\u666F"
-    isGroup: 0
     parentIndex: -1
-    spriteID: f81a2e146d68b0944b106e2f6dc9d751
-    layerID: 1
+    spriteID: b3d015d3ceaf6d94896a63afa9a978b5
+    layerID: 2929
     mosaicPosition: {x: 4, y: 1568}
   characterData:
     bones: []

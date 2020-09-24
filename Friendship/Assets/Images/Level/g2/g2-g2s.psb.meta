@@ -87,18 +87,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: g2spool4
+  - name: g2sanglec
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4231
-      y: 1568
-      width: 3411
-      height: 637
-    spriteID: e7fc27d1a779688419490f0618babcc1
+      x: 7670
+      y: 4303
+      width: 78
+      height: 41
+    spriteID: cc526eecb17f879488c682000abc498c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,19 +108,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -178, y: 1264}
-  - name: g2spool3
+    uvTransform: {x: 7284, y: 3757}
+  - name: g2sanglec2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 11065
-      y: 1568
-      width: 3411
-      height: 635
-    spriteID: c9f0971b01498224f98efe9866b9f149
+      x: 7756
+      y: 4303
+      width: 78
+      height: 41
+    spriteID: 71f115013f7ce444fa630e418e57460e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,19 +130,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 6656, y: 1264}
-  - name: g2spool2
+    uvTransform: {x: 7245, y: 3757}
+  - name: g2sangleh
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 7650
-      y: 1568
-      width: 3407
-      height: 636
-    spriteID: 2e9b316b909bacb4bae9c92aab7d9860
+      x: 7842
+      y: 4303
+      width: 66
+      height: 16
+    spriteID: 9dd102bc713929848bcb97546f1ed498
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -152,19 +152,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3241, y: 1264}
-  - name: g2spool1
+    uvTransform: {x: 7386, y: 3675}
+  - name: g2sangle
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 2655
-      width: 3408
-      height: 635
-    spriteID: f937583c97dbfdb46a74e19ea0294c2e
+      x: 7300
+      y: 4417
+      width: 63
+      height: 175
+    spriteID: 2004f898efac6be4bb425307da4a951c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -174,19 +174,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -4405, y: 2351}
-  - name: g2sfoot1
+    uvTransform: {x: 6845, y: 3970}
+  - name: g2sanglep
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 14484
-      y: 1568
-      width: 833
-      height: 382
-    spriteID: 6a6da95b0b9548f4384006b6802e488a
+      x: 6973
+      y: 4303
+      width: 319
+      height: 451
+    spriteID: fa085766a0ed7a94788b65d25f2f210b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -196,7 +196,29 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 11785, y: 1055}
+    uvTransform: {x: 6628, y: 3995}
+  - name: g2sapplelamp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7300
+      y: 4303
+      width: 362
+      height: 106
+    spriteID: ac14fa3610f38174c98017ed3e405297
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4270, y: 3213}
   - name: g2s
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -204,55 +226,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 8532
-      y: 4
-      width: 7475
-      height: 1556
-    spriteID: 7f6e962120ad063488af8c1bef2ac4e7
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 7529, y: 4}
-  - name: g2sfoots
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1568
-      width: 4219
-      height: 1079
-    spriteID: 5c369e3916497a943b1b947cb2c2168b
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1902, y: 1091}
-  - name: g2sbg
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
       x: 4
       y: 4
-      width: 8520
+      width: 7040
       height: 1556
-    spriteID: 8153a2e6204ac5e4a8102c03a3dfdfe0
+    spriteID: 003c1a3d8078b4748888e531c6343998
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -263,6 +241,94 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+  - name: g2swallwater
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3132
+      width: 5678
+      height: 1163
+    spriteID: 2b636f951a90fd24d800c6a19ec73ed5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -198, y: 2739}
+  - name: g2sspwater
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3424
+      y: 4303
+      width: 3541
+      height: 536
+    spriteID: 35fafea4cf110c343b420e2a9e00f688
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 53, y: 4022}
+  - name: g2sspwall
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4303
+      width: 3412
+      height: 637
+    spriteID: c0425377cc147574d864c66a2c35e749
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3365, y: 3999}
+  - name: g2sbg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1568
+      width: 7040
+      height: 1556
+    spriteID: 28e3132ea76cbed42a2ab8d0fb01247a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1568}
   platformSettings:
   - name: Default
     overridden: 1
@@ -281,81 +347,95 @@ ScriptedImporter:
   importHiddenLayers: 0
   importedTextureWidth: 8192
   importedTextureHeight: 8192
-  documentSize: {x: 8520, y: 1556}
+  documentSize: {x: 7040, y: 1556}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 16384
-  textureActualHeight: 16384
+  textureActualWidth: 8192
+  textureActualHeight: 8192
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: g2s
-    spriteName: 
-    isGroup: 1
+  - name: g2sanglec
+    spriteName: g2sanglec
+    isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 27
-    mosaicPosition: {x: 0, y: 0}
-  - name: g2spool4
-    spriteName: g2spool4
+    spriteID: cc526eecb17f879488c682000abc498c
+    layerID: 6582
+    mosaicPosition: {x: 7670, y: 4303}
+  - name: g2sanglec2
+    spriteName: g2sanglec2
     isGroup: 0
-    parentIndex: 0
-    spriteID: e7fc27d1a779688419490f0618babcc1
-    layerID: 26
-    mosaicPosition: {x: 4231, y: 1568}
-  - name: g2spool3
-    spriteName: g2spool3
+    parentIndex: -1
+    spriteID: 71f115013f7ce444fa630e418e57460e
+    layerID: 6581
+    mosaicPosition: {x: 7756, y: 4303}
+  - name: g2sangleh
+    spriteName: g2sangleh
     isGroup: 0
-    parentIndex: 0
-    spriteID: c9f0971b01498224f98efe9866b9f149
-    layerID: 25
-    mosaicPosition: {x: 11065, y: 1568}
-  - name: g2spool2
-    spriteName: g2spool2
+    parentIndex: -1
+    spriteID: 9dd102bc713929848bcb97546f1ed498
+    layerID: 6580
+    mosaicPosition: {x: 7842, y: 4303}
+  - name: g2sangle
+    spriteName: g2sangle
     isGroup: 0
-    parentIndex: 0
-    spriteID: 2e9b316b909bacb4bae9c92aab7d9860
-    layerID: 24
-    mosaicPosition: {x: 7650, y: 1568}
-  - name: g2spool1
-    spriteName: g2spool1
+    parentIndex: -1
+    spriteID: 2004f898efac6be4bb425307da4a951c
+    layerID: 6577
+    mosaicPosition: {x: 7300, y: 4417}
+  - name: g2sanglep
+    spriteName: g2sanglep
     isGroup: 0
-    parentIndex: 0
-    spriteID: f937583c97dbfdb46a74e19ea0294c2e
-    layerID: 23
-    mosaicPosition: {x: 4, y: 2655}
-  - name: g2sfoot1
-    spriteName: g2sfoot1
+    parentIndex: -1
+    spriteID: fa085766a0ed7a94788b65d25f2f210b
+    layerID: 6593
+    mosaicPosition: {x: 6973, y: 4303}
+  - name: g2sapplelamp
+    spriteName: g2sapplelamp
     isGroup: 0
-    parentIndex: 0
-    spriteID: 6a6da95b0b9548f4384006b6802e488a
-    layerID: 22
-    mosaicPosition: {x: 14484, y: 1568}
+    parentIndex: -1
+    spriteID: ac14fa3610f38174c98017ed3e405297
+    layerID: 6572
+    mosaicPosition: {x: 7300, y: 4303}
   - name: g2s
     spriteName: g2s
     isGroup: 0
-    parentIndex: 0
-    spriteID: 7f6e962120ad063488af8c1bef2ac4e7
-    layerID: 21
-    mosaicPosition: {x: 8532, y: 4}
-  - name: g2sfoots
-    spriteName: g2sfoots
+    parentIndex: -1
+    spriteID: 003c1a3d8078b4748888e531c6343998
+    layerID: 6601
+    mosaicPosition: {x: 4, y: 4}
+  - name: g2swallwater
+    spriteName: g2swallwater
     isGroup: 0
-    parentIndex: 0
-    spriteID: 5c369e3916497a943b1b947cb2c2168b
-    layerID: 20
-    mosaicPosition: {x: 4, y: 1568}
+    parentIndex: -1
+    spriteID: 2b636f951a90fd24d800c6a19ec73ed5
+    layerID: 6600
+    mosaicPosition: {x: 4, y: 3132}
+  - name: g2sspwater
+    spriteName: g2sspwater
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 35fafea4cf110c343b420e2a9e00f688
+    layerID: 6571
+    mosaicPosition: {x: 3424, y: 4303}
+  - name: g2sspwall
+    spriteName: g2sspwall
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c0425377cc147574d864c66a2c35e749
+    layerID: 2808
+    mosaicPosition: {x: 4, y: 4303}
   - name: g2sbg
     spriteName: g2sbg
     isGroup: 0
-    parentIndex: 0
-    spriteID: 8153a2e6204ac5e4a8102c03a3dfdfe0
-    layerID: 19
-    mosaicPosition: {x: 4, y: 4}
+    parentIndex: -1
+    spriteID: 28e3132ea76cbed42a2ab8d0fb01247a
+    layerID: 2848
+    mosaicPosition: {x: 4, y: 1568}
   characterData:
     bones: []
     parts: []
