@@ -46,6 +46,7 @@ namespace Friendship
         public GameObject deafground;
         public GameObject blindground;
 
+        GameObject[] players;
         private CharactorCreatorNetworkManager networkmanager;
         public List<SpriteResolver> spriteResolvers = new List<SpriteResolver>();
 
@@ -63,6 +64,7 @@ namespace Friendship
         #region //Initialization
         void Awake()
         {
+            players = new GameObject[2];
             photonView = GetComponent<PhotonView>();
             SingletonInit();            
         }
@@ -154,7 +156,7 @@ namespace Friendship
         {
             if (!(Blindloaded && Deafloaded))
             {
-                GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+                players = GameObject.FindGameObjectsWithTag("Player");
                 if (players.Length > 0)
                 {
                     foreach (GameObject player in players)
@@ -548,11 +550,11 @@ namespace Friendship
             Blindloaded = true;
             if (Blindloaded && Deafloaded)
             {
-                if (PlayerNetwork.Instance.photonView.IsMine)
-                {
-                    PlayerNetwork.Instance.photonView.RPC("RPC_FinishLoading", RpcTarget.All);
-                    Allloaded = true;
-                }
+                PlayerNetwork.Instance.photonView.RPC("RPC_FinishLoading", RpcTarget.All);
+                players[0].GetComponent<Rigidbody2D>().gravityScale = 1;
+                if(players.Length > 1)
+                    players[1].GetComponent<Rigidbody2D>().gravityScale = 1;
+                Allloaded = true;
             }
         }
 
@@ -562,11 +564,11 @@ namespace Friendship
             Deafloaded = true;
             if (Blindloaded && Deafloaded)
             {
-                if (PlayerNetwork.Instance.photonView.IsMine)
-                {
-                    PlayerNetwork.Instance.photonView.RPC("RPC_FinishLoading", RpcTarget.All);
-                    Allloaded = true;
-                }
+                PlayerNetwork.Instance.photonView.RPC("RPC_FinishLoading", RpcTarget.All);
+                players[0].GetComponent<Rigidbody2D>().gravityScale = 1;
+                if (players.Length > 1)
+                    players[1].GetComponent<Rigidbody2D>().gravityScale = 1;
+                Allloaded = true;
             }
         }
     }

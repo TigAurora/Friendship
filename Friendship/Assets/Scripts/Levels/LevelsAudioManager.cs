@@ -72,7 +72,7 @@ namespace Friendship
                 Obj.gameObject.GetComponent<AudioSource>().Play();
             }
             //Set AudioClip and Volume for Frog and Chick button
-            if (Obj.gameObject.name.Contains("g1p4horn"))
+            if (Obj.gameObject.name.Contains("g1p4"))
             {
                 if (environment == "frog")
                 {
@@ -98,15 +98,19 @@ namespace Friendship
                 }
                 if (Obj.gameObject.GetComponent<itemState>().maxVel / 12 > 1)
                 {
-                    Obj.gameObject.GetComponent<AudioSource>().volume = 1;
+                    Obj.gameObject.GetComponent<AudioSource>().volume = 0.3f;
+                    Obj.gameObject.GetComponent<AudioSource>().Play();
                 }
-                else if (Obj.gameObject.GetComponent<itemState>().maxVel / 12 < 0)
-                {
-                    Obj.gameObject.GetComponent<AudioSource>().volume = 0.1f;
-                }
+                //else if (Obj.gameObject.GetComponent<itemState>().maxVel / 12 < 0)
+                //{
+                // Obj.gameObject.GetComponent<AudioSource>().volume = 0.1f;
+                // Obj.gameObject.GetComponent<AudioSource>().Play();
+                //}
                 else
-                    Obj.gameObject.GetComponent<AudioSource>().volume = Obj.gameObject.GetComponent<itemState>().maxVel / 12;
-                Obj.gameObject.GetComponent<AudioSource>().Play();
+                {
+                    Obj.gameObject.GetComponent<AudioSource>().volume = (Obj.gameObject.GetComponent<itemState>().maxVel / 12) * 0.3f;
+                    Obj.gameObject.GetComponent<AudioSource>().Play();
+                }
                 Obj.gameObject.GetComponent<itemState>().maxVel = 0;
             }
             else if (Obj.gameObject.name.Contains("Lift") || Obj.gameObject.name.Contains("lift"))

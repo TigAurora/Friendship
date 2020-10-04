@@ -82,6 +82,7 @@ namespace Friendship
             }
             if (PlayerNetwork.Instance.myCharacter == 0)
             {
+                components.BlindView.TurnBlack("Untagged");
                 components.BlindView.TurnBlack("Background");
                 components.BlindView.TurnBlack("Floor");
                 components.BlindView.TurnBlack("Player");
@@ -93,8 +94,12 @@ namespace Friendship
             {
                 AudioListener.volume = 0;
             }
-            yield return new WaitForSeconds(0f);
+            yield return new WaitForSeconds(0.5f);
             PlayerNetwork.Instance.photonView.RPC("RPC_FinishLevelPositionSet", RpcTarget.MasterClient);
+            foreach (GameObject x in components.SoundsSetup)
+            {
+                x.GetComponent<AudioSource>().Play();
+            }
             components.LevelAManager.isGame = true;
 
 
@@ -186,6 +191,7 @@ namespace Friendship
             [Header("Components")]
             public GameObject[] players;
             public Transform[] blindPlayerStartPosition, deafPlayerStartPosition;
+            public GameObject[] SoundsSetup;
         }
     }
 }

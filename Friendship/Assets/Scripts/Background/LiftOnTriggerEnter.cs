@@ -27,7 +27,7 @@ namespace Friendship
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(Players + " in lift");
+            //photonView.RPC("RPC_NextAnim", RpcTarget.All);
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -42,6 +42,17 @@ namespace Friendship
                 photonView.RPC("RPC_CharacterGetOut", RpcTarget.All, whichPlayer);
         }
 
+        [PunRPC]
+        void RPC_NextAnim()
+        {
+            if (Players == 2)
+            {
+                lift.GetComponent<LiftControll>().SetParent(1);
+                lift.GetComponent<LiftControll>().NextAnim();
+                //lift.GetComponent<LiftControll>().SetCameraLimit("LifttoFF");
+            }
+        }
+
 
         [PunRPC]
         void RPC_CharacterGetIn(int character)
@@ -50,7 +61,7 @@ namespace Friendship
             anotherDetect.GetComponent<LiftOnTriggerEnter>().PlayerInLift[character] = true;
             anotherDetect.GetComponent<LiftOnTriggerEnter>().Players++;
             Players++;
-
+            lift.GetComponent<LiftControll>().PlayersinLift = Players;
         }
 
         [PunRPC]
@@ -60,6 +71,7 @@ namespace Friendship
             anotherDetect.GetComponent<LiftOnTriggerEnter>().PlayerInLift[character] = false;
             anotherDetect.GetComponent<LiftOnTriggerEnter>().Players--;
             Players--;
+            lift.GetComponent<LiftControll>().PlayersinLift = Players;
         }
     }
 }

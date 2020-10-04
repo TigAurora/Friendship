@@ -72,21 +72,27 @@ namespace Friendship
                     {
                         if (Obj == "Player")
                         {
-                            r.color = new Color(0f, 0f, 0f, 0f);
+                            //r.color = new Color(0f, 0f, 0f, 0f);
+                            r.material = InvertColorMaterial;
+                            r.material.SetFloat("_Threshold", 0);
+                            r.material.color = new Color(r.material.color.r, r.material.color.g, r.material.color.b, 0f);
+                            r.color = new Color(r.color.r, r.color.g, r.color.b, 0f);
                         }
                     }
                     else if (r.transform.tag == Obj)
                     {
                         r.material = DefaultMaterial;
-                        if (r.transform.name == "g1liftgan")
+                        if (r.transform.name == "g1lift")
                         {
-                            r.color = new Color(0f, 0f, 0f, 0f);
-                        }
-                        else
-                        {
+                            r.material.color = new Color(0f, 0f, 0f, 1f);
                             r.color = new Color(0f, 0f, 0f, 1f);
                         }
-
+                        //else
+                        //{
+                        //r.color = new Color(0f, 0f, 0f, 1f);
+                        r.material.color = new Color(0f, 0f, 0f, 1f);
+                        r.color = new Color(0f, 0f, 0f, 1f);
+                        //}
                     }
                 }
 

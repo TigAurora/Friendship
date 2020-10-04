@@ -37,9 +37,11 @@ namespace Friendship
         {
             for (int i = 0; i < GA_puzzles.Length; ++i)
             {
-                if (GA_puzzles[i] == true)
+                if (GA_puzzles[i] == true && puzzleBlocks[i].GetComponent<BoxCollider2D>().enabled)
                 {
-                    puzzleBlocks[i].SetActive(false);
+                    puzzleBlocks[i].GetComponent<AudioSource>().Play();
+                    puzzleBlocks[i].GetComponent<SpriteRenderer>().enabled = false;
+                    puzzleBlocks[i].GetComponent<BoxCollider2D>().enabled = false;
                 }
             }
         }

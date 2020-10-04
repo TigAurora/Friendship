@@ -78,6 +78,13 @@ MonoBehaviour:
   - RPC_SyncTrigger
   - RPC_Update
   - RPC_WrongAnswer
+  - RPC_NextAnim
+  - RPC_SetParent
+  - RPC_LiftStart
+  - RPC_CharacterIn
+  - RPC_CharacterOut
+  - RPC_CollectApple
+  - RPC_DeleteApple
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

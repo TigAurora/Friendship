@@ -7,15 +7,27 @@ namespace Friendship
 {
     public class SoundWithAnim : MonoBehaviour
     {
+        [Header("Components")]
+        public GameObject[] otherObjs;
+
         public float TimeLoop;
         float time;
         public bool isPlaying = false, isStart = false, isLoop = false, isEnd = false;
         public Animator anim;
+        public List<Animator> otherAnims;
 
         // Start is called before the first frame update
         void Start()
         {
+            otherAnims = new List<Animator>();
             anim = GetComponent<Animator>();
+            if (otherObjs.Length > 0)
+            {
+                for (int i = 0; i < otherObjs.Length; ++i)
+                {
+                    otherAnims.Add(otherObjs[i].GetComponent<Animator>());
+                }
+            }
             isStart = false;
         }
 
@@ -26,12 +38,21 @@ namespace Friendship
                 isStart = true;
                 isEnd = false;
                 anim.SetTrigger("Play");
+                for (int i = 0; i < otherAnims.Count; ++i)
+                {
+                    otherAnims[i].enabled = true;
+                    otherAnims[i].SetTrigger("Play");
+                }
             }
             if (!isPlaying && isStart && isLoop & !isEnd)
             {
                 if (time >= TimeLoop)
                 {
                     anim.SetTrigger("Play");
+                    for (int i = 0; i < otherAnims.Count; ++i)
+                    {
+                        otherAnims[i].SetTrigger("Play");
+                    }
                     time = 0;
                 }
                 else
@@ -75,6 +96,25 @@ namespace Friendship
         {
             GetComponent<AudioSource>().enabled = true;
             GetComponent<AudioSource>().Play();
+        }
+
+        public void StartSoundFadein(float volume)
+        {
+            GetComponent<AudioSource>().enabled = true;
+            GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().volume = Mathf.Lerp(0, volume, 1.5f);
+        }
+
+        public void FadeOutSound()
+        {
+            GetComponent<AudioSource>().volume = Mathf.Lerp(GetComponent<AudioSource>().volume, 0, 2f);
+            StartCoroutine(FadeOutX());
+        }
+
+        IEnumerator FadeOutX()
+        {
+            yield return new WaitForSeconds(2.2f);
+            GetComponent<AudioSource>().Stop();
         }
 
     }

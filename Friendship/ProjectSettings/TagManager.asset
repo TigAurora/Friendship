@@ -23,6 +23,7 @@ TagManager:
   - SoundSource
   - SoundSourceComp
   - InteractiveItem
+  - SameColor
   layers:
   - Default
   - TransparentFX
@@ -45,7 +46,7 @@ TagManager:
   - 
   - Floor
   - Wall
-  - 
+  - Abyss
   - 
   - 
   - 

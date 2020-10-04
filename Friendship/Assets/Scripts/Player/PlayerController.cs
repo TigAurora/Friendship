@@ -11,16 +11,19 @@ namespace Friendship
     {
         //Components
         PhotonView photonView;
-        Animator animator, wheelanimator;
+        Animator animator;
         PlayerCamera playerCamera;
         DetectWallAndGround detect;
+        GameObject wheelchair;
 
         [Header("Parameters")]
         [SerializeField] public float speedMove;
         [SerializeField] public float speedShift;
         [SerializeField] public float validpickrange;
         [SerializeField] public float validthrowrange;
-        [HideInInspector] public bool isPick = false, isGround = false, isAnima = false, CheckPickAnim = false;
+        public bool isPick = false, isGround = false, isAnima = false, CheckPickAnim = false, isSync = true;
+        //status
+        public bool isWalk = false, isRun = false, isFalling = false;
 
         [Header("Transforms")]
         [SerializeField] public Transform playerSprite;
@@ -38,6 +41,8 @@ namespace Friendship
 
         [HideInInspector] public List<GameObject> pickableitems;
         [HideInInspector] public List<GameObject> interactiveitems;
+        public int thisCharacter = -1;
+
 
         #region// Unity
 
@@ -47,6 +52,14 @@ namespace Friendship
             interactiveitems = new List<GameObject>();
             photonView = GetComponent<PhotonView>();
             detect = GetComponent<DetectWallAndGround>();
+            if (transform.name.Contains("deaf"))
+            {
+                thisCharacter = 1;
+            }
+            else if (transform.name.Contains("blind"))
+            {
+                thisCharacter = 0;
+            }
             if (PlayerNetwork.Instance.myCharacter == 0)
             {
                 if (photonView.IsMine)
@@ -63,8 +76,9 @@ namespace Friendship
                         }
                         else if (obj.gameObject.name == "wheelchair")
                         {
-                            wheelanimator = obj.gameObject.GetComponentInChildren<Animator>();
+                            wheelchair = obj.gameObject;
                         }
+
                     }
 
                 }
@@ -81,7 +95,7 @@ namespace Friendship
                         }
                         else if (obj.gameObject.name == "wheelchair")
                         {
-                            wheelanimator = obj.gameObject.GetComponentInChildren<Animator>();
+                            wheelchair = obj.gameObject;
                         }
                     }
                 }
@@ -106,8 +120,40 @@ namespace Friendship
                     {
                         CheckInteraction();
                         if (detect.IsGround())
-                            isGround = true;
+                        {
+                            if (isFalling)
+                            {
+                                isFalling = false;
+                                isAnima = false;
+                                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isFall", false, thisCharacter);
+                            }
+                        }
+                        else if (GetComponent<Rigidbody2D>().velocity.y < 0)
+                        {
+                            isAnima = true;
+                            isFalling = true;
+                            isGround = false;
+                            photonView.RPC("RPC_SyncBool", RpcTarget.All, "isFall", true, thisCharacter);
+                        }
+
                     }
+                }
+            }
+            else if (SceneManager.GetActiveScene().name == "CharacterCreator")
+            {
+                if (detect.IsGround())
+                {
+                    if (isFalling)
+                    {
+                        isFalling = false;
+                        animator.SetBool("isFall", false);
+                    }
+                }
+                else if (GetComponent<Rigidbody2D>().velocity.y < 0)
+                {
+                    isFalling = true;
+                    isGround = false;
+                    animator.SetBool("isFall", true);
                 }
             }
         }
@@ -148,15 +194,18 @@ namespace Friendship
         //Photon method to send and get data
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-            if (stream.IsWriting)
+            if (isSync)
             {
-                stream.SendNext(transform.position);
-                stream.SendNext(transform.localScale);
-            }
-            else
-            {
-                targetPosition = (Vector3)stream.ReceiveNext();
-                targetScale = (Vector3)stream.ReceiveNext();
+                if (stream.IsWriting)
+                {
+                    stream.SendNext(transform.position);
+                    stream.SendNext(transform.localScale);
+                }
+                else
+                {
+                    targetPosition = (Vector3)stream.ReceiveNext();
+                    targetScale = (Vector3)stream.ReceiveNext();
+                }
             }
         }
 
@@ -290,9 +339,9 @@ namespace Friendship
             //Rotate by X move 
             Rotation(CheckInput("").x);
 
-            if(detect.IsWall() == 1)
+            if(detect.IsWall() == 1 || detect.IsAbyss() == 1)
                 transform.Translate(CheckInput("LeftWall"));
-            else if (detect.IsWall() == 2)
+            else if (detect.IsWall() == 2 || detect.IsAbyss() == 2)
                 transform.Translate(CheckInput("RightWall"));
             else
                 transform.Translate(CheckInput(""));
@@ -329,29 +378,29 @@ namespace Friendship
             //If player is't stay
             if (x != 0 || y != 0)
             {
-                if ((x > 0 && (detect.IsWall() != 2)) || (x < 0 && (detect.IsWall() != 1)))
+                if ((x > 0 && (detect.IsWall() != 2) && (detect.IsAbyss() != 2)) || (x < 0 && (detect.IsWall() != 1) && (detect.IsAbyss() != 1)))
                 {
                     if (InputManager.GetKey("Speedup"))
                     {
-                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", true);
-                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false);
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", true, thisCharacter);
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false, thisCharacter);
                     }
                     else
                     {
-                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false);
-                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", true);
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false, thisCharacter);
+                        photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", true, thisCharacter);
                     }
                 }
                 else
                 {
-                    photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false);
-                    photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false);
+                    photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false, thisCharacter);
+                    photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false, thisCharacter);
                 }
             }
             else
             {
-                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false);
-                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false);
+                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isRun", false, thisCharacter);
+                photonView.RPC("RPC_SyncBool", RpcTarget.All, "isWalk", false, thisCharacter);
             }
 
         }
@@ -426,23 +475,35 @@ namespace Friendship
             animator.SetTrigger(animation);
             if (transform.name.Contains("deaf"))
             {
-                wheelanimator.SetTrigger(animation);
+                wheelchair.GetComponentInChildren<Animator>().SetTrigger(animation);
             }
         }
 
         [PunRPC]
-        void RPC_SyncBool(string animation, bool state)
+        void RPC_SyncBool(string animation, bool state, int which)
         {
-            animator.SetBool(animation, state);
+            if (thisCharacter == which)
+            {
+                animator.SetBool(animation, state);
+                if ((animation.Contains("Walk") || animation.Contains("Run")) && thisCharacter == 1)
+                {
+                    wheelchair.GetComponentInChildren<Animator>().SetBool(animation, state);
+                    if (!wheelchair.GetComponentInChildren<AudioSource>().isPlaying &&
+                            (wheelchair.GetComponentInChildren<Animator>().GetBool("isWalk") || wheelchair.GetComponentInChildren<Animator>().GetBool("isRun")))
+                        wheelchair.GetComponentInChildren<AudioSource>().Play();
+                    else if (wheelchair.GetComponentInChildren<AudioSource>().isPlaying &&
+                            !wheelchair.GetComponentInChildren<Animator>().GetBool("isWalk") && !wheelchair.GetComponentInChildren<Animator>().GetBool("isRun"))
+                        wheelchair.GetComponentInChildren<AudioSource>().Stop();
+
+                }
+            }
         }
 
         [PunRPC]
         void RPC_SyncThrowItem(string player)
         {
-            Debug.Log("ThrowItem");
             if (transform.name == player && iteminhand != null)
             {
-                Debug.Log("ThrowItemInner");
                 Vector3 temp = iteminhand.transform.parent.position;
                 iteminhand.transform.SetParent(null);
                 iteminhand.transform.position = temp;
@@ -459,17 +520,17 @@ namespace Friendship
             //3 isThrow Trigger for 3 transition
             if (transform.name == player && stage == 1)
             {
-                Debug.Log("isThrow");
+                //Debug.Log("isThrow");
                 animator.SetTrigger("isThrow");
             }
             else if (transform.name == player && stage == 2)
             {
-                Debug.Log("isThrow1");
+                //Debug.Log("isThrow1");
                 animator.SetTrigger("isThrow1");
             }
             else if (transform.name == player && stage == 3)
             {
-                Debug.Log("isThrow2");
+                //Debug.Log("isThrow2");
                 animator.SetTrigger("isThrow2");
                 isPick = false;
             }
@@ -481,7 +542,7 @@ namespace Friendship
             //3 isPick Trigger for 3 transition
             if (transform.name == player && stage == 1)
             {
-                Debug.Log("isPick");
+                //Debug.Log("isPick");
                 isPick = true;
                 CheckPickAnim = true;
                 iteminhand = pickableitems[0];
@@ -492,7 +553,7 @@ namespace Friendship
             }
             else if (transform.name == player && stage == 2)
             {
-                Debug.Log("isPick1");
+                //Debug.Log("isPick1");
                 pointIK.transform.position = iteminhand.transform.position;
                 iteminhand.GetComponent<Rigidbody2D>().gravityScale = 0;
                 iteminhand.GetComponent<itemState>().pickuphand = pickuphand;
@@ -503,7 +564,7 @@ namespace Friendship
             }
             else if (transform.name == player && stage == 3)
             {
-                Debug.Log("isPick2");
+                //Debug.Log("isPick2");
                 CheckPickAnim = false;
                 pickupIK.transform.position = armlDefault.position;
                 pickupIK.GetComponent<LimbSolver2D>().GetChain(0).target = defaultIK;

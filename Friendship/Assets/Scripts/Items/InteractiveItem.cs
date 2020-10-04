@@ -35,23 +35,29 @@ namespace Friendship
         {
             if (transform.name.Contains("g1p3tablephone"))
             {
-                photonView.RPC("RPC_SyncTeleInteraction", RpcTarget.All);
+                if(!items[3].GetComponent<AudioSource>().isPlaying)
+                    photonView.RPC("RPC_SyncTeleInteraction", RpcTarget.All);
             }
-
         }
 
-        [PunRPC]
-        void RPC_SyncTeleInteraction()
+        IEnumerator delayComplete()
         {
+            yield return new WaitForSeconds(1f);
             //PhoneBody
             items[0].GetComponent<SoundWithAnim>().End();
             //PhoneHandle
             items[1].GetComponent<Animator>().enabled = true;
             //TeleStop
             items[2].GetComponent<SoundWithAnim>().End();
-            items[3].GetComponent<SoundWithAnim>().End();
             //items[4].GetComponent<Animator>().SetTrigger("MoveDown");
+            yield return new WaitForSeconds(2.2f);
             GAManager.GA_puzzles[2] = true;
+        }
+
+        [PunRPC]
+        void RPC_SyncTeleInteraction()
+        {
+            StartCoroutine(delayComplete());
         }
 
     }

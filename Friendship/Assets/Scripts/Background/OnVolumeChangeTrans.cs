@@ -13,6 +13,7 @@ namespace Friendship
         //Any other muted obj need to be included
         [Header("SoundSourceComp")]
         public GameObject[] others;
+        public GameObject[] othersParent;
 
         public bool isFadeIn = false;
         public bool isFadeOut = false;
@@ -53,10 +54,29 @@ namespace Friendship
         {
             float a = 0;
             float[] oa = new float[99];
-            a = sprite.material.color.a;
+            float[] oap = new float[666];
+            GameObject[] othersChild = new GameObject[666];
+            int count = 0;
+
+            if (sprite != null)
+                a = sprite.material.color.a;
+            foreach (GameObject x in othersParent)
+            {
+                foreach (Transform child in x.transform)
+                {
+                    if (child.gameObject.GetComponent<SpriteRenderer>() != null)
+                    {
+                        othersChild[count] = child.gameObject;
+                        oap[count] = child.gameObject.GetComponent<SpriteRenderer>().material.color.a;
+                        ++count;
+                    }
+                }
+            }
+
             for (int j = 0; j < others.Length; ++j)
             {
-                oa[j] = others[j].GetComponent<SpriteRenderer>().material.color.a;
+                if (others[j].GetComponent<SpriteRenderer>() != null)
+                    oa[j] = others[j].GetComponent<SpriteRenderer>().material.color.a;
             }
             // loop over 1 second
             for (float i = 0; i <= fadeinTime; i += Time.deltaTime)
@@ -66,14 +86,25 @@ namespace Friendship
                 //col.a = (byte)((sprite.color.a + ((1 - sprite.color.a) / fadeinTime) * i) * 255);
                 //sprite.material.SetColor("_Color", col);
                 //sprite.material.color= new Color(0, 0, 0, sprite.color.a + ((1 - sprite.color.a) / fadeinTime) * i);
-                sprite.material.SetColor("_Color", new Color(1, 1, 1, a + ((1 - a) / fadeinTime + (1 - a) % fadeinTime) * i));
+                if(sprite != null)
+                    sprite.material.SetColor("_Color", new Color(1, 1, 1, a + ((1 - a) / fadeinTime + (1 - a) % fadeinTime) * i));
                 if (others.Length != 0)
                 {
                     for(int j = 0; j < others.Length; ++j)
                     {
-                        others[j].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, oa[j] + ((1 - oa[j]) / fadeinTime + (1 - oa[j]) % fadeinTime) * i));
+                        if(others[j].GetComponent<SpriteRenderer>() != null)
+                            others[j].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, oa[j] + ((1 - oa[j]) / fadeinTime + (1 - oa[j]) % fadeinTime) * i));
                     }
                 }
+                if (othersChild.Length != 0)
+                {
+                    for (int k = 0; k < count; ++k)
+                    {
+                        if (othersChild[k].GetComponent<SpriteRenderer>() != null)
+                            othersChild[k].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, oap[k] + ((1 - oap[k]) / fadeinTime + (1 - oap[k]) % fadeinTime) * i));
+                    }
+                }
+
                 yield return null;
             }
         }
@@ -82,40 +113,75 @@ namespace Friendship
         {
             float a = 0;
             float[] oa = new float[99];
+            float[] oap = new float[666];
+            GameObject[] othersChild = new GameObject[666];
+            int count = 0;
+
+            if (sprite != null)
+                a = sprite.material.color.a;
+            foreach (GameObject x in othersParent)
+            {
+                foreach (Transform child in x.transform)
+                {
+                    if (child.gameObject.GetComponent<SpriteRenderer>() != null)
+                    {
+                        othersChild[count] = child.gameObject;
+                        oap[count] = child.gameObject.GetComponent<SpriteRenderer>().material.color.a;
+                        ++count;
+                    }
+                }
+            }
+
             // fade from opaque to transparent
             // loop over 1 second backwards
-            a = sprite.material.color.a;
+            if (sprite != null)
+                a = sprite.material.color.a;
             for (int j = 0; j < others.Length; ++j)
             {
-                oa[j] = others[j].GetComponent<SpriteRenderer>().material.color.a;
+                if (others[j].GetComponent<SpriteRenderer>() != null)
+                    oa[j] = others[j].GetComponent<SpriteRenderer>().material.color.a;
             }
             for (float i = fadeoutTime; i >= 0 && !isFadeIn; i -= Time.deltaTime)
             {
                 // set color with i as alpha
-                sprite.material.SetColor("_Color", new Color(1,1,1, a - (a / fadeoutTime + a % fadeoutTime) * (fadeoutTime - i)));
+                if (sprite != null)
+                    sprite.material.SetColor("_Color", new Color(1,1,1, a - (a / fadeoutTime + a % fadeoutTime) * (fadeoutTime - i)));
                 if (others.Length != 0)
                 {
-                    foreach (GameObject other in others)
+                    for (int j = 0; j < others.Length; ++j)
                     {
-                        for (int j = 0; j < others.Length; ++j)
-                        {
+                        if (others[j].GetComponent<SpriteRenderer>() != null)
                             others[j].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, oa[j] - (oa[j] / fadeoutTime + oa[j] % fadeoutTime) * (fadeoutTime - i)));
-                        }
+                    }
+                }
+                if (othersChild.Length != 0)
+                {
+                    for (int k = 0; k < count; ++k)
+                    {
+                        if (othersChild[k].GetComponent<SpriteRenderer>() != null)
+                            othersChild[k].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, oap[k] - (oap[k] / fadeoutTime + oap[k] % fadeoutTime) * (fadeoutTime - i)));
                     }
                 }
                 yield return null;
             }
             if (!isFadeIn)
             {
-                sprite.material.SetColor("_Color", new Color(1, 1, 1, 0));
+                if (sprite != null)
+                    sprite.material.SetColor("_Color", new Color(1, 1, 1, 0));
                 if (others.Length != 0)
                 {
-                    foreach (GameObject other in others)
+                    for (int j = 0; j < others.Length; ++j)
                     {
-                        for (int j = 0; j < others.Length; ++j)
-                        {
+                        if (others[j].GetComponent<SpriteRenderer>() != null)
                             others[j].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, 0));
-                        }
+                    }
+                }
+                if (othersChild.Length != 0)
+                {
+                    for (int k = 0; k < count; ++k)
+                    {
+                        if (othersChild[k].GetComponent<SpriteRenderer>() != null)
+                            othersChild[k].GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(1, 1, 1, 0));
                     }
                 }
             }
